@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="MR PLASTIC S.A.C. — Sistemas de tuberías industriales HDPE, PVC, CPVC y Hierro Dúctil para minería, construcción e industria en Perú."/>
+<title>MR PLASTIC S.A.C. | Tuberías Industriales — Perú</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;0,800;0,900;1,700&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="index.css"/>
+</head>
+<body>
+
+<!-- CURSOR -->
+<div id="cur-dot"></div>
+<div id="cur-ring"></div>
+<!-- PROGRESS BAR -->
+<div id="prog"></div>
+<!-- BACK TO TOP -->
+<button id="btt" aria-label="Volver arriba">
+  <svg viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg>
+</button>
+
+<!-- ═══════════════════════════════════════
+     NAVBAR
+═══════════════════════════════════════ -->
+<nav class="nav top" id="nav">
+  <div class="wrap nav__inner">
+
+    <a href="#inicio" class="nav__logo">
+      <img src="images\logo\logo.png"
+           alt="MR PLASTIC"
+           class="nav__logo-img"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+      <!-- Fallback si no carga la imagen -->
+      <div class="nav__logo-badge" style="display:none">
+        <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+      </div>
+     
+    </a>
+
+    <div class="nav__links" id="navLinks">
+      <a href="#inicio" class="active">Inicio</a>
+      <a href="#productos">Productos</a>
+      <a href="#sectores">Sectores</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#contacto">Contacto</a>
+    </div>
+
+    <div class="nav__actions">
+      <!-- WhatsApp -->
+      <a href="https://wa.me/+51947156354" class="nav__social-icon nav__social-icon--wa" target="_blank" rel="noopener" aria-label="WhatsApp">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.374 0 0 5.373 0 12c0 2.117.553 4.103 1.523 5.83L.057 23.5l5.83-1.49A11.945 11.945 0 0012 24c6.626 0 12-5.373 12-12S18.626 0 12 0zm0 22c-1.885 0-3.656-.51-5.18-1.399l-.371-.22-3.857.987.987-3.732-.241-.393A9.98 9.98 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+      </a>
+      <!-- Facebook -->
+      <a href="https://facebook.com/mrplastic" class="nav__social-icon nav__social-icon--fb" target="_blank" rel="noopener" aria-label="Facebook">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+      </a>
+      <!-- Instagram -->
+      <a href="https://instagram.com/mrplastic" class="nav__social-icon nav__social-icon--ig" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+      </a>
+      <!-- TikTok -->
+      <a href="https://tiktok.com/@mrplastic" class="nav__social-icon nav__social-icon--tt" target="_blank" rel="noopener" aria-label="TikTok">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.75a4.85 4.85 0 01-1.01-.06z"/></svg>
+      </a>
+    </div>
+
+    <button class="nav__burger" id="burger" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
+
+  </div>
+</nav>
+
+
+<!-- ═══════════════════════════════════════
+     HERO — CARRUSEL
+═══════════════════════════════════════ -->
+<section class="hero" id="inicio">
+
+  <!-- CARRUSEL DE FONDO -->
+  <div class="hero__carousel" id="heroCarousel">
+
+    <!-- SLIDE 1 — imagen opcion2.jpeg -->
+    <div class="hero__slide active" data-slide="0">
+      <img src="images\inicio\opcion2.jpeg"
+           alt="MR Plastic — Especialistas en tuberías"
+           class="hero__slide-img"/>
+      <div class="hero__slide-overlay"></div>
+    </div>
+
+    <!-- SLIDE 2 — imagen ejemplo_inicio1.jpeg -->
+    <div class="hero__slide" data-slide="1">
+      <img src="images\inicio\opcion2.jpeg"
+           alt="MR Plastic — Sistemas industriales"
+           class="hero__slide-img"/>
+      <div class="hero__slide-overlay"></div>
+    </div>
+
+    <!-- SLIDE 3 — slot para una tercera imagen (reemplaza la ruta) -->
+    <div class="hero__slide" data-slide="2">
+      <img src="images\inicio\opcion2.jpeg"
+           alt="MR Plastic — Calidad garantizada"
+           class="hero__slide-img"
+           onerror="this.parentElement.style.background='linear-gradient(135deg,#1A1C1E 0%,#0E0F10 100%)'"/>
+      <div class="hero__slide-overlay"></div>
+    </div>
+
+  </div>
+
+  <!-- CONTROLES DEL CARRUSEL -->
+  <button class="hero__carousel-btn hero__carousel-btn--prev" id="heroPrev" aria-label="Anterior">
+    <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
+  </button>
+  <button class="hero__carousel-btn hero__carousel-btn--next" id="heroNext" aria-label="Siguiente">
+    <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
+  </button>
+
+  <!-- DOTS / INDICADORES -->
+  <div class="hero__dots" id="heroDots">
+    <button class="hero__dot active" data-index="0" aria-label="Slide 1"></button>
+    <button class="hero__dot" data-index="1" aria-label="Slide 2"></button>
+    <button class="hero__dot" data-index="2" aria-label="Slide 3"></button>
+  </div>
+
+  <!-- GRID TEXTURE OVERLAY -->
+  <div class="hero__grid"></div>
+
+  <!-- CONTENIDO DEL HERO -->
+  <div class="wrap" style="width:100%;position:relative;z-index:4">
+    <div class="hero__inner">
+
+      <!-- LEFT -->
+      <div class="hero__left">
+        <div class="hero__eyebrow">
+          <span class="hero__eyebrow-line"></span>
+          Soluciones industriales para conducción de fluidos
+        </div>
+
+        <h1 class="hero__h1">
+          Tuberías<br>
+          <span class="accent">que no</span><br>
+          <span class="outline">fallan.</span>
+        </h1>
+
+        <p class="hero__desc">
+          
+		  Soluciones confiables en <strong> tuberías y conexiones </strong>para proyectos industriales y comerciales con respaldo técnico y entrega rápida.
+        </p>
+
+        <div class="hero__btns">
+          <a href="mailto:ventas@mrplastic.com.pe?subject=Solicitud%20de%20cotización%20técnica" class="btn btn-primary btn-lg">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+            Cotizar ahora
+          </a>
+        </div>
+
+        <!-- STATS debajo del botón -->
+        <div class="hero__stats hero__stats--inline">
+          <div class="hero__stat">
+            <div class="hero__stat-val"><span>+</span><span id="s-years">0</span></div>
+            <div class="hero__stat-lbl">Años en el mercado</div>
+          </div>
+          <div class="hero__stat">
+            <div class="hero__stat-val"><span>+</span><span id="s-projs">0</span></div>
+            <div class="hero__stat-lbl">Proyectos ejecutados</div>
+          </div>
+          <div class="hero__stat">
+            <div class="hero__stat-val"><span id="s-resp">0</span><span>h</span></div>
+            <div class="hero__stat-lbl">Respuesta técnica</div>
+          </div>
+          <div class="hero__stat">
+            <div class="hero__stat-val"><span id="s-sect">0</span></div>
+            <div class="hero__stat-lbl">Sectores atendidos</div>
+          </div>
+        </div>
+
+        <!-- FEATURES pequeños debajo de stats -->
+        <div class="hero__feats-mini">
+          <div class="hero__feat-mini">
+            <svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            <span><strong>Certificación completa</strong> · Ficha técnica, origen garantizado, NTP / ISO</span>
+          </div>
+          <div class="hero__feat-mini">
+            <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+            <span><strong>Equipo técnico dedicado</strong> · Ingenieros en campo y oficina</span>
+          </div>
+          <div class="hero__feat-mini">
+            <svg viewBox="0 0 24 24"><path d="M20 7H4a2 2 0 00-2 2v6a2 2 0 002 2h16a2 2 0 002-2V9a2 2 0 00-2-2z"/></svg>
+            <span><strong>Stock en Lima</strong> · Despacho inmediato · Puente Piedra → todo el Perú</span>
+          </div>
+        </div>
+
+        <div class="hero__trust">
+          <div class="hero__trust-dot"></div>
+          <p>Respuesta rápida garantizada  · Stock disponible · Despacho a nivel nacional</p>
+        </div>
+      </div>
+
+    </div><!-- fin hero__inner -->
+  </div><!-- fin wrap -->
+</section>
+
+
+<!-- ═══ TICKER ═══ -->
+<div class="ticker" role="marquee">
+  <div class="ticker__track">
+    <div class="ticker__item">HDPE SDR 11 / SDR 17</div>
+    <div class="ticker__item">PVC UF / SP / CPVC</div>
+    <div class="ticker__item">Hierro Dúctil K9 / K12</div>
+    <div class="ticker__item">Conduit PVC &amp; EMT</div>
+    <div class="ticker__item">Conexiones &amp; Accesorios</div>
+    <div class="ticker__item">ISO 9001 Certificado</div>
+    <div class="ticker__item">Despacho 24–48 h</div>
+    <div class="ticker__item">Minería · Construcción · Industria</div>
+    <!-- Duplicate for seamless loop -->
+    <div class="ticker__item">HDPE SDR 11 / SDR 17</div>
+    <div class="ticker__item">PVC UF / SP / CPVC</div>
+    <div class="ticker__item">Hierro Dúctil K9 / K12</div>
+    <div class="ticker__item">Conduit PVC &amp; EMT</div>
+    <div class="ticker__item">Conexiones &amp; Accesorios</div>
+    <div class="ticker__item">ISO 9001 Certificado</div>
+    <div class="ticker__item">Despacho 24–48 h</div>
+    <div class="ticker__item">Minería · Construcción · Industria</div>
+  </div>
+</div>
+
+
+<!-- ═══ TRUST BAR ═══ -->
+<div class="trustbar">
+  <div class="wrap trustbar__inner">
+    <div class="tb-item"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>ISO 9001 Certificado</div>
+    <div class="tb-sep"></div>
+    <div class="tb-item"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Despacho en 24–48 h</div>
+    <div class="tb-sep"></div>
+    <div class="tb-item"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Lima – Puente Piedra</div>
+    <div class="tb-sep"></div>
+    <div class="tb-item"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.81a19.79 19.79 0 01-3.07-8.63A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.08 6.08l1.27-.95a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>+51 947 156 354</div>
+    <div class="tb-sep"></div>
+    <div class="tb-item"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>ventas@mrplastic.com.pe</div>
+  </div>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>
