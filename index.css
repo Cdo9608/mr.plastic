@@ -123,7 +123,7 @@ body.is-hovering #cur-ring{width:46px;height:46px;opacity:.9}
 
 /* Logo imagen */
 .nav__logo-img{
-  height:46px;width:auto;
+  height:35px;width:auto;
   object-fit:contain;
   /* Sobre fondo oscuro (nav top): logo con fondo negro se invierte para verse blanco */
   filter:brightness(0) invert(1);
@@ -307,14 +307,15 @@ body.is-hovering #cur-ring{width:46px;height:46px;opacity:.9}
 .hero__h1{
   font-family:var(--fh);
   font-size:clamp(3.2rem,5.5vw,5.5rem);
-  font-weight:700;line-height:.92;
+  font-weight:700;line-height:1;
   color:#fff;margin-bottom:20px;
   letter-spacing:-.01em;
 }
-.hero__h1 .accent{color:var(--red)}
+.hero__h1-line{display:block;line-height:1.05}
+.hero__h1 .accent{color:var(--red);display:block;line-height:0.67}
 .hero__h1 .outline{
-  -webkit-text-stroke:1.5px rgba(255,255,255,.4);
-  color:transparent;
+  -webkit-text-stroke:1.5px rgba(255,255,255,.9);
+  color:transparent;display:block;line-height:1.50;
 }
 
 /* Descripción */
