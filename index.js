@@ -58,6 +58,8 @@ window.addEventListener('scroll', () => {
 
 burger.addEventListener('click', () => {
   const open  = navLinks.classList.toggle('open');
+  document.body.classList.toggle('menu-open', open);
+  document.documentElement.classList.toggle('menu-open', open);
   const spans = burger.querySelectorAll('span');
   if (open) {
     spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
@@ -70,6 +72,8 @@ burger.addEventListener('click', () => {
 navLinks.querySelectorAll('a').forEach(a => {
   a.addEventListener('click', () => {
     navLinks.classList.remove('open');
+    document.body.classList.remove('menu-open');
+    document.documentElement.classList.remove('menu-open');
     burger.querySelectorAll('span').forEach(s => { s.style.transform = ''; s.style.opacity = ''; });
   });
 });

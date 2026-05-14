@@ -3,8 +3,10 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<meta name="description" content="MR PLASTIC S.A.C. — Sistemas de tuberías industriales HDPE, PVC, CPVC y Hierro Dúctil para minería, construcción e industria en Perú."/>
+<meta name="description" content="MR PLASTIC — Especialistas en tuberías y mangueras industriales para minería, construcción e industria en Perú."/>
 <title>MR PLASTIC</title>
+<link rel="icon" type="image/png" href="images/logo/isotipo.png">
+<link rel="apple-touch-icon" href="images/logo/isotipo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;0,800;0,900;1,700&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet"/>
@@ -29,28 +31,26 @@
   <div class="wrap nav__inner">
 
     <a href="#inicio" class="nav__logo">
-      <img src="images\logo\log_principal.png"
+      <img src="images/logo/log_principal.png"
            alt="MR PLASTIC"
            class="nav__logo-img"
            onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
-      <!-- Fallback si no carga la imagen -->
       <div class="nav__logo-badge" style="display:none">
         <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
       </div>
-     
     </a>
 
     <div class="nav__links" id="navLinks">
       <a href="#inicio" class="active">Inicio</a>
-      <a href="#productos">Productos</a>
-      <a href="#sectores">Sectores</a>
+      <a href="productos.html">Productos</a>
       <a href="#nosotros">Nosotros</a>
       <a href="#contacto">Contacto</a>
+	   <a href="#sectores">+</a>
     </div>
 
     <div class="nav__actions">
       <!-- WhatsApp -->
-      <a href="https://wa.me/+51947156354" class="nav__social-icon nav__social-icon--wa" target="_blank" rel="noopener" aria-label="WhatsApp">
+      <a href="https://wa.me/+51923302538" class="nav__social-icon nav__social-icon--wa" target="_blank" rel="noopener" aria-label="WhatsApp">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.374 0 0 5.373 0 12c0 2.117.553 4.103 1.523 5.83L.057 23.5l5.83-1.49A11.945 11.945 0 0012 24c6.626 0 12-5.373 12-12S18.626 0 12 0zm0 22c-1.885 0-3.656-.51-5.18-1.399l-.371-.22-3.857.987.987-3.732-.241-.393A9.98 9.98 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
       </a>
       <!-- Facebook -->
@@ -80,37 +80,22 @@
 ═══════════════════════════════════════ -->
 <section class="hero" id="inicio">
 
-  <!-- CARRUSEL DE FONDO -->
   <div class="hero__carousel" id="heroCarousel">
-
-    <!-- SLIDE 1 — imagen opcion2.jpeg -->
     <div class="hero__slide active" data-slide="0">
-      <img src="images\inicio\opc4.jpeg"
-           alt="MR Plastic — Especialistas en tuberías"
-           class="hero__slide-img"/>
+      <img src="images/inicio/opc4.jpeg" alt="MR Plastic — Especialistas en tuberías" class="hero__slide-img"/>
       <div class="hero__slide-overlay"></div>
     </div>
-
-    <!-- SLIDE 2 — imagen ejemplo_inicio1.jpeg -->
     <div class="hero__slide" data-slide="1">
-      <img src="images\inicio\opc4.jpeg"
-           alt="MR Plastic — Sistemas industriales"
-           class="hero__slide-img"/>
+      <img src="images/inicio/opc4.jpeg" alt="MR Plastic — Sistemas industriales" class="hero__slide-img"/>
       <div class="hero__slide-overlay"></div>
     </div>
-
-    <!-- SLIDE 3 — slot para una tercera imagen (reemplaza la ruta) -->
     <div class="hero__slide" data-slide="2">
-      <img src="images\inicio\opc4.jpeg"
-           alt="MR Plastic — Calidad garantizada"
-           class="hero__slide-img"
+      <img src="images/inicio/opc4.jpeg" alt="MR Plastic — Calidad garantizada" class="hero__slide-img"
            onerror="this.parentElement.style.background='linear-gradient(135deg,#1A1C1E 0%,#0E0F10 100%)'"/>
       <div class="hero__slide-overlay"></div>
     </div>
-
   </div>
 
-  <!-- CONTROLES DEL CARRUSEL -->
   <button class="hero__carousel-btn hero__carousel-btn--prev" id="heroPrev" aria-label="Anterior">
     <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
   </button>
@@ -118,21 +103,16 @@
     <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
   </button>
 
-  <!-- DOTS / INDICADORES -->
   <div class="hero__dots" id="heroDots">
     <button class="hero__dot active" data-index="0" aria-label="Slide 1"></button>
     <button class="hero__dot" data-index="1" aria-label="Slide 2"></button>
     <button class="hero__dot" data-index="2" aria-label="Slide 3"></button>
   </div>
 
-  <!-- GRID TEXTURE OVERLAY -->
   <div class="hero__grid"></div>
 
-  <!-- CONTENIDO DEL HERO -->
   <div class="wrap" style="width:100%;position:relative;z-index:4">
     <div class="hero__inner">
-
-      <!-- LEFT -->
       <div class="hero__left">
         <div class="hero__eyebrow">
           <span class="hero__eyebrow-line"></span>
@@ -146,18 +126,19 @@
         </h1>
 
         <p class="hero__desc">
-          
-		  Soluciones confiables en <strong> tuberías y conexiones </strong>para proyectos industriales y comerciales con respaldo técnico y entrega rápida.
+          Soluciones confiables en <strong>tuberías y conexiones</strong> para proyectos industriales y comerciales con respaldo técnico y entrega rápida.
         </p>
 
-        <div class="hero__btns">
-          <a href="mailto:ventas@mrplastic.com.pe?subject=Solicitud%20de%20cotización%20técnica" class="btn btn-primary btn-lg">
-            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-            Cotizar ahora
-          </a>
-        </div>
+		<div class="hero__btns">
+		<a href="mailto:admmrplastic@gmail.com?cc=mrplastic.kb@gmail.com&subject=Solicitud%20de%20cotización%20técnica" class="btn btn-primary btn-lg">
+			<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+			<path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/>
+			<polyline points="14 2 14 8 20 8"/>
+			</svg>
+			Cotizar ahora
+		</a>
+		</div>
 
-           <!-- STATS debajo del botón -->
         <div class="hero__stats hero__stats--inline">
           <div class="hero__stat">
             <div class="hero__stat-val"><span>+</span><span id="s-years">0</span></div>
@@ -177,15 +158,14 @@
           </div>
         </div>
 
-        <!-- FEATURES pequeños debajo de stats -->
         <div class="hero__feats-mini">
           <div class="hero__feat-mini">
             <svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-            <span><strong>Certificación completa</strong> · Ficha técnica, origen garantizado, NTP / ISO</span>
+            <span><strong>Certificaciones</strong> · Ficha técnica</span>
           </div>
           <div class="hero__feat-mini">
             <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
-            <span><strong>Equipo técnico dedicado</strong> · Ingenieros en campo y oficina</span>
+            <span><strong>Equipo técnico dedicado</strong> · Personal especializado</span>
           </div>
           <div class="hero__feat-mini">
             <svg viewBox="0 0 24 24"><path d="M20 7H4a2 2 0 00-2 2v6a2 2 0 002 2h16a2 2 0 002-2V9a2 2 0 00-2-2z"/></svg>
@@ -195,12 +175,11 @@
 
         <div class="hero__trust">
           <div class="hero__trust-dot"></div>
-          <p>Respuesta rápida garantizada  · Stock disponible · Despacho a nivel nacional</p>
+          <p>Respuesta rápida garantizada · Stock disponible · Despacho a nivel nacional</p>
         </div>
       </div>
-
-    </div><!-- fin hero__inner -->
-  </div><!-- fin wrap -->
+    </div>
+  </div>
 </section>
 
 
@@ -215,7 +194,6 @@
     <div class="ticker__item">Productos certificados</div>
     <div class="ticker__item">Despacho 24–48 h</div>
     <div class="ticker__item">Minería · Construcción · Agrícola · Pesquero · Saneamiento · Alcantarillado · Comercial</div>
-    <!-- Duplicate for seamless loop -->
     <div class="ticker__item">Alcance a nivel nacional</div>
     <div class="ticker__item">Soluciones confiables</div>
     <div class="ticker__item">Venta al por mayor de materiales ferretería</div>
@@ -231,17 +209,244 @@
 <!-- ═══ TRUST BAR ═══ -->
 <div class="trustbar">
   <div class="wrap trustbar__inner">
-    <div class="tb-item"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>ISO 9001 Certificado</div>
+    <div class="tb-item">
+      <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      Productos Certificados
+    </div>
     <div class="tb-sep"></div>
-    <div class="tb-item"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Despacho en 24–48 h</div>
+    <div class="tb-item">
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+      Despacho en 24–48 h
+    </div>
     <div class="tb-sep"></div>
-    <div class="tb-item"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Lima – Puente Piedra</div>
+    <div class="tb-item">
+      <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      Lima – Puente Piedra
+    </div>
     <div class="tb-sep"></div>
-    <div class="tb-item"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.81a19.79 19.79 0 01-3.07-8.63A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.08 6.08l1.27-.95a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>+51 947 156 354</div>
+    <div class="tb-item">
+      <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.81a19.79 19.79 0 01-3.07-8.63A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.08 6.08l1.27-.95a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+      +51 923 302 538
+    </div>
     <div class="tb-sep"></div>
-    <div class="tb-item"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>mrplastic.kb@gmail.com</div>
+    <div class="tb-item">
+      <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+      mrplastic.kb@gmail.com
+    </div>
   </div>
 </div>
+
+
+<!-- ═══════════════════════════════════════
+     FRANJA CTA WHATSAPP
+═══════════════════════════════════════ -->
+<section class="cta-wa">
+  <div class="wrap cta-wa__inner">
+    <div class="cta-wa__text">
+      <div class="cta-wa__eyebrow">Atención especializada</div>
+      <h2 class="cta-wa__title">¿Buscas <span>Asesoría Personalizada?</span></h2>
+      <p class="cta-wa__desc">Contáctanos por WhatsApp para una respuesta rápida y precisa de nuestro equipo técnico.</p>
+    </div>
+    <div class="cta-wa__actions">
+      <a href="https://wa.me/51923302538?text=Hola%2C%20necesito%20asesor%C3%ADa%20t%C3%A9cnica%20de%20MR%20PLASTIC"
+         class="cta-wa__btn" target="_blank" rel="noopener">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+          <path d="M12 0C5.374 0 0 5.373 0 12c0 2.117.553 4.103 1.523 5.83L.057 23.5l5.83-1.49A11.945 11.945 0 0012 24c6.626 0 12-5.373 12-12S18.626 0 12 0zm0 22c-1.885 0-3.656-.51-5.18-1.399l-.371-.22-3.857.987.987-3.732-.241-.393A9.98 9.98 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/>
+        </svg>
+        ¡Cotiza YA!
+      </a>
+      <span class="cta-wa__note">Respuesta inmediata</span>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════
+     CERTIFICACIONES — 4 PDFs descargables
+═══════════════════════════════════════ -->
+<section class="certs" id="certificaciones">
+  <div class="wrap">
+    <div class="certs__header">
+      <div class="certs__eyebrow">Respaldo documentado</div>
+      <h2 class="certs__title">Nuestras Certificaciones</h2>
+    </div>
+
+    <div class="certs__grid">
+
+      <!-- 1 — ISO 9001 -->
+      <div class="cert-card">
+        <div class="cert-card__icon">
+          <!-- Icono PDF / documento con sello -->
+          <svg viewBox="0 0 24 24" width="26" height="26" stroke="var(--red)" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/>
+            <polyline points="14 2 14 8 20 8"/>
+            <path d="M9 15l2 2 4-4"/>
+          </svg>
+        </div>
+        <div class="cert-card__norm">ISO 9001:2015<br/>NTP-ISO 9001:2015</div>
+        <div class="cert-card__name">Sistemas de gestión<br/>de la calidad</div>
+        <a class="cert-card__download"
+           href="images/certificaciones/CERT_ISO_9001_2015.pdf"
+           download="ISO_9001_MR_PLASTIC.pdf"
+           target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Descargar PDF
+        </a>
+      </div>
+
+      <!-- 2 — ISO 14001 -->
+      <div class="cert-card">
+        <div class="cert-card__icon">
+          <svg viewBox="0 0 24 24" width="26" height="26" stroke="var(--red)" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/>
+            <polyline points="14 2 14 8 20 8"/>
+            <path d="M12 18c-3 0-5-2-5-5 0-2 2-4 5-4s5 2 5 4c0 3-2 5-5 5z"/>
+          </svg>
+        </div>
+        <div class="cert-card__norm">ISO 14001:2015<br/>NTP-ISO 14001:2015</div>
+        <div class="cert-card__name">Sistema de gestión<br/>ambiental</div>
+        <a class="cert-card__download"
+           href="images/certificaciones/CERT_ISO_14001_2015.pdf"
+           download="ISO_14001_MR_PLASTIC.pdf"
+           target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Descargar PDF
+        </a>
+      </div>
+
+      <!-- 3 — ISO 37001 -->
+      <div class="cert-card">
+        <div class="cert-card__icon">
+          <svg viewBox="0 0 24 24" width="26" height="26" stroke="var(--red)" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/>
+            <polyline points="14 2 14 8 20 8"/>
+            <path d="M12 22s8-4 8-10V8l-8-3-8 3v4c0 6 8 10 8 10z"/>
+          </svg>
+        </div>
+        <div class="cert-card__norm">ISO 37001:2016<br/>NTP-ISO 37001:2017</div>
+        <div class="cert-card__name">Sistema de gestión<br/>antisoborno</div>
+        <a class="cert-card__download"
+           href="images/certificaciones/CERT_ISO_37001_2016.pdf"
+           download="ISO_37001_MR_PLASTIC.pdf"
+           target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Descargar PDF
+        </a>
+      </div>
+
+      <!-- 4 — Sostenibilidad Social -->
+      <div class="cert-card">
+        <div class="cert-card__icon">
+          <svg viewBox="0 0 24 24" width="26" height="26" stroke="var(--red)" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/>
+            <polyline points="14 2 14 8 20 8"/>
+            <path d="M17 21v-2a4 4 0 00-4-4H9a4 4 0 00-4 4v2"/>
+            <circle cx="12" cy="11" r="2.5"/>
+          </svg>
+        </div>
+        <div class="cert-card__norm">Sostenibilidad Social</div>
+        <div class="cert-card__name">Buenas prácticas<br/>laborales</div>
+        <a class="cert-card__download"
+           href="images/certificaciones/CERT_SOSTENIBILIDAD_SOCIAL.pdf"
+           download="Sostenibilidad_Social_MR_PLASTIC.pdf"
+           target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Descargar PDF
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+<!-- ═══════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════ -->
+<footer class="footer" id="contacto">
+  <div class="wrap">
+    <div class="footer__top">
+
+      <div>
+        <!-- Logo imagen en footer -->
+        <a href="#inicio">
+          <img src="images/logo/log_principal.png"
+               alt="MR PLASTIC"
+               class="footer__logo-img"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='block'"
+          />
+          <!-- Fallback texto si no carga la imagen -->
+          <div class="footer__brand-name" style="display:none">MR <span>PLASTIC</span> S.A.C.</div>
+        </a>
+        <p class="footer__brand-desc">Especialistas en sistemas de tuberías, mangueras industriales y más, para minería, construcción, agroindustria e industria en el Perú.</p>
+        <div class="footer__contact-item">
+          <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.81 19.79 19.79 0 01.007 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.08 6.08l1.27-.95a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          +51 923 302 538
+        </div>
+        <div class="footer__contact-item">
+          <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          mrplastic.kb@gmail.com <br> <br> admmrplastic@gmail.com
+        </div>
+        <div class="footer__contact-item">
+          <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Lima – Puente Piedra, Perú
+        </div>
+      </div>
+
+      <div>
+        <div class="footer__col-title">Productos</div>
+        <div class="footer__links">
+          <a href="productos.html#tuberias-hdpe">Tuberías HDPE</a>
+          <a href="productos.html#succion-descarga">Succión y Descarga</a>
+          <a href="productos.html#mangueras-pvc">Mangueras PVC</a>
+          <a href="productos.html#acoples-por-compresion">Acoples</a>
+          <a href="productos.html#geosinteticos">Geosintéticos</a>
+          <a href="productos.html#valvulas">Válvulas</a>
+          <a href="productos.html#termofusion">Termofusión</a>
+          <a href="productos.html#electrofusion">Electrofusión</a>
+          <a href="productos.html#cintas-riego">Cintas de Riego</a>
+        </div>
+      </div>
+
+      <div>
+        <div class="footer__col-title">Sectores</div>
+        <div class="footer__links">
+          <a href="#sectores">Minería</a>
+          <a href="#sectores">Construcción</a>
+          <a href="#sectores">Industria</a>
+          <a href="#sectores">Agroindustria</a>
+          <a href="#sectores">Saneamiento</a>
+        </div>
+      </div>
+
+      <div>
+        <div class="footer__col-title">Empresa</div>
+        <div class="footer__links">
+          <a href="#nosotros">Nosotros</a>
+          <a href="#certificaciones">Certificaciones</a>
+          <a href="mailto:admmrplastic@gmail.com?cc=mrplastic.kb@gmail.com&subject=Solicitud%20de%20cotización%20técnica">Solicitar cotización</a>
+          <a href="https://wa.me/519923302538" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer__bottom">
+      <div class="footer__copy">Created by Orse Atelier</div>
+    </div>
+	
+	
+	
+			
+  </div>
+</footer>
+
+
 
 <script src="index.js"></script>
 </body>
