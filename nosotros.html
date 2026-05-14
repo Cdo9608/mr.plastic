@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="Conoce a MR Plastic SAC — empresa peruana especialista en tuberías, mangueras y soluciones industriales para construcción, minería e industria."/>
+<title>Nosotros — MR PLASTIC</title>
+<link rel="icon" type="image/png" href="images/logo/isotipo.png">
+<link rel="apple-touch-icon" href="images/logo/isotipo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;0,800;0,900;1,700&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="index.css"/>
+<link rel="stylesheet" href="nosotros.css"/>
+</head>
+<body>
+
+<!-- CURSOR -->
+<div id="cur-dot"></div>
+<div id="cur-ring"></div>
+<!-- PROGRESS BAR -->
+<div id="prog"></div>
+<!-- BACK TO TOP -->
+<button id="btt" aria-label="Volver arriba">
+  <svg viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg>
+</button>
+
+<!-- ═══════════════════════════════════════
+     NAVBAR — idéntico al index
+═══════════════════════════════════════ -->
+<nav class="nav solid" id="nav">
+  <div class="wrap nav__inner">
+
+    <a href="index.html#inicio" class="nav__logo">
+      <img src="images/logo/log_principal.png"
+           alt="MR PLASTIC"
+           class="nav__logo-img"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+      <div class="nav__logo-badge" style="display:none">
+        <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+      </div>
+    </a>
+
+    <div class="nav__links" id="navLinks">
+      <a href="index.html#inicio">Inicio</a>
+      <a href="productos.html">Productos</a>
+      <a href="nosotros.html" class="active">Nosotros</a>
+      <a href="index.html#contacto">Contacto</a>
+      <a href="index.html#sectores">+</a>
+    </div>
+
+    <div class="nav__actions">
+      <a href="https://wa.me/+51923302538" class="nav__social-icon nav__social-icon--wa" target="_blank" rel="noopener" aria-label="WhatsApp">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.374 0 0 5.373 0 12c0 2.117.553 4.103 1.523 5.83L.057 23.5l5.83-1.49A11.945 11.945 0 0012 24c6.626 0 12-5.373 12-12S18.626 0 12 0zm0 22c-1.885 0-3.656-.51-5.18-1.399l-.371-.22-3.857.987.987-3.732-.241-.393A9.98 9.98 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+      </a>
+      <a href="https://facebook.com/mrplastic" class="nav__social-icon nav__social-icon--fb" target="_blank" rel="noopener" aria-label="Facebook">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+      </a>
+      <a href="https://instagram.com/mrplastic" class="nav__social-icon nav__social-icon--ig" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+      </a>
+      <a href="https://tiktok.com/@mrplastic" class="nav__social-icon nav__social-icon--tt" target="_blank" rel="noopener" aria-label="TikTok">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.75a4.85 4.85 0 01-1.01-.06z"/></svg>
+      </a>
+    </div>
+
+    <button class="nav__burger" id="burger" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
+
+  </div>
+</nav>
+
+
+<!-- ═══════════════════════════════════════
+     1 — QUIÉNES SOMOS  (blanco)
+═══════════════════════════════════════ -->
+<section class="nos-sec nos-sec--white nos-sec--first" id="nosotros">
+  <div class="wrap">
+    <div class="nos-quienes__grid">
+
+      <div class="nos-quienes__text">
+        <div class="nos-eyebrow">
+          <span class="nos-eyebrow-line"></span>
+          Quiénes somos
+        </div>
+        <h2 class="nos-h2">Conducimos fluidos.<br/>Construimos confianza.</h2>
+        <p>MR Plastic SAC es una empresa peruana dedicada a la comercialización de mangueras industriales y soluciones completas para la conducción de fluidos. Atendemos proyectos de construcción, industria y minería con productos de calidad certificada y respaldo técnico real.</p>
+        <p>Nuestro catálogo incluye <strong>mangueras HDPE, conexiones, tubo PVC agua, alcantarillado, eléctricas y conduit, tubos CPVC y conexiones, y tubería de hierro dúctil con sus conexiones</strong> — todo bajo un mismo techo, con despacho nacional desde Lima – Puente Piedra.</p>
+      </div>
+
+      <div class="nos-quienes__cards">
+        <div class="nos-card">
+          <div class="nos-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg>
+          </div>
+          <strong>Venta al por mayor</strong>
+          <p>Materiales de construcción, ferretería y fontanería para proyectos de toda escala</p>
+        </div>
+        <div class="nos-card">
+          <div class="nos-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93l-1.41 1.41M6.34 17.66l-1.41 1.41M2 12h2M20 12h2M17.66 17.66l1.41 1.41M4.93 4.93l1.41 1.41M12 2v2M12 20v2"/></svg>
+          </div>
+          <strong>Fabricación de plásticos</strong>
+          <p>Productos de plástico de alta ingeniería para aplicaciones industriales exigentes</p>
+        </div>
+        <div class="nos-card">
+          <div class="nos-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M1 3h15v13H1zM16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+          </div>
+          <strong>Despacho nacional</strong>
+          <p>Desde Puente Piedra a todo el Perú con stock disponible y entrega en 24–48 h</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════
+     2 — LIDERAZGO  (oscuro ink-2)
+═══════════════════════════════════════ -->
+<section class="nos-sec nos-sec--dark nos-rep">
+  <div class="nos-rep__bg"></div>
+  <div class="wrap nos-rep__inner">
+
+    <div class="nos-rep__photo-col">
+      <div class="nos-rep__photo">
+        <!-- Reemplaza con tu foto:-->
+		<img src="images/nosotros/lider.jpeg" alt="kevin"/> 
+        
+      </div>
+      <div class="nos-rep__badge">Encargado</div>
+    </div>
+
+    <div class="nos-rep__bio">
+      <div class="nos-eyebrow nos-eyebrow--light">
+        <span class="nos-eyebrow-line"></span>
+        Liderazgo
+      </div>
+      <h2 class="nos-h2 nos-h2--white">Kevin </h2>
+      <span class="nos-rep__role">MR Plastic SAC</span>
+
+      <div class="nos-rep__timeline">
+        <div class="nos-tl-item">
+          <span class="nos-tl-dot"></span>
+          <div>
+            <strong>Profesional</strong>
+            <p>Impulsa el objetivo de ofrecer soluciones técnicas confiables en el mercado de tuberías y mangueras industriales del Perú.</p>
+          </div>
+        </div>
+        <div class="nos-tl-item">
+          <span class="nos-tl-dot"></span>
+          <div>
+            <strong>Experiencia en el sector industrial</strong>
+            <p>Amplia trayectoria en comercialización de materiales de construcción, ferretería y productos plásticos para proyectos de minería, construcción e industria.</p>
+          </div>
+        </div>
+        <div class="nos-tl-item">
+          <span class="nos-tl-dot"></span>
+          <div>
+            <strong>Visión de crecimiento nacional</strong>
+            <p>Lidera la expansión de MR Plastic hacia nuevos sectores y mercados regionales, con foco en calidad certificada y atención técnica especializada.</p>
+          </div>
+        </div>
+      </div>
+
+     
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════
+     3 — PROPÓSITO  (snow)
+═══════════════════════════════════════ -->
+<section class="nos-sec nos-sec--snow">
+  <div class="wrap">
+    <div class="nos-sec__header">
+      <div class="nos-eyebrow">
+        <span class="nos-eyebrow-line"></span>
+        Propósito
+      </div>
+      <h2 class="nos-h2">Lo que nos mueve</h2>
+    </div>
+    <div class="nos-mvp__grid">
+
+      <div class="nos-mvp__item">
+        <div class="nos-mvp__num">01</div>
+        <div class="nos-mvp__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/></svg>
+        </div>
+        <h3>Misión</h3>
+        <p>Proveer soluciones integrales en tuberías, mangueras y conexiones industriales de alta calidad, ofreciendo asesoría técnica especializada que garantice la eficiencia operativa, seguridad y rentabilidad de los proyectos de nuestros clientes en los sectores de construcción, minería e industria en el Perú.</p>
+      </div>
+
+      <div class="nos-mvp__item nos-mvp__item--accent">
+        <div class="nos-mvp__num">02</div>
+        <div class="nos-mvp__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+        </div>
+        <h3>Visión</h3>
+        <p>Ser la empresa líder en la comercialización y fabricación de productos plásticos industriales en el Perú, reconocida por la excelencia técnica, la confiabilidad en los plazos de entrega y el compromiso con el desarrollo sostenible de los sectores productivos del país.</p>
+      </div>
+
+      <div class="nos-mvp__item">
+        <div class="nos-mvp__num">03</div>
+        <div class="nos-mvp__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>
+        </div>
+        <h3>Objetivo principal</h3>
+        <p>Reducir las fallas, fugas y sobrecostos operativos de nuestros clientes mediante la selección técnica precisa del material correcto para cada aplicación, respaldada por ingenieros disponibles en campo y oficina durante todo el ciclo del proyecto.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════
+     4 — LA EMPRESA / VIDEO  (blanco)
+═══════════════════════════════════════ -->
+<section class="nos-sec nos-sec--white nos-video">
+  <div class="wrap">
+    <div class="nos-sec__header nos-sec__header--center">
+      <div class="nos-eyebrow nos-eyebrow--center">
+        <span class="nos-eyebrow-line"></span>
+        La empresa
+        <span class="nos-eyebrow-line"></span>
+      </div>
+      <h2 class="nos-h2">Conócenos de cerca</h2>
+      <p>Descubra nuestras instalaciones, productos y el equipo técnico que respalda cada proyecto.</p>
+    </div>
+    <div class="nos-video__frame" id="videoFrame">
+      <div class="nos-video__overlay" id="videoOverlay">
+        <button class="nos-video__play" id="videoPlay" aria-label="Reproducir video">
+          <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+        </button>
+        <p>Video corporativo — <em>próximamente</em></p>
+      </div>
+      <!-- Cuando tengas el video listo, reemplaza el overlay con:
+      <iframe src="https://www.youtube.com/embed/TU_ID?autoplay=1"
+        allow="autoplay;encrypted-media" allowfullscreen
+        style="position:absolute;inset:0;width:100%;height:100%;border:0"></iframe> -->
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════
+     5 — EL PROBLEMA QUE RESOLVEMOS  (snow)
+═══════════════════════════════════════ -->
+<section class="nos-sec nos-sec--snow">
+  <div class="wrap">
+    <div class="nos-sec__header">
+      <div class="nos-eyebrow">
+        <span class="nos-eyebrow-line"></span>
+        El problema que resolvemos
+      </div>
+      <h2 class="nos-h2">Los fallos en sistemas de tuberías<br/>no son accidentales.</h2>
+      <p class="nos-comp__sub">Son el resultado de decisiones sin respaldo técnico.</p>
+    </div>
+
+    <div class="nos-comp__cols">
+
+      <div class="nos-comp__col nos-comp__col--sin">
+        <div class="nos-comp__col-head">
+          <span class="nos-comp__badge nos-comp__badge--sin">Sin MR Plastic</span>
+          <h3>Problemas recurrentes</h3>
+          <p>Fallas críticas que frenan sus proyectos</p>
+        </div>
+        <ul class="nos-comp__list">
+          <li>
+            <span class="nos-comp__emoji">⚠️</span>
+            <div>
+              <strong>Fugas y roturas prematuras</strong>
+              <p>Materiales fuera de especificación que fallan ante presión y temperatura operativa.</p>
+            </div>
+          </li>
+          <li>
+            <span class="nos-comp__emoji">⏳</span>
+            <div>
+              <strong>Proveedores que incumplen plazos</strong>
+              <p>Retrasos que generan paradas de obra y penalidades contractuales.</p>
+            </div>
+          </li>
+          <li>
+            <span class="nos-comp__emoji">💸</span>
+            <div>
+              <strong>Sobrecostos en mantenimiento</strong>
+              <p>Reparaciones frecuentes que superan el ahorro inicial de comprar barato.</p>
+            </div>
+          </li>
+          <li>
+            <span class="nos-comp__emoji">📋</span>
+            <div>
+              <strong>Sin asesoría técnica real</strong>
+              <p>Proveedores que despachan sin evaluar si el producto es correcto para su aplicación.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="nos-comp__col nos-comp__col--con">
+        <div class="nos-comp__col-head">
+          <span class="nos-comp__badge nos-comp__badge--con">Con MR Plastic</span>
+          <h3>Sistemas que funcionan</h3>
+          <p>Entregamos sistemas diseñados para sus condiciones reales.</p>
+        </div>
+        <ul class="nos-comp__list">
+          <li>
+            <span class="nos-comp__check">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </span>
+            <div>
+              <strong>Selección técnica del material correcto</strong>
+              <p>Evaluamos presión, temperatura, químicos y caudal antes de recomendar cualquier producto.</p>
+            </div>
+          </li>
+          <li>
+            <span class="nos-comp__check">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </span>
+            <div>
+              <strong>Cumplimiento de plazos garantizado</strong>
+              <p>Stock en Lima con despacho nacional. Compromisos reales, no promesas vacías.</p>
+            </div>
+          </li>
+          <li>
+            <span class="nos-comp__check">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </span>
+            <div>
+              <strong>Reducción del costo total de operación</strong>
+              <p>Materiales certificados que duran más y cuestan menos en el largo plazo.</p>
+            </div>
+          </li>
+          <li>
+            <span class="nos-comp__check">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </span>
+            <div>
+              <strong>Ingenieros disponibles en campo y oficina</strong>
+              <p>Soporte técnico durante selección, instalación y post-venta.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════
+     6 — ATENCIÓN ESPECIALIZADA / CTA  (oscuro ink-2)
+═══════════════════════════════════════ -->
+<section class="cta-wa">
+  <div class="wrap">
+    <div class="cta-wa__inner">
+      <div class="cta-wa__text">
+        <div class="cta-wa__eyebrow">Atención especializada</div>
+        <h2 class="cta-wa__title">¿Listo para un sistema<br/><span>que funcione?</span></h2>
+        <p class="cta-wa__desc">Hable con nuestro equipo. Respuesta garantizada en menos de 48 h desde Lima – Puente Piedra a todo el Perú.</p>
+      </div>
+      <div class="cta-wa__actions">
+        <a href="https://wa.me/51923302538?text=Hola%2C%20necesito%20asesor%C3%ADa%20t%C3%A9cnica%20de%20MR%20PLASTIC" class="cta-wa__btn" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.374 0 0 5.373 0 12c0 2.117.553 4.103 1.523 5.83L.057 23.5l5.83-1.49A11.945 11.945 0 0012 24c6.626 0 12-5.373 12-12S18.626 0 12 0zm0 22c-1.885 0-3.656-.51-5.18-1.399l-.371-.22-3.857.987.987-3.732-.241-.393A9.98 9.98 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+          ¡Cotiza YA!
+        </a>
+        <div class="cta-wa__note">Respuesta inmediata</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════
+     FOOTER — idéntico al index
+═══════════════════════════════════════ -->
+<footer class="footer" id="contacto">
+  <div class="wrap">
+    <div class="footer__top">
+
+      <div>
+        <a href="index.html#inicio">
+          <img src="images/logo/log_principal.png"
+               alt="MR PLASTIC"
+               class="footer__logo-img"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='block'"/>
+          <div class="footer__brand-name" style="display:none">MR <span>PLASTIC</span> S.A.C.</div>
+        </a>
+        <p class="footer__brand-desc">Especialistas en sistemas de tuberías, mangueras industriales y más, para minería, construcción, agroindustria e industria en el Perú.</p>
+        <div class="footer__contact-item">
+          <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.81 19.79 19.79 0 01.007 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.08 6.08l1.27-.95a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          +51 923 302 538
+        </div>
+        <div class="footer__contact-item">
+          <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          mrplastic.kb@gmail.com <br/><br/> admmrplastic@gmail.com
+        </div>
+        <div class="footer__contact-item">
+          <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Lima – Puente Piedra, Perú
+        </div>
+      </div>
+
+      <div>
+        <div class="footer__col-title">Productos</div>
+        <div class="footer__links">
+          <a href="productos.html#tuberias-hdpe">Tuberías HDPE</a>
+          <a href="productos.html#succion-descarga">Succión y Descarga</a>
+          <a href="productos.html#mangueras-pvc">Mangueras PVC</a>
+          <a href="productos.html#acoples-por-compresion">Acoples</a>
+          <a href="productos.html#geosinteticos">Geosintéticos</a>
+          <a href="productos.html#valvulas">Válvulas</a>
+          <a href="productos.html#termofusion">Termofusión</a>
+          <a href="productos.html#electrofusion">Electrofusión</a>
+          <a href="productos.html#cintas-riego">Cintas de Riego</a>
+        </div>
+      </div>
+
+      <div>
+        <div class="footer__col-title">Sectores</div>
+        <div class="footer__links">
+          <a href="index.html#sectores">Minería</a>
+          <a href="index.html#sectores">Construcción</a>
+          <a href="index.html#sectores">Industria</a>
+          <a href="index.html#sectores">Agroindustria</a>
+          <a href="index.html#sectores">Saneamiento</a>
+        </div>
+      </div>
+
+      <div>
+        <div class="footer__col-title">Empresa</div>
+        <div class="footer__links">
+          <a href="nosotros.html">Nosotros</a>
+          <a href="index.html#certificaciones">Certificaciones</a>
+          <a href="mailto:admmrplastic@gmail.com?cc=mrplastic.kb@gmail.com&subject=Solicitud%20de%20cotización%20técnica">Solicitar cotización</a>
+          <a href="https://wa.me/519923302538" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+      </div>
+
+    </div>
+    <div class="footer__bottom">
+      <div class="footer__copy">Created by Orse Atelier</div>
+    </div>
+  </div>
+</footer>
+
+<script src="nosotros.js"></script>
+</body>
+</html>
