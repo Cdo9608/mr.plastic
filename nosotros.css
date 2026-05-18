@@ -289,3 +289,46 @@
   .nos-rep__photo-col { flex-direction:column;align-items:center; }
   .nos-rep__inner  { gap:32px; }
 }
+
+
+
+
+/* ══════════════════════════════════════════
+   BARRA MARQUEE
+══════════════════════════════════════════ */
+.nos-marquee-bar {
+  width:100%;
+  background:var(--red);
+  overflow:hidden;
+  padding:13px 0;
+  position:relative;
+  z-index:10;
+}
+.nos-marquee-track {
+  display:flex;
+  align-items:center;
+  gap:32px;
+  width:max-content;
+  animation:marquee-scroll 20s linear infinite;
+  white-space:nowrap;
+}
+.nos-marquee-track span {
+  font-family:var(--fh);
+  font-size:1.05rem;
+  font-weight:700;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  color:#fff;
+}
+.nos-marquee-dot {
+  color:rgba(255,255,255,.45) !important;
+  font-size:.55rem !important;
+  letter-spacing:0 !important;
+}
+@keyframes marquee-scroll {
+  0%   { transform:translateX(0); }
+  100% { transform:translateX(-50%); }
+}
+.nos-marquee-bar:hover .nos-marquee-track {
+  animation-play-state:paused;
+}

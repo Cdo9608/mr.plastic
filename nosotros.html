@@ -45,7 +45,7 @@
       <a href="index.html#inicio">Inicio</a>
       <a href="productos.html">Productos</a>
       <a href="nosotros.html" class="active">Nosotros</a>
-      <a href="index.html#contacto">Contacto</a>
+      <a href="contacto.html">Contacto</a>
       <a href="index.html#sectores">+</a>
     </div>
 
@@ -73,9 +73,72 @@
 
 
 <!-- ═══════════════════════════════════════
+     BARRA MARQUEE — MR PLASTIC
+═══════════════════════════════════════ -->
+<style>
+.nos-marquee-bar {
+  width: 100%;
+  background: #d42027;
+  overflow: hidden;
+  padding: 14px 0;
+  position: relative;
+  z-index: 10;
+  margin-top: 72px;
+}
+.nos-marquee-track {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  width: max-content;
+  animation: marquee-scroll 22s linear infinite;
+  white-space: nowrap;
+}
+.nos-marquee-track span {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: #fff;
+}
+.nos-marquee-dot {
+  color: rgba(255,255,255,.4) !important;
+  font-size: .5rem !important;
+  letter-spacing: 0 !important;
+}
+@keyframes marquee-scroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.nos-marquee-bar:hover .nos-marquee-track {
+  animation-play-state: paused;
+}
+</style>
+<div class="nos-marquee-bar">
+  <div class="nos-marquee-track">
+    <span>MR. PLASTIC</span><span class="nos-marquee-dot">◆</span>
+    <span>MR. PLASTIC</span><span class="nos-marquee-dot">◆</span>
+    <span>MR. PLASTIC</span><span class="nos-marquee-dot">◆</span>
+    <span>MR. PLASTIC</span><span class="nos-marquee-dot">◆</span>
+    <span>MR. PLASTIC</span><span class="nos-marquee-dot">◆</span>
+    <span>MR. PLASTIC</span><span class="nos-marquee-dot">◆</span>
+    <span>MR. PLASTIC</span><span class="nos-marquee-dot">◆</span>
+    <span>MR. PLASTIC</span><span class="nos-marquee-dot">◆</span>
+    <span>MR. PLASTIC</span><span class="nos-marquee-dot">◆</span>
+    <span>MR. PLASTIC</span><span class="nos-marquee-dot">◆</span>
+    <span>MR. PLASTIC</span><span class="nos-marquee-dot">◆</span>
+    <span>MR. PLASTIC</span><span class="nos-marquee-dot">◆</span>
+    <span>MR. PLASTIC</span><span class="nos-marquee-dot">◆</span>
+    <span>MR. PLASTIC</span><span class="nos-marquee-dot">◆</span>
+    <span>MR. PLASTIC</span><span class="nos-marquee-dot">◆</span>
+    <span>MR. PLASTIC</span><span class="nos-marquee-dot">◆</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════
      1 — QUIÉNES SOMOS  (blanco)
 ═══════════════════════════════════════ -->
-<section class="nos-sec nos-sec--white nos-sec--first" id="nosotros">
+<section class="nos-sec nos-sec--white" id="nosotros">
   <div class="wrap">
     <div class="nos-quienes__grid">
 
@@ -85,7 +148,7 @@
           Quiénes somos
         </div>
         <h2 class="nos-h2">Conducimos fluidos.<br/>Construimos confianza.</h2>
-        <p>MR Plastic SAC es una empresa peruana dedicada a la comercialización de mangueras industriales y soluciones completas para la conducción de fluidos. Atendemos proyectos de construcción, industria y minería con productos de calidad certificada y respaldo técnico real.</p>
+        <p>MR Plastic SAC es una empresa peruana dedicada a la comercialización de productos industriales y soluciones completas para la conducción de fluidos. Atendemos proyectos de construcción, industria y minería con productos de calidad certificada y respaldo técnico real.</p>
         <p>Nuestro catálogo incluye <strong>mangueras HDPE, conexiones, tubo PVC agua, alcantarillado, eléctricas y conduit, tubos CPVC y conexiones, y tubería de hierro dúctil con sus conexiones</strong> — todo bajo un mismo techo, con despacho nacional desde Lima – Puente Piedra.</p>
       </div>
 

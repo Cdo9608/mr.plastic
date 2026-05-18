@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="MR PLASTIC"/>
+<title>Contacto — MR PLASTIC</title>
+<link rel="icon" type="image/png" href="images/logo/isotipo.png">
+<link rel="apple-touch-icon" href="images/logo/isotipo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;0,800;0,900;1,700&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+<link rel="stylesheet" href="contacto.css"/>
+</head>
+<body>
+
+<!-- CURSOR -->
+<div id="cur-dot"></div>
+<div id="cur-ring"></div>
+<!-- PROGRESS BAR -->
+<div id="prog"></div>
+<!-- BACK TO TOP -->
+<button id="btt" aria-label="Volver arriba">
+  <svg viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg>
+</button>
+
+<!-- ═══════════════════════════════════════
+     NAVBAR
+═══════════════════════════════════════ -->
+<nav class="nav solid" id="nav">
+  <div class="wrap nav__inner">
+
+    <a href="index.html" class="nav__logo">
+      <img src="images/logo/log_principal.png"
+           alt="MR PLASTIC"
+           class="nav__logo-img"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+      <div class="nav__logo-badge" style="display:none">
+        <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+      </div>
+    </a>
+
+    <div class="nav__links" id="navLinks">
+      <a href="index.html#inicio">Inicio</a>
+      <a href="productos.html">Productos</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="contacto.html" class="active">Contacto</a>
+      <a href="index.html#sectores">+</a>
+    </div>
+
+    <div class="nav__actions">
+      <!-- WhatsApp -->
+      <a href="https://wa.me/+51923302538" class="nav__social-icon nav__social-icon--wa" target="_blank" rel="noopener" aria-label="WhatsApp">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.374 0 0 5.373 0 12c0 2.117.553 4.103 1.523 5.83L.057 23.5l5.83-1.49A11.945 11.945 0 0012 24c6.626 0 12-5.373 12-12S18.626 0 12 0zm0 22c-1.885 0-3.656-.51-5.18-1.399l-.371-.22-3.857.987.987-3.732-.241-.393A9.98 9.98 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+      </a>
+      <!-- Facebook -->
+      <a href="https://facebook.com/mrplastic" class="nav__social-icon nav__social-icon--fb" target="_blank" rel="noopener" aria-label="Facebook">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+      </a>
+      <!-- Instagram -->
+      <a href="https://instagram.com/mrplastic" class="nav__social-icon nav__social-icon--ig" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+      </a>
+      <!-- TikTok -->
+      <a href="https://tiktok.com/@mrplastic" class="nav__social-icon nav__social-icon--tt" target="_blank" rel="noopener" aria-label="TikTok">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.75a4.85 4.85 0 01-1.01-.06z"/></svg>
+      </a>
+    </div>
+
+    <button class="nav__burger" id="burger" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
+
+  </div>
+</nav>
+
+
+<!-- ═══════════════════════════════════════
+     PAGE HERO
+═══════════════════════════════════════ -->
+<section class="page-hero">
+  <div class="wrap page-hero__inner">
+    <div class="breadcrumb">
+      <a href="index.html">Inicio</a>
+      <span>/</span>
+      <span style="color:rgba(255,255,255,.6)">Contacto</span>
+    </div>
+    <div class="page-hero__eyebrow">Impulsamos tu Operación Industrial</div>
+    <h1>Soluciones Industriales a tu <span>Medida</span></h1>
+    <p>Desarrollamos productos plásticos industriales con calidad, resistencia y atención técnica especializada para cada proyecto.</p>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════
+     SECCIÓN CONTACTO
+═══════════════════════════════════════ -->
+<section class="contacto-section">
+  <div class="wrap">
+    <div class="contacto-grid">
+
+      <!-- ── COLUMNA IZQUIERDA ── -->
+      <div class="contacto-aside">
+
+        <!-- Asesor -->
+        <div class="asesor-card rv">
+          <div class="asesor-eyebrow">Ventas</div>
+          <div class="asesor-name">Lucy</div>
+          <span class="asesor-role">Asesora Comercial</span>
+          <div class="asesor-contacts">
+            <div class="asesor-contact-item">
+              <div class="asesor-contact-item__icon asesor-contact-item__icon--wa">
+                <i class="fab fa-whatsapp"></i>
+              </div>
+              <div>
+                <span class="asesor-contact-item__label">Teléfono · WhatsApp</span>
+                <span class="asesor-contact-item__value">
+                  <a href="https://wa.me/51923302538" target="_blank" rel="noopener">+51 923 302 538</a>
+                </span>
+              </div>
+            </div>
+            <div class="asesor-contact-item">
+              <div class="asesor-contact-item__icon asesor-contact-item__icon--mail">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div>
+                <span class="asesor-contact-item__label">Correo electrónico</span>
+                <span class="asesor-contact-item__value">
+                  <a href="mailto:admmrplastic@gmail.com">admmrplastic@gmail.com</a><br>
+                  <a href="mailto:mrplastic.kb@gmail.com">mrplastic.kb@gmail.com</a>
+                </span>
+              </div>
+            </div>
+          </div>
+          <a href="https://wa.me/51923302538?text=Hola%20Lucy%2C%20me%20gustar%C3%ADa%20recibir%20una%20cotizaci%C3%B3n" target="_blank" rel="noopener" class="btn-wa-asesor">
+            <i class="fab fa-whatsapp"></i>
+            Escribir a Lucy ahora
+          </a>
+        </div>
+
+        <!-- Horario -->
+        <div class="horario-card rv d1">
+          <div class="horario-title"><i class="fas fa-clock"></i> Horario de Atención</div>
+          <div class="horario-row">
+            <span class="horario-day">Lunes – Viernes</span>
+            <span class="horario-time">8:00 AM – 6:00 PM</span>
+          </div>
+          <div class="horario-row">
+            <span class="horario-day">Sábados</span>
+            <span class="horario-time">8:00 AM – 1:00 PM</span>
+          </div>
+          <div class="horario-row">
+            <span class="horario-day">Domingos</span>
+            <span class="horario-time--closed">Cerrado</span>
+          </div>
+        </div>
+
+        <!-- FAQ -->
+        <div class="faq-card rv d2">
+          <div class="faq-title"><i class="fas fa-circle-question"></i> Preguntas Frecuentes</div>
+
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              ¿Realizan envíos a todo el Perú?
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <p>Sí, despachamos a todo el territorio nacional desde Lima – Puente Piedra, con empresas de transporte de confianza que garantizan entregas en buen estado y en los plazos acordados.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              ¿Cuentan con stock disponible?
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <p>Mantenemos inventario permanente de los productos con mayor rotación. Para volúmenes grandes o pedidos especiales, consulta disponibilidad y tiempos de entrega directamente con nuestro equipo.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              ¿En cuánto tiempo recibo una cotización?
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <p>Nos comprometemos a responder en un máximo de 24 horas hábiles. Si tu requerimiento es urgente, escríbenos por WhatsApp y te atendemos de inmediato.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div><!-- /aside -->
+
+      <!-- ── COLUMNA DERECHA — FORMULARIO ── -->
+      <div class="form-card rv d1">
+        <div class="form-header">
+          <div class="form-eyebrow">Cotización</div>
+          <h2 class="form-title">Solicita tu <span style="color:var(--red)">Propuesta</span></h2>
+          <p class="form-subtitle">Completa el formulario y nos ponemos en contacto contigo en menos de 24 horas.</p>
+        </div>
+
+        <form id="formContacto" onsubmit="enviarFormulario(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="nombre">Nombre Completo <span>*</span></label>
+              <input class="form-input" type="text" id="nombre" name="nombre" placeholder="Ej. Juan Pérez" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="empresa">Empresa</label>
+              <input class="form-input" type="text" id="empresa" name="empresa" placeholder="Nombre de tu empresa">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="email">Email <span>*</span></label>
+              <input class="form-input" type="email" id="email" name="email" placeholder="correo@empresa.com" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="telefono">Teléfono / WhatsApp <span>*</span></label>
+              <input class="form-input" type="tel" id="telefono" name="telefono" placeholder="+51 999 000 000" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="sector">Sector <span>*</span></label>
+              <select class="form-select" id="sector" name="sector" required>
+                <option value="" disabled selected>Selecciona tu sector</option>
+                <option>Minería</option>
+                <option>Construcción</option>
+                <option>Industria</option>
+                <option>Agroindustria</option>
+                <option>Saneamiento</option>
+                <option>Otro</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="producto">Producto de Interés <span>*</span></label>
+              <select class="form-select" id="producto" name="producto" required>
+                <option value="" disabled selected>Selecciona un producto</option>
+                <option>Tuberías HDPE / Mangueras PEBD</option>
+                <option>Succión y Descarga</option>
+                <option>Mangueras PVC</option>
+                <option>Manguera Corrugada Gris</option>
+                <option>Acoples por Compresión</option>
+                <option>Geosintéticos</option>
+                <option>Válvulas</option>
+                <option>Termofusión</option>
+                <option>Electrofusión</option>
+                <option>Cintas de Riego</option>
+                <option>Otro</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="mensaje">Mensaje / Consulta <span>*</span></label>
+            <textarea class="form-textarea" id="mensaje" name="mensaje" placeholder="Describe tu requerimiento: cantidades, diámetros, presiones de trabajo, plazo de entrega u otros detalles relevantes." required></textarea>
+          </div>
+
+          <div class="form-privacy">
+            <input type="checkbox" id="privacidad" name="privacidad" required>
+            <label for="privacidad">
+              Acepto el tratamiento de mis datos personales conforme a la <a href="#">Política de Privacidad</a> de MR PLASTIC S.A.C.
+            </label>
+          </div>
+
+          <button type="submit" class="btn-enviar">
+            <i class="fab fa-whatsapp"></i>
+            Enviar por WhatsApp
+          </button>
+        </form>
+      </div><!-- /form-card -->
+
+    </div><!-- /contacto-grid -->
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════ -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__top">
+
+      <div>
+        <a href="index.html">
+          <img src="images/logo/log_principal.png"
+               alt="MR PLASTIC"
+               class="footer__logo-img"
+               onerror="this.style.display='none';this.nextElementSibling.style.display='block'"/>
+          <div class="footer__brand-name" style="display:none">MR <span>PLASTIC</span> S.A.C.</div>
+        </a>
+        <p class="footer__brand-desc">Especialistas en sistemas de tuberías, mangueras industriales y más, para minería, construcción, agroindustria e industria en el Perú.</p>
+        <div class="footer__contact-item">
+          <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.81 19.79 19.79 0 01.007 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.08 6.08l1.27-.95a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          +51 923 302 538
+        </div>
+        <div class="footer__contact-item">
+          <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          mrplastic.kb@gmail.com &nbsp;·&nbsp; admmrplastic@gmail.com
+        </div>
+        <div class="footer__contact-item">
+          <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Lima – Puente Piedra, Perú
+        </div>
+      </div>
+
+      <div>
+        <div class="footer__col-title">Productos</div>
+        <div class="footer__links">
+          <a href="productos.html#tuberias-hdpe">Tuberías HDPE</a>
+          <a href="productos.html#succion-descarga">Succión y Descarga</a>
+          <a href="productos.html#mangueras-pvc">Mangueras PVC</a>
+          <a href="productos.html#acoples-por-compresion">Acoples</a>
+          <a href="productos.html#geosinteticos">Geosintéticos</a>
+          <a href="productos.html#valvulas">Válvulas</a>
+          <a href="productos.html#termofusion">Termofusión</a>
+          <a href="productos.html#electrofusion">Electrofusión</a>
+          <a href="productos.html#cintas-riego">Cintas de Riego</a>
+        </div>
+      </div>
+
+      <div>
+        <div class="footer__col-title">Sectores</div>
+        <div class="footer__links">
+          <a href="index.html#sectores">Minería</a>
+          <a href="index.html#sectores">Construcción</a>
+          <a href="index.html#sectores">Industria</a>
+          <a href="index.html#sectores">Agroindustria</a>
+          <a href="index.html#sectores">Saneamiento</a>
+        </div>
+      </div>
+
+      <div>
+        <div class="footer__col-title">Empresa</div>
+        <div class="footer__links">
+          <a href="nosotros.html">Nosotros</a>
+          <a href="contacto.html">Contacto</a>
+          <a href="mailto:admmrplastic@gmail.com?subject=Solicitud%20de%20cotización">Solicitar cotización</a>
+          <a href="https://wa.me/51923302538" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer__bottom">
+      <div class="footer__copy">Created by Orse Atelier</div>
+    </div>
+  </div>
+</footer>
+
+
+<script src="contacto.js"></script>
+</body>
+</html>

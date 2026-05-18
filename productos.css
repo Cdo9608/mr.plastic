@@ -412,6 +412,22 @@
 
 
 
+/* ═══ SUBCATEGORÍA HEADER ═══ */
+.subcategory-title {
+  font-family: var(--fh);
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--red);
+  display: inline-block;
+}
+
+.subcategory-block {
+  margin-bottom: 40px;
+}
+
 /* ═══ ESTADO OCULTO (filtro) ═══ */
 .producto-card.hidden {
   display: none;
