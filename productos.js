@@ -19,7 +19,7 @@
 
       if (filter === 'all') {
         // Mostrar todo
-        cards.forEach(c => c.classList.remove('hidden'));
+        cards.forEach(c => { c.classList.remove('hidden'); c.classList.add('in'); });
         categories.forEach(cat => cat.classList.remove('hidden'));
       } else {
         // Ocultar/mostrar cards
@@ -40,6 +40,12 @@
         // Scroll suave a la primera categoría visible
         const firstVisible = document.querySelector('.productos-category:not(.hidden)');
         if (firstVisible) {
+          // Forzar clase 'in' en todas las cards visibles del filtro activo
+          // (necesario en móvil cuando el IntersectionObserver no las alcanzó)
+          firstVisible.querySelectorAll(`.producto-card[data-category="${filter}"]`).forEach(c => {
+            c.classList.add('in');
+          });
+
           setTimeout(() => {
             const top = firstVisible.getBoundingClientRect().top + window.scrollY - 140;
             window.scrollTo({ top, behavior: 'smooth' });

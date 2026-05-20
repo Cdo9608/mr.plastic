@@ -524,58 +524,74 @@ body.is-hovering #cur-ring{width:52px;height:52px;opacity:.9}
       <i class="fas fa-arrow-right"></i>
     </div>
     <div class="filters-bar">
-      <button class="filter-btn active" data-filter="all">
+	  <button class="filter-btn active" data-filter="all">
         <i class="fas fa-th"></i>
         Todos
       </button>
-      <button class="filter-btn" data-filter="tuberias-hdpe">
+	  
+	  <button class="filter-btn" data-filter="pvc">
+        <i class="fas fa-circle-dot"></i>
+        PVC
+      </button>
+	  
+      <button class="filter-btn" data-filter="pph">
+        <i class="fas fa-fire"></i>
+        PPH
+      </button>	  
+	  
+	 <button class="filter-btn" data-filter="cpvc">
+        <i class="fas fa-temperature-high"></i>
+        CPVC
+      </button>
+	  
+	 <button class="filter-btn" data-filter="tuberias-hdpe">
         <i class="fas fa-grip-lines"></i>
         Tuberías HDPE - Mangueras PEBD
-      </button>
-      <button class="filter-btn" data-filter="succion-descarga">
+     </button>
+	 
+    <button class="filter-btn" data-filter="geosinteticos">
+        <i class="fas fa-layer-group"></i>
+        Geosintéticos
+    </button>
+
+    <button class="filter-btn" data-filter="tanques-biodigestores">
+        <i class="fas fa-database"></i>
+        Tanques y Biodigestores
+    </button>		
+
+    <button class="filter-btn" data-filter="succion-descarga">
         <i class="fas fa-arrow-right-arrow-left"></i>
         Succión y Descarga
-      </button>
+    </button>	  
+
+    <button class="filter-btn" data-filter="acoples-por-compresion">
+        <i class="fas fa-link"></i>
+        Acoples por compresión
+    </button>	  
+
+    <button class="filter-btn" data-filter="termofusion">
+        <i class="fas fa-temperature-high"></i>
+        Termofusión
+    </button>
+	  
+    <button class="filter-btn" data-filter="electrofusion">
+        <i class="fas fa-bolt"></i>
+        Electrofusión
+    </button>	  
+	  
+	  
       <button class="filter-btn" data-filter="mangueras-pvc">
         <i class="fas fa-water"></i>
         Mangueras PVC
       </button>
-      <button class="filter-btn" data-filter="acoples-por-compresion">
-        <i class="fas fa-link"></i>
-        Acoples por compresión
-      </button>
-      <button class="filter-btn" data-filter="geosinteticos">
-        <i class="fas fa-layer-group"></i>
-        Geosintéticos
-      </button>
+
+      
       <button class="filter-btn" data-filter="valvulas">
         <i class="fas fa-faucet-drip"></i>
         Válvulas
       </button>
-      <button class="filter-btn" data-filter="termofusion">
-        <i class="fas fa-temperature-high"></i>
-        Termofusión
-      </button>
-      <button class="filter-btn" data-filter="electrofusion">
-        <i class="fas fa-bolt"></i>
-        Electrofusión
-      </button>
-      <button class="filter-btn" data-filter="pvc">
-        <i class="fas fa-plug"></i>
-        PVC
-      </button>
-      <button class="filter-btn" data-filter="pph">
-        <i class="fas fa-fire"></i>
-        PPH
-      </button>
-      <button class="filter-btn" data-filter="cpvc">
-        <i class="fas fa-temperature-high"></i>
-        CPVC
-      </button>
-      <button class="filter-btn" data-filter="tanques-biodigestores">
-        <i class="fas fa-database"></i>
-        Tanques y Biodigestores
-      </button>
+
+
     </div>
   </div>
 </section>
@@ -586,1414 +602,15 @@ body.is-hovering #cur-ring{width:52px;height:52px;opacity:.9}
 ═══════════════════════════════════════ -->
 <section class="productos-section">
   <div class="container">
-
-    <!-- ══ TUBERÍAS HDPE - MANGUERAS PEBD ══ -->
-    <div class="productos-category rv" id="tuberias-hdpe">
-      <div class="category-header">
-        <div class="category-badge" style="background:linear-gradient(135deg,#003B5C 0%,#0066A1 100%)">
-          <i class="fas fa-grip-lines"></i>
-        </div>
-        <div>
-          <h2 class="category-title">Tuberías HDPE — Mangueras PEBD</h2>
-          <p class="category-subtitle">Soluciones completas en polietileno de alta densidad y baja densidad</p>
-        </div>
-      </div>
-
-      <div class="productos-grid">
-
-        <!-- PE-80 -->
-        <div class="producto-card rv d1" data-category="tuberias-hdpe">
-          <div class="producto-image">
-            <img src="images/productos/tuberias_hdpe/HDPE_PE_80.PNG" alt="Tubería HDPE PE-80">
-            <div class="producto-badge">PE-80</div>
-          </div>
-          <div class="producto-content">
-            <h3 class="producto-title">HDPE PE-80</h3>
-            <p class="producto-description">Tubería de polietileno y conexiones para abastecimiento de agua potable.</p>
-            <div class="producto-specs">
-              <div class="spec-item"><i class="fas fa-award"></i><div><span class="spec-label">Norma</span><span class="spec-value">NTP ISO 4427</span></div></div>
-              <div class="spec-item"><i class="fas fa-ruler"></i><div><span class="spec-label">Diámetros</span><span class="spec-value">Ø 16 – 355 mm</span></div></div>
-              <div class="spec-item"><i class="fas fa-gauge-high"></i><div><span class="spec-label">SDR</span><span class="spec-value">SDR 6 – 41</span></div></div>
-            </div>
-            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Tuber%C3%ADa%20HDPE%20PE-80','_blank')">
-              <i class="fab fa-whatsapp"></i> Cotizar
-            </button>
-          </div>
-        </div>
-
-        <!-- PE-100 -->
-        <div class="producto-card rv d2" data-category="tuberias-hdpe">
-          <div class="producto-image">
-            <img src="images/productos/tuberias_hdpe/HDPE_PE_100.PNG" alt="Tubería HDPE PE-100">
-            <div class="producto-badge">PE-100</div>
-          </div>
-          <div class="producto-content">
-            <h3 class="producto-title">HDPE PE-100</h3>
-            <p class="producto-description">Tubería de alta densidad de mayor resistencia para sistemas de agua potable, minería e industria.</p>
-            <div class="producto-specs">
-              <div class="spec-item"><i class="fas fa-award"></i><div><span class="spec-label">Norma</span><span class="spec-value">NTP ISO 4427 / ASTM</span></div></div>
-              <div class="spec-item"><i class="fas fa-ruler"></i><div><span class="spec-label">Diámetros</span><span class="spec-value">Ø 16 – 355 mm</span></div></div>
-              <div class="spec-item"><i class="fas fa-gauge-high"></i><div><span class="spec-label">SDR</span><span class="spec-value">SDR 6 – 41</span></div></div>
-            </div>
-            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Tuber%C3%ADa%20HDPE%20PE-100','_blank')">
-              <i class="fab fa-whatsapp"></i> Cotizar
-            </button>
-          </div>
-        </div>
-
-        <!-- PE-3608 -->
-        <div class="producto-card rv d3" data-category="tuberias-hdpe">
-          <div class="producto-image">
-            <img src="images/productos/tuberias_hdpe/HDPE_PE_3608.PNG" alt="Tubería PE 3608">
-            <div class="producto-badge">PE-3608</div>
-          </div>
-          <div class="producto-content">
-            <h3 class="producto-title">PE-3608</h3>
-            <p class="producto-description">Tubería HDPE de alto desempeño para sistemas bajo estándar ASTM.</p>
-            <div class="producto-specs">
-              <div class="spec-item"><i class="fas fa-award"></i><div><span class="spec-label">Norma</span><span class="spec-value">ASTM D3035 / ASTM F714</span></div></div>
-              <div class="spec-item"><i class="fas fa-ruler"></i><div><span class="spec-label">Diámetros</span><span class="spec-value">Ø 16 – 355 mm</span></div></div>
-            </div>
-            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Tuber%C3%ADa%20PE%203608','_blank')">
-              <i class="fab fa-whatsapp"></i> Cotizar
-            </button>
-          </div>
-        </div>
-
-        <!-- PE-4710 -->
-        <div class="producto-card rv d4" data-category="tuberias-hdpe">
-          <div class="producto-image">
-            <img src="images/productos/tuberias_hdpe/HDPE_PE_4710.PNG" alt="Tubería PE 4710">
-            <div class="producto-badge">PE-4710</div>
-          </div>
-          <div class="producto-content">
-            <h3 class="producto-title">HDPE PE-4710</h3>
-            <p class="producto-description">Tubería HDPE de alto desempeño para sistemas bajo estándar ASTM.</p>
-            <div class="producto-specs">
-              <div class="spec-item"><i class="fas fa-award"></i><div><span class="spec-label">Norma</span><span class="spec-value">ASTM D3035 / F714 · D3350</span></div></div>
-              <div class="spec-item"><i class="fas fa-ruler"></i><div><span class="spec-label">Diámetros</span><span class="spec-value">Ø 16 – 355 mm</span></div></div>
-            </div>
-            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Tuber%C3%ADa%20PE%204710','_blank')">
-              <i class="fab fa-whatsapp"></i> Cotizar
-            </button>
-          </div>
-        </div>
-
-        <!-- Drenaje y alcantarillado -->
-        <div class="producto-card rv" data-category="tuberias-hdpe">
-          <div class="producto-image">
-            <img src="images/productos/tuberias_hdpe/drenaje_alcantarillado.PNG" alt="Tubería HDPE para drenaje">
-            <div class="producto-badge">Drenaje</div>
-          </div>
-          <div class="producto-content">
-            <h3 class="producto-title">Tubería HDPE Drenaje y Alcantarillado</h3>
-            <p class="producto-description">Tubería para sistemas de drenaje y alcantarillado color naranja.</p>
-            <div class="producto-specs">
-              <div class="spec-item"><i class="fas fa-award"></i><div><span class="spec-label">Norma</span><span class="spec-value">NTP ISO 8772</span></div></div>
-              <div class="spec-item"><i class="fas fa-ruler"></i><div><span class="spec-label">Diámetros</span><span class="spec-value">Ø 16 – 355 mm</span></div></div>
-            </div>
-            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Tuber%C3%ADa%20HDPE%20drenaje','_blank')">
-              <i class="fab fa-whatsapp"></i> Cotizar
-            </button>
-          </div>
-        </div>
-
-        <!-- PEBD Lisa -->
-        <div class="producto-card rv" data-category="tuberias-hdpe">
-          <div class="producto-image">
-            <img src="images/productos/tuberias_hdpe/manguera_pebd_lisa.PNG" alt="Manguera PEBD Lisa">
-            <div class="producto-badge">PEBD-Lisa</div>
-          </div>
-          <div class="producto-content">
-            <h3 class="producto-title">Manguera PEBD Lisa</h3>
-            <p class="producto-description">Manguera flexible de polietileno de baja densidad para riego por goteo y conducción ligera de agua.</p>
-            <div class="producto-specs">
-              <div class="spec-item"><i class="fas fa-ruler"></i><div><span class="spec-label">Diámetros</span><span class="spec-value">Ø 16 – 32 mm</span></div></div>
-              <div class="spec-item"><i class="fas fa-gauge-high"></i><div><span class="spec-label">Presión</span><span class="spec-value">Baja presión</span></div></div>
-            </div>
-            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Manguera%20PEBD%20Lisa','_blank')">
-              <i class="fab fa-whatsapp"></i> Cotizar
-            </button>
-          </div>
-        </div>
-
-        <!-- Manguera corrugada PEBD -->
-        <div class="producto-card rv" data-category="tuberias-hdpe">
-          <div class="producto-image">
-            <img src="images/productos/tuberias_hdpe/manguera_corrugada.PNG" alt="Manguera corrugada PEBD">
-            <div class="producto-badge">Corrugada</div>
-          </div>
-          <div class="producto-content">
-            <h3 class="producto-title">Manguera Corrugada PEBD</h3>
-            <p class="producto-description">Manguera corrugada para protección y paso de cables.</p>
-            <div class="producto-specs">
-              <div class="spec-item"><i class="fas fa-ruler"></i><div><span class="spec-label">Diámetros</span><span class="spec-value">Ø 16 – 50 mm</span></div></div>
-              <div class="spec-item"><i class="fas fa-gauge-high"></i><div><span class="spec-label">Presión</span><span class="spec-value">No presurizada</span></div></div>
-            </div>
-            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Manguera%20corrugada','_blank')">
-              <i class="fab fa-whatsapp"></i> Cotizar
-            </button>
-          </div>
-        </div>
-
-      </div><!-- /productos-grid -->
-    </div><!-- /tuberias-hdpe -->
-
-
-    <!-- MODAL IMAGEN -->
-    <div id="detalle-modal" class="dm-overlay" onclick="if(event.target===this)cerrarDetalleModal()">
-      <div class="dm-box">
-        <button class="dm-close" onclick="cerrarDetalleModal()" aria-label="Cerrar"><i class="fas fa-times"></i></button>
-        <button class="dm-nav dm-prev" onclick="navDetalle(-1)" aria-label="Anterior"><i class="fas fa-chevron-left"></i></button>
-        <img id="detalle-modal-img" src="" alt="" class="dm-img">
-        <button class="dm-nav dm-next" onclick="navDetalle(1)" aria-label="Siguiente"><i class="fas fa-chevron-right"></i></button>
-        <p id="detalle-modal-cap" class="dm-cap"></p>
-        <div id="detalle-modal-dots" class="dm-dots"></div>
-      </div>
-    </div>
-
-
-    <!-- ══ SUCCIÓN Y DESCARGA ══ -->
-    <div class="productos-category rv" id="succion-descarga">
-      <div class="category-header">
-        <div class="category-badge" style="background:linear-gradient(135deg,#00695C 0%,#00897B 100%)">
-          <i class="fas fa-arrow-right-arrow-left"></i>
-        </div>
-        <div>
-          <h2 class="category-title">Succión y Descarga</h2>
-          <p class="category-subtitle">Soluciones versátiles para succión y descarga de múltiples materiales</p>
-        </div>
-      </div>
-      <div class="productos-grid">
-
-        <div class="producto-card rv d1" data-category="succion-descarga">
-          <div class="producto-image">
-            <img src="images/productos/succion_descarga/manguera_succion_naranja.png" alt="Manguera Succión Naranja">
-            <div class="producto-badge">Rígido Flexible</div>
-          </div>
-          <div class="producto-content">
-            <h3 class="producto-title">Manguera Succión Naranja</h3>
-            <p class="producto-description">Manguera flexible de PVC reforzada con espiral rígido para succión y descarga de agua y líquidos.</p>
-            <div class="producto-specs">
-              <div class="spec-item"><i class="fas fa-ruler"></i><div><span class="spec-label">Rollos 50 mts · Uso comercial</span><span class="spec-value">1" – 1¼" – 1½" · 2" · 3" · 4" · 5" · 6"</span></div></div>
-            </div>
-            <div class="producto-tags"><span class="tag">Agrícola</span><span class="tag">Industrial</span><span class="tag">Construcción</span></div>
-            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Manguera%20Succi%C3%B3n%20Naranja','_blank')">
-              <i class="fab fa-whatsapp"></i> Cotizar
-            </button>
-          </div>
-        </div>
-
-        <div class="producto-card rv d2" data-category="succion-descarga">
-          <div class="producto-image">
-            <img src="images/productos/succion_descarga/manguera_succion_amarilla.png" alt="Manguera Succión Amarilla">
-            <div class="producto-badge">Rígido Flexible</div>
-          </div>
-          <div class="producto-content">
-            <h3 class="producto-title">Manguera Succión Amarilla</h3>
-            <p class="producto-description">Manguera flexible de PVC reforzada con espiral rígido, color amarillo.</p>
-            <div class="producto-specs">
-              <div class="spec-item"><i class="fas fa-ruler"></i><div><span class="spec-label">Diámetros</span><span class="spec-value">Ø 1" – 4"</span></div></div>
-            </div>
-            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Manguera%20Succion%20amarilla','_blank')">
-              <i class="fab fa-whatsapp"></i> Cotizar
-            </button>
-          </div>
-        </div>
-
-        <div class="producto-card rv d3" data-category="succion-descarga">
-          <div class="producto-image">
-            <img src="images/productos/succion_descarga/manguera_succion_azul.png" alt="Manguera Succión Azul">
-            <div class="producto-badge">Rígido Flexible</div>
-          </div>
-          <div class="producto-content">
-            <h3 class="producto-title">Manguera Succión Azul</h3>
-            <p class="producto-description">Manguera flexible de PVC reforzada con espiral rígido, color azul.</p>
-            <div class="producto-specs">
-              <div class="spec-item"><i class="fas fa-ruler"></i><div><span class="spec-label">Diámetros</span><span class="spec-value">Ø 1" – 4"</span></div></div>
-            </div>
-            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Manguera%20Succion%20azul','_blank')">
-              <i class="fab fa-whatsapp"></i> Cotizar
-            </button>
-          </div>
-        </div>
-
-        <div class="producto-card rv d4" data-category="succion-descarga">
-          <div class="producto-image">
-            <img src="images/productos/succion_descarga/manguera_succion_verde .png" alt="Manguera Succión Verde">
-            <div class="producto-badge">Rígido Flexible</div>
-          </div>
-          <div class="producto-content">
-            <h3 class="producto-title">Manguera Succión Verde</h3>
-            <p class="producto-description">Manguera flexible de PVC reforzada con espiral rígido, color verde.</p>
-            <div class="producto-specs">
-              <div class="spec-item"><i class="fas fa-ruler"></i><div><span class="spec-label">Diámetros</span><span class="spec-value">Ø 1" – 4"</span></div></div>
-            </div>
-            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Manguera%20Succion%20verde','_blank')">
-              <i class="fab fa-whatsapp"></i> Cotizar
-            </button>
-          </div>
-        </div>
-
-        <div class="producto-card rv" data-category="succion-descarga">
-          <div class="producto-image">
-            <img src="images/productos/succion_descarga/mangueras_sanitarias_alimentaria.jpeg" alt="Manguera Sanitaria Industria Alimentaria">
-            <div class="producto-badge">Sanitaria</div>
-          </div>
-          <div class="producto-content">
-            <h3 class="producto-title">Manguera Sanitaria — Industria Alimentaria</h3>
-            <p class="producto-description">Manguera PVC con alambre para uso de alimentos.</p>
-            <div class="producto-specs">
-              <div class="spec-item"><i class="fas fa-ruler"></i><div><span class="spec-label">Diámetros</span><span class="spec-value">1" · 2" · 3" · 4" · 6"</span></div></div>
-            </div>
-            <div class="producto-tags"><span class="tag">Industrial</span><span class="tag">Neumático</span><span class="tag">Talleres</span></div>
-            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Manguera%20Sanitaria%20para%20Industria%20Alimentaria','_blank')">
-              <i class="fab fa-whatsapp"></i> Cotizar
-            </button>
-          </div>
-        </div>
-
-        <div class="producto-card rv" data-category="succion-descarga">
-          <div class="producto-image">
-            <img src="images/productos/succion_descarga/manguera_descarga_aire.png" alt="Manguera Descarga Aire">
-            <div class="producto-badge">Descarga</div>
-          </div>
-          <div class="producto-content">
-            <h3 class="producto-title">Manguera Descarga Aire</h3>
-            <p class="producto-description">Manguera para descarga de aire a presión, diseñada para sistemas neumáticos y compresoras.</p>
-            <div class="producto-specs">
-              <div class="spec-item"><i class="fas fa-wind"></i><div><span class="spec-label">Uso</span><span class="spec-value">Neumático / Aire a presión</span></div></div>
-            </div>
-            <div class="producto-tags"><span class="tag">Industrial</span><span class="tag">Neumático</span></div>
-            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Manguera%20Descarga%20Aire','_blank')">
-              <i class="fab fa-whatsapp"></i> Cotizar
-            </button>
-          </div>
-        </div>
-
-        <div class="producto-card rv" data-category="succion-descarga">
-          <div class="producto-image">
-            <img src="images/productos/succion_descarga/manguera_descarga_azul.png" alt="Manguera Descarga Azul">
-            <div class="producto-badge">Descarga</div>
-          </div>
-          <div class="producto-content">
-            <h3 class="producto-title">Manguera Descarga Azul</h3>
-            <p class="producto-description">Manguera de descarga de agua, color azul, para bombas y sistemas de riego.</p>
-            <div class="producto-specs">
-              <div class="spec-item"><i class="fas fa-water"></i><div><span class="spec-label">Uso</span><span class="spec-value">Descarga de agua</span></div></div>
-              <div class="spec-item"><i class="fas fa-info-circle"></i><div><span class="spec-label">Detalle</span><span class="spec-value">Color azul</span></div></div>
-            </div>
-            <div class="producto-tags"><span class="tag">Agrícola</span><span class="tag">Industrial</span></div>
-            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Manguera%20Descarga%20Azul','_blank')">
-              <i class="fab fa-whatsapp"></i> Cotizar
-            </button>
-          </div>
-        </div>
-
-        <div class="producto-card rv" data-category="succion-descarga">
-          <div class="producto-image">
-            <img src="images/productos/succion_descarga/succion_cristal.png" alt="Tubos Succión Cristal">
-            <div class="producto-badge">Succión</div>
-          </div>
-          <div class="producto-content">
-            <h3 class="producto-title">Tubos Succión Cristal</h3>
-            <p class="producto-description">Tubos de succión transparentes (cristal) con espiral rígido para bombeo y conducción de líquidos.</p>
-            <div class="producto-specs">
-              <div class="spec-item"><i class="fas fa-eye"></i><div><span class="spec-label">Detalle</span><span class="spec-value">Transparente</span></div></div>
-            </div>
-            <div class="producto-tags"><span class="tag">Agrícola</span><span class="tag">Industrial</span></div>
-            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Tubos%20Succi%C3%B3n%20Cristal','_blank')">
-              <i class="fab fa-whatsapp"></i> Cotizar
-            </button>
-          </div>
-        </div>
-
-        <div class="producto-card rv" data-category="succion-descarga">
-          <div class="producto-image">
-            <img src="images/productos/succion_descarga/tubo_succion_naranja.png" alt="Tubos Succión Naranja">
-            <div class="producto-badge">Succión</div>
-          </div>
-          <div class="producto-content">
-            <h3 class="producto-title">Tubos Succión Naranja</h3>
-            <p class="producto-description">Tubos de succión color naranja con espiral rígido para bombeo y conducción de agua.</p>
-            <div class="producto-specs">
-              <div class="spec-item"><i class="fas fa-info-circle"></i><div><span class="spec-label">Detalle</span><span class="spec-value">Color naranja</span></div></div>
-            </div>
-            <div class="producto-tags"><span class="tag">Agrícola</span><span class="tag">Industrial</span></div>
-            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Tubos%20Succi%C3%B3n%20Naranja','_blank')">
-              <i class="fab fa-whatsapp"></i> Cotizar
-            </button>
-          </div>
-        </div>
-
-      </div>
-    </div><!-- /succion-descarga -->
-
-
-    <!-- ══ MANGUERAS PVC ══ -->
-    <div class="productos-category rv" id="mangueras-pvc">
-      <div class="category-header">
-        <div class="category-badge" style="background:linear-gradient(135deg,#6DB33F 0%,#558b2f 100%)">
-          <i class="fas fa-water"></i>
-        </div>
-        <div>
-          <h2 class="category-title">Mangueras PVC</h2>
-          <p class="category-subtitle">Amplia gama para jardín, industria, gas y alta presión</p>
-        </div>
-      </div>
-      <div class="productos-grid">
-
-        <div class="producto-card rv d1" data-category="mangueras-pvc">
-          <div class="producto-image">
-            <img src="images/productos/mangueras_pvc/manguera_reforzada_jardin.png" alt="Manguera Reforzada Jardín">
-            <div class="producto-badge">Línea jardín</div>
-          </div>
-          <div class="producto-content">
-            <h3 class="producto-title">Manguera Reforzada Jardín</h3>
-            <p class="producto-description">Manguera para riego con franja roja identificadora.</p>
-            <div class="producto-specs">
-              <div class="spec-item"><i class="fas fa-ruler"></i><div><span class="spec-label">Diámetro</span><span class="spec-value">½" · 5/8" · ¾" · 1"</span></div></div>
-              <div class="spec-item"><i class="fas fa-info-circle"></i><div><span class="spec-label">Detalle</span><span class="spec-value">Franja roja</span></div></div>
-            </div>
-            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Manguera%20Reforzada%20Jard%C3%ADn%20Franja%20Roja','_blank')">
-              <i class="fab fa-whatsapp"></i> Cotizar
-            </button>
-          </div>
-        </div>
-
-        <div class="producto-card rv d2" data-category="mangueras-pvc">
-          <div class="producto-image">
-            <img src="images/productos/mangueras_pvc/maguera_reforzada_transparente.png" alt="Manguera Reforzada Cristal Franja Naranja">
-            <div class="producto-badge">Línea industrial</div>
-          </div>
-          <div class="producto-content">
-            <h3 class="producto-title">Manguera Reforzada Cristal</h3>
-            <p class="producto-description">Manguera transparente con franja naranja identificadora.</p>
-            <div class="producto-specs">
-              <div class="spec-item"><i class="fas fa-ruler"></i><div><span class="spec-label">Diámetro</span><span class="spec-value">¼" · 5/16" · 3/8" · ½" · 5/8" · ¾" · 1"</span></div></div>
-              <div class="spec-item"><i class="fas fa-info-circle"></i><div><span class="spec-label">Detalle</span><span class="spec-value">Franja naranja</span></div></div>
-            </div>
-            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Manguera%20Reforzada%20Cristal%20Franja%20Naranja','_blank')">
-              <i class="fab fa-whatsapp"></i> Cotizar
-            </button>
-          </div>
-        </div>
-
-        <div class="producto-card rv d3" data-category="mangueras-pvc">
-          <div class="producto-image">
-            <img src="images/productos/mangueras_pvc/maguera_reforzada_transparente_sf.png" alt="Manguera Reforzada sin franja">
-            <div class="producto-badge">Línea baja presión</div>
-          </div>
-          <div class="producto-content">
-            <h3 class="producto-title">Manguera Reforzada Sin Franja</h3>
-            <p class="producto-description">Manguera transparente reforzada sin franja.</p>
-            <div class="producto-specs">
-              <div class="spec-item"><i class="fas fa-ruler"></i><div><span class="spec-label">Diámetro</span><span class="spec-value">3/8" · ½" · 5/8" · ¾" · 1"</span></div></div>
-            </div>
-            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Manguera%20Reforzada%20Cristal%20Sin%20Franja','_blank')">
-              <i class="fab fa-whatsapp"></i> Cotizar
-            </button>
-          </div>
-        </div>
-
-        <div class="producto-card rv d4" data-category="mangueras-pvc">
-          <div class="producto-image">
-            <img src="images/productos/mangueras_pvc/manguera_alta_presion_cristal.png" alt="Manguera Alta Presión 300 PSI">
-            <div class="producto-badge">Alta presión</div>
-          </div>
-          <div class="producto-content">
-            <h3 class="producto-title">Manguera de Alta Presión 300 PSI</h3>
-            <p class="producto-description">Manguera de alta presión 300 PSI color cristal.</p>
-            <div class="producto-specs">
-              <div class="spec-item"><i class="fas fa-ruler"></i><div><span class="spec-label">Diámetro</span><span class="spec-value">½"</span></div></div>
-              <div class="spec-item"><i class="fas fa-tachometer-alt"></i><div><span class="spec-label">Presión</span><span class="spec-value">300 PSI</span></div></div>
-            </div>
-            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Manguera%20Alta%20Presi%C3%B3n%20300%20PSI%20Cristal','_blank')">
-              <i class="fab fa-whatsapp"></i> Cotizar
-            </button>
-          </div>
-        </div>
-
-        <div class="producto-card rv" data-category="mangueras-pvc">
-          <div class="producto-image">
-            <img src="images/productos/mangueras_pvc/manguera_duplex_liviana.png" alt="Manguera Duplex Liviana">
-            <div class="producto-badge">Línea duplex</div>
-          </div>
-          <div class="producto-content">
-            <h3 class="producto-title">Manguera Duplex Liviana</h3>
-            <p class="producto-description">Manguera duplex liviana con franja amarilla identificadora.</p>
-            <div class="producto-specs">
-              <div class="spec-item"><i class="fas fa-ruler"></i><div><span class="spec-label">Diámetro</span><span class="spec-value">5/8" · ¾" · 1"</span></div></div>
-              <div class="spec-item"><i class="fas fa-info-circle"></i><div><span class="spec-label">Detalle</span><span class="spec-value">Franja amarilla</span></div></div>
-            </div>
-            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Manguera%20Duplex%20Liviana%20Franja%20Amarilla','_blank')">
-              <i class="fab fa-whatsapp"></i> Cotizar
-            </button>
-          </div>
-        </div>
-
-        <div class="producto-card rv" data-category="mangueras-pvc">
-          <div class="producto-image">
-            <img src="images/productos/mangueras_pvc/manguera_duplex_pesada.png" alt="Manguera Duplex Pesada">
-            <div class="producto-badge">Línea duplex</div>
-          </div>
-          <div class="producto-content">
-            <h3 class="producto-title">Manguera Duplex Pesada</h3>
-            <p class="producto-description">Manguera duplex pesada con franja roja identificadora.</p>
-            <div class="producto-specs">
-              <div class="spec-item"><i class="fas fa-ruler"></i><div><span class="spec-label">Diámetro</span><span class="spec-value">5/8" · ¾" · 1"</span></div></div>
-              <div class="spec-item"><i class="fas fa-info-circle"></i><div><span class="spec-label">Detalle</span><span class="spec-value">Franja roja</span></div></div>
-            </div>
-            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Manguera%20Duplex%20Pesada%20Franja%20Roja','_blank')">
-              <i class="fab fa-whatsapp"></i> Cotizar
-            </button>
-          </div>
-        </div>
-
-        <div class="producto-card rv" data-category="mangueras-pvc">
-          <div class="producto-image">
-            <img src="images/productos/mangueras_pvc/manguera_presion_gle_aire.png" alt="Manguera de Presión GLP/Aire">
-            <div class="producto-badge">Gas</div>
-          </div>
-          <div class="producto-content">
-            <h3 class="producto-title">Manguera de Presión GLP/Aire</h3>
-            <p class="producto-description">Manguera GLP y aire a presión, color rojo con franja azul identificadora.</p>
-            <div class="producto-specs">
-              <div class="spec-item"><i class="fas fa-tachometer-alt"></i><div><span class="spec-label">Presión</span><span class="spec-value">Media presión</span></div></div>
-              <div class="spec-item"><i class="fas fa-info-circle"></i><div><span class="spec-label">Detalle</span><span class="spec-value">Rojo con franja azul</span></div></div>
-            </div>
-            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Manguera%20Presi%C3%B3n%20GLP%20Aire%20Rojo%20Franja%20Azul','_blank')">
-              <i class="fab fa-whatsapp"></i> Cotizar
-            </button>
-          </div>
-        </div>
-
-        <div class="producto-card rv" data-category="mangueras-pvc">
-          <div class="producto-image">
-            <img src="images/productos/mangueras_pvc/manguera_glp_premium.png" alt="Manguera GLP Premium">
-            <div class="producto-badge">Gas</div>
-          </div>
-          <div class="producto-content">
-            <h3 class="producto-title">Manguera GLP Premium</h3>
-            <p class="producto-description">Manguera GLP premium color naranja.</p>
-            <div class="producto-specs">
-              <div class="spec-item"><i class="fas fa-ruler"></i><div><span class="spec-label">Diámetro</span><span class="spec-value">3/8"</span></div></div>
-              <div class="spec-item"><i class="fas fa-info-circle"></i><div><span class="spec-label">Detalle</span><span class="spec-value">Color naranja</span></div></div>
-            </div>
-            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Manguera%20GLP%20Premium%20Naranja','_blank')">
-              <i class="fab fa-whatsapp"></i> Cotizar
-            </button>
-          </div>
-        </div>
-
-        <div class="producto-card rv" data-category="mangueras-pvc">
-          <div class="producto-image">
-            <img src="images/productos/mangueras_pvc/manguera_jebe_lona_reforzada_f_azul.png" alt="Manguera Jebe y Lona Reforzada">
-            <div class="producto-badge">Jebe y lona</div>
-          </div>
-          <div class="producto-content">
-            <h3 class="producto-title">Manguera Jebe y Lona Reforzada</h3>
-            <p class="producto-description">Manguera reforzada jebe y lona alta presión de gas y aire, 300 PSI, color negro con franja azul.</p>
-            <div class="producto-specs">
-              <div class="spec-item"><i class="fas fa-tachometer-alt"></i><div><span class="spec-label">Presión</span><span class="spec-value">300 PSI</span></div></div>
-              <div class="spec-item"><i class="fas fa-info-circle"></i><div><span class="spec-label">Detalle</span><span class="spec-value">Negro con franja azul</span></div></div>
-            </div>
-            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Manguera%20Jebe%20y%20Lona%20Reforzada','_blank')">
-              <i class="fab fa-whatsapp"></i> Cotizar
-            </button>
-          </div>
-        </div>
-
-        <div class="producto-card rv" data-category="mangueras-pvc">
-          <div class="producto-image">
-            <img src="images/productos/mangueras_pvc/layflat.png" alt="Manguera Layflat Azul">
-            <div class="producto-badge">Layflat</div>
-          </div>
-          <div class="producto-content">
-            <h3 class="producto-title">Manguera PVC Layflat Azul</h3>
-            <p class="producto-description">Manguera plana para conducción de agua, fácil de enrollar y transportar.</p>
-            <div class="producto-specs">
-              <div class="spec-item"><i class="fas fa-ruler"></i><div><span class="spec-label">Diámetro</span><span class="spec-value">1" · 1½" · 2" · 3" · 4" · 6"</span></div></div>
-              <div class="spec-item"><i class="fas fa-info-circle"></i><div><span class="spec-label">Detalle</span><span class="spec-value">Azul</span></div></div>
-            </div>
-            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Manguera%20PVC%20Layflat%20Azul','_blank')">
-              <i class="fab fa-whatsapp"></i> Cotizar
-            </button>
-          </div>
-        </div>
-
-        <div class="producto-card rv" data-category="mangueras-pvc">
-          <div class="producto-image">
-            <img src="images/productos/mimbre/mimbre.png" alt="Mimbre Cordón Sólido PVC">
-            <div class="producto-badge">Cordón sólido</div>
-          </div>
-          <div class="producto-content">
-            <h3 class="producto-title">Mimbre — Cordón Sólido de PVC</h3>
-            <p class="producto-description">Cordones de fibra sintética de PVC para sillas y muebles artesanales.</p>
-            <div class="producto-specs">
-              <div class="spec-item"><i class="fas fa-palette"></i><div><span class="spec-label">Colores</span><span class="spec-value">Varios colores disponibles</span></div></div>
-              <div class="spec-item"><i class="fas fa-info-circle"></i><div><span class="spec-label">Uso</span><span class="spec-value">Sillas y muebles artesanales</span></div></div>
-            </div>
-            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Mimbre','_blank')">
-              <i class="fab fa-whatsapp"></i> Cotizar
-            </button>
-          </div>
-        </div>
-
-        <div class="producto-card rv" data-category="mangueras-pvc">
-          <div class="producto-image">
-            <img src="images/productos/mangueras_pvc/manguera_gas_domestico_azul_f_blanca.png" alt="Manguera de Gas Doméstico Azul con franja blanca">
-            <div class="producto-badge">Gas doméstico</div>
-          </div>
-          <div class="producto-content">
-            <h3 class="producto-title">Manguera de Gas Doméstico (Azul con franja blanca)</h3>
-            <p class="producto-description">Manguera para gas doméstico, color azul con franja blanca identificadora.</p>
-            <div class="producto-specs">
-              <div class="spec-item"><i class="fas fa-fire"></i><div><span class="spec-label">Uso</span><span class="spec-value">Gas doméstico</span></div></div>
-              <div class="spec-item"><i class="fas fa-info-circle"></i><div><span class="spec-label">Detalle</span><span class="spec-value">Azul con franja blanca</span></div></div>
-            </div>
-            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Manguera%20Gas%20Dom%C3%A9stico%20Azul','_blank')">
-              <i class="fab fa-whatsapp"></i> Cotizar
-            </button>
-          </div>
-        </div>
-
-        <div class="producto-card rv" data-category="mangueras-pvc">
-          <div class="producto-image">
-            <img src="images/productos/mangueras_pvc/manguera_gas_domestico_naranja_f_blanca.png" alt="Manguera de Gas Doméstico Naranja con franja blanca">
-            <div class="producto-badge">Gas doméstico</div>
-          </div>
-          <div class="producto-content">
-            <h3 class="producto-title">Manguera de Gas Doméstico (Naranja con franja blanca)</h3>
-            <p class="producto-description">Manguera para gas doméstico, color naranja con franja blanca identificadora.</p>
-            <div class="producto-specs">
-              <div class="spec-item"><i class="fas fa-fire"></i><div><span class="spec-label">Uso</span><span class="spec-value">Gas doméstico</span></div></div>
-              <div class="spec-item"><i class="fas fa-info-circle"></i><div><span class="spec-label">Detalle</span><span class="spec-value">Naranja con franja blanca</span></div></div>
-            </div>
-            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Manguera%20Gas%20Dom%C3%A9stico%20Naranja','_blank')">
-              <i class="fab fa-whatsapp"></i> Cotizar
-            </button>
-          </div>
-        </div>
-
-        <div class="producto-card rv" data-category="mangueras-pvc">
-          <div class="producto-image">
-            <img src="images/productos/mangueras_pvc/manguera_gas_domestico_rojo_f_blanca.png" alt="Manguera de Gas Doméstico Rojo con franja blanca">
-            <div class="producto-badge">Gas doméstico</div>
-          </div>
-          <div class="producto-content">
-            <h3 class="producto-title">Manguera de Gas Doméstico (Rojo con franja blanca)</h3>
-            <p class="producto-description">Manguera para gas doméstico, color rojo con franja blanca identificadora.</p>
-            <div class="producto-specs">
-              <div class="spec-item"><i class="fas fa-fire"></i><div><span class="spec-label">Uso</span><span class="spec-value">Gas doméstico</span></div></div>
-              <div class="spec-item"><i class="fas fa-info-circle"></i><div><span class="spec-label">Detalle</span><span class="spec-value">Rojo con franja blanca</span></div></div>
-            </div>
-            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Manguera%20Gas%20Dom%C3%A9stico%20Rojo','_blank')">
-              <i class="fab fa-whatsapp"></i> Cotizar
-            </button>
-          </div>
-        </div>
-
-        <div class="producto-card rv" data-category="mangueras-pvc">
-          <div class="producto-image">
-            <img src="images/productos/mangueras_pvc/manguera_nivel_azulino.png" alt="Manguera de Nivel">
-            <div class="producto-badge">Nivel</div>
-          </div>
-          <div class="producto-content">
-            <h3 class="producto-title">Manguera de Nivel</h3>
-            <p class="producto-description">Manguera transparente de PVC para nivelación en obras de construcción y carpintería.</p>
-            <div class="producto-specs">
-              <div class="spec-item"><i class="fas fa-ruler-horizontal"></i><div><span class="spec-label">Uso</span><span class="spec-value">Nivelación en construcción</span></div></div>
-            </div>
-            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Manguera%20de%20Nivel','_blank')">
-              <i class="fab fa-whatsapp"></i> Cotizar
-            </button>
-          </div>
-        </div>
-
-        <div class="producto-card rv" data-category="mangueras-pvc">
-          <div class="producto-image">
-            <img src="images/productos/mangueras_pvc/manguera_automotriz.png" alt="Manguera de Uso Automotriz">
-            <div class="producto-badge">Automotriz</div>
-          </div>
-          <div class="producto-content">
-            <h3 class="producto-title">Manguera de Uso Automotriz</h3>
-            <p class="producto-description">Manguera de PVC para aplicaciones automotrices, resistente a aceites y combustibles.</p>
-            <div class="producto-specs">
-              <div class="spec-item"><i class="fas fa-car"></i><div><span class="spec-label">Uso</span><span class="spec-value">Automotriz</span></div></div>
-            </div>
-            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Manguera%20Uso%20Automotriz','_blank')">
-              <i class="fab fa-whatsapp"></i> Cotizar
-            </button>
-          </div>
-        </div>
-
-
-
-        <div class="producto-card rv" data-category="mangueras-pvc">
-          <div class="producto-image">
-            <img src="images/productos/mangueras_pvc/manguera_jebe_lona_reforzada_f_amarilla.png" alt="Manguera Jebe y Lona Reforzada Franja Amarilla">
-            <div class="producto-badge">Jebe y lona</div>
-          </div>
-          <div class="producto-content">
-            <h3 class="producto-title">Manguera Jebe y Lona Reforzada (Franja Amarilla)</h3>
-            <p class="producto-description">Manguera reforzada jebe y lona de alta presión con franja amarilla identificadora.</p>
-            <div class="producto-specs">
-              <div class="spec-item"><i class="fas fa-info-circle"></i><div><span class="spec-label">Detalle</span><span class="spec-value">Franja amarilla</span></div></div>
-            </div>
-            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Manguera%20Jebe%20y%20Lona%20Franja%20Amarilla','_blank')">
-              <i class="fab fa-whatsapp"></i> Cotizar
-            </button>
-          </div>
-        </div>
-
-        <div class="producto-card rv" data-category="mangueras-pvc">
-          <div class="producto-image">
-            <img src="images/productos/mangueras_pvc/manguera_jebe_lona_reforzada_f_naranja.png" alt="Manguera Jebe y Lona Reforzada Franja Naranja">
-            <div class="producto-badge">Jebe y lona</div>
-          </div>
-          <div class="producto-content">
-            <h3 class="producto-title">Manguera Jebe y Lona Reforzada (Franja Naranja)</h3>
-            <p class="producto-description">Manguera reforzada jebe y lona de alta presión con franja naranja identificadora.</p>
-            <div class="producto-specs">
-              <div class="spec-item"><i class="fas fa-info-circle"></i><div><span class="spec-label">Detalle</span><span class="spec-value">Franja naranja</span></div></div>
-            </div>
-            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Manguera%20Jebe%20y%20Lona%20Franja%20Naranja','_blank')">
-              <i class="fab fa-whatsapp"></i> Cotizar
-            </button>
-          </div>
-        </div>
-
-        <div class="producto-card rv" data-category="mangueras-pvc">
-          <div class="producto-image">
-            <img src="images/productos/mangueras_pvc/manguera_milimetrica.png" alt="Manguera Milimétrica">
-            <div class="producto-badge">Milimétrica</div>
-          </div>
-          <div class="producto-content">
-            <h3 class="producto-title">Manguera Milimétrica</h3>
-            <p class="producto-description">Manguera de PVC de dimensiones milimétricas para aplicaciones de precisión en laboratorio e industria.</p>
-            <div class="producto-specs">
-              <div class="spec-item"><i class="fas fa-microscope"></i><div><span class="spec-label">Uso</span><span class="spec-value">Laboratorio / Precisión</span></div></div>
-            </div>
-            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Manguera%20Milit%C3%A9trica','_blank')">
-              <i class="fab fa-whatsapp"></i> Cotizar
-            </button>
-          </div>
-        </div>
-
-
-        <div class="producto-card rv" data-category="mangueras-pvc">
-          <div class="producto-image">
-            <img src="images/productos/mangueras_pvc/manguera_reforzada_gnv.png" alt="Manguera Reforzada GNV">
-            <div class="producto-badge">GNV</div>
-          </div>
-          <div class="producto-content">
-            <h3 class="producto-title">Manguera Reforzada GNV</h3>
-            <p class="producto-description">Manguera reforzada para gas natural vehicular (GNV), alta resistencia a la presión.</p>
-            <div class="producto-specs">
-              <div class="spec-item"><i class="fas fa-gas-pump"></i><div><span class="spec-label">Uso</span><span class="spec-value">Gas natural vehicular</span></div></div>
-            </div>
-            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Manguera%20Reforzada%20GNV','_blank')">
-              <i class="fab fa-whatsapp"></i> Cotizar
-            </button>
-          </div>
-        </div>
-
-      </div>
-    </div><!-- /mangueras-pvc -->
-
-
-
-
-
-    <!-- ══ ACOPLES POR COMPRESIÓN ══ -->
-    <div class="productos-category rv" id="acoples-por-compresion">
-      <div class="category-header">
-        <div class="category-badge" style="background:linear-gradient(135deg,#9C27B0 0%,#7B1FA2 100%)">
-          <i class="fas fa-link"></i>
-        </div>
-        <div>
-          <h2 class="category-title">Acoples por Compresión</h2>
-          <p class="category-subtitle">Accesorios y conexiones para sistemas de riego y conducción</p>
-        </div>
-      </div>
-      <div class="productos-grid">
-
-        <div class="producto-card rv d1" data-category="acoples-por-compresion">
-          <div class="producto-image">
-            <img src="images/productos/acoples_por_compresion/CODO_R_HEMBRA/CODO_R_HEMBRA_2.png" alt="Codo 90° Rosca Hembra">
-            <div class="producto-badge">Polipropileno</div>
-          </div>
-          <div class="producto-content">
-            <h3 class="producto-title">Codo 90° Rosca Hembra</h3>
-            <p class="producto-description">Codo con salida roscada para cambio de dirección en 90°.</p>
-            <div class="producto-specs">
-              <div class="spec-item"><i class="fas fa-ruler"></i><div><span class="spec-label">Diámetro</span><span class="spec-value">16 mm – 110 mm (½" – 4")</span></div></div>
-            </div>
-            <div class="producto-tags"><span class="tag">Agrícola</span></div>
-            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Codo%2090%C2%B0%20Rosca%20Hembra','_blank')">
-              <i class="fab fa-whatsapp"></i> Cotizar
-            </button>
-          </div>
-        </div>
-
-        <div class="producto-card rv d2" data-category="acoples-por-compresion">
-          <div class="producto-image">
-            <img src="images/productos/acoples_por_compresion/UNION_ENLACE/UNION_ENLACE_1.png" alt="Unión Enlace">
-            <div class="producto-badge">Polipropileno</div>
-          </div>
-          <div class="producto-content">
-            <h3 class="producto-title">Unión Enlace</h3>
-            <p class="producto-description">Accesorio para unión directa de tuberías.</p>
-            <div class="producto-specs">
-              <div class="spec-item"><i class="fas fa-ruler"></i><div><span class="spec-label">Diámetro</span><span class="spec-value">16 mm – 110 mm (½" – 4")</span></div></div>
-            </div>
-            <div class="producto-tags"><span class="tag">Agrícola</span></div>
-            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Uni%C3%B3n%20Enlace','_blank')">
-              <i class="fab fa-whatsapp"></i> Cotizar
-            </button>
-          </div>
-        </div>
-
-        <div class="producto-card rv d3" data-category="acoples-por-compresion">
-          <div class="producto-image">
-            <img src="images/productos/acoples_por_compresion/UNION_ENLACE_REDUCIDO/UNION_ENLACE_REDUCIDO_4.png" alt="Unión Enlace Reducido">
-            <div class="producto-badge">Polipropileno</div>
-          </div>
-          <div class="producto-content">
-            <h3 class="producto-title">Unión Enlace Reducido</h3>
-            <p class="producto-description">Unión con reducción integrada para distintos diámetros.</p>
-            <div class="producto-specs">
-              <div class="spec-item"><i class="fas fa-ruler"></i><div><span class="spec-label">Diámetro</span><span class="spec-value">16 mm – 110 mm (½" – 4")</span></div></div>
-            </div>
-            <div class="producto-tags"><span class="tag">Agrícola</span></div>
-            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Uni%C3%B3n%20Enlace%20Reducido','_blank')">
-              <i class="fab fa-whatsapp"></i> Cotizar
-            </button>
-          </div>
-        </div>
-
-        <div class="producto-card rv d4" data-category="acoples-por-compresion">
-          <div class="producto-image">
-            <img src="images/productos/acoples_por_compresion/CONECTOR_INICIAL/CONECTOR_INICIAL_1.png" alt="Conector Inicial">
-            <div class="producto-badge">Polipropileno</div>
-          </div>
-          <div class="producto-content">
-            <h3 class="producto-title">Conector Inicial</h3>
-            <p class="producto-description">Accesorio para inicio de línea de riego.</p>
-            <div class="producto-specs">
-              <div class="spec-item"><i class="fas fa-ruler"></i><div><span class="spec-label">Diámetro</span><span class="spec-value">16 mm – 110 mm (½" – 4")</span></div></div>
-            </div>
-            <div class="producto-tags"><span class="tag">Agrícola</span></div>
-            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Conector%20Inicial','_blank')">
-              <i class="fab fa-whatsapp"></i> Cotizar
-            </button>
-          </div>
-        </div>
-
-        <div class="producto-card rv" data-category="acoples-por-compresion">
-          <div class="producto-image">
-            <img src="images/productos/acoples_por_compresion/SACABOCADO/sacabocado_2.png" alt="Sacabocado">
-            <div class="producto-badge">Acero / Plástico</div>
-          </div>
-          <div class="producto-content">
-            <h3 class="producto-title">Sacabocado</h3>
-            <p class="producto-description">Herramienta para perforación en líneas de riego.</p>
-            <div class="producto-specs">
-              <div class="spec-item"><i class="fas fa-ruler"></i><div><span class="spec-label">Diámetro</span><span class="spec-value">16 mm – 110 mm (½" – 4")</span></div></div>
-            </div>
-            <div class="producto-tags"><span class="tag">Agrícola</span></div>
-            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Sacabocado','_blank')">
-              <i class="fab fa-whatsapp"></i> Cotizar
-            </button>
-          </div>
-        </div>
-
-        <div class="producto-card rv" data-category="acoples-por-compresion">
-          <div class="producto-image">
-            <img src="images/productos/acoples_por_compresion/ABRAZADERA_COLLARIN/ABRAZADERA_COLLARIN_1.png" alt="Abrazadera Collarín">
-            <div class="producto-badge">PP/HDPE</div>
-          </div>
-          <div class="producto-content">
-            <h3 class="producto-title">Abrazadera — Collarín</h3>
-            <p class="producto-description">Accesorio para derivación y sujeción en tuberías.</p>
-            <div class="producto-specs">
-              <div class="spec-item"><i class="fas fa-ruler"></i><div><span class="spec-label">Diámetro</span><span class="spec-value">16 mm – 110 mm (½" – 4")</span></div></div>
-            </div>
-            <div class="producto-tags"><span class="tag">Agrícola</span><span class="tag">Agroindustria</span><span class="tag">Minero</span></div>
-            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20ABRAZADERA%20%E2%80%93%20COLLARIN','_blank')">
-              <i class="fab fa-whatsapp"></i> Cotizar
-            </button>
-          </div>
-        </div>
-
-        <div class="producto-card rv" data-category="acoples-por-compresion">
-          <div class="producto-image">
-            <img src="images/productos/acoples_por_compresion/ASPERSOR_CIRCULAR/ASPERSOR_CIRCULAR_2.png" alt="Aspersor Circular">
-            <div class="producto-badge">Plástico técnico</div>
-          </div>
-          <div class="producto-content">
-            <h3 class="producto-title">Aspersor Circular</h3>
-            <p class="producto-description">Aspersor para riego con patrón circular, ideal para jardinería y cultivos.</p>
-            <div class="producto-specs">
-              <div class="spec-item"><i class="fas fa-tachometer-alt"></i><div><span class="spec-label">Cobertura</span><span class="spec-value">Uniforme; fácil instalación</span></div></div>
-            </div>
-            <div class="producto-tags"><span class="tag">Agrícola</span><span class="tag">Agroindustria</span></div>
-            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20ASPERSOR%20CIRCULAR','_blank')">
-              <i class="fab fa-whatsapp"></i> Cotizar
-            </button>
-          </div>
-        </div>
-
-        <div class="producto-card rv" data-category="acoples-por-compresion">
-          <div class="producto-image">
-            <img src="images/productos/acoples_por_compresion/ASPERSOR_SECTORIAL/ASPERSOR_SECTORIAL_2.png" alt="Aspersor Sectorial">
-            <div class="producto-badge">Plástico técnico</div>
-          </div>
-          <div class="producto-content">
-            <h3 class="producto-title">Aspersor Sectorial</h3>
-            <p class="producto-description">Aspersor ajustable por sectores, recomendado para riego dirigido.</p>
-            <div class="producto-specs">
-              <div class="spec-item"><i class="fas fa-tachometer-alt"></i><div><span class="spec-label">Ajuste</span><span class="spec-value">Ángulo regulable; eficiente</span></div></div>
-            </div>
-            <div class="producto-tags"><span class="tag">Agrícola</span><span class="tag">Agroindustria</span></div>
-            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20ASPERSOR%20SECTORIAL','_blank')">
-              <i class="fab fa-whatsapp"></i> Cotizar
-            </button>
-          </div>
-        </div>
-
-        <div class="producto-card rv" data-category="acoples-por-compresion">
-          <div class="producto-image">
-            <img src="images/productos/acoples_por_compresion/GOTEROS/goteros_2.png" alt="Goteros">
-            <div class="producto-badge">Plástico técnico</div>
-          </div>
-          <div class="producto-content">
-            <h3 class="producto-title">Goteros</h3>
-            <p class="producto-description">Emisores para riego por goteo que optimizan el uso de agua en agricultura.</p>
-            <div class="producto-specs">
-              <div class="spec-item"><i class="fas fa-tachometer-alt"></i><div><span class="spec-label">Caudal</span><span class="spec-value">Controlado; ahorro de agua</span></div></div>
-            </div>
-            <div class="producto-tags"><span class="tag">Agrícola</span><span class="tag">Agroindustria</span></div>
-            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20GOTEROS','_blank')">
-              <i class="fab fa-whatsapp"></i> Cotizar
-            </button>
-          </div>
-        </div>
-
-        <div class="producto-card rv" data-category="acoples-por-compresion">
-          <div class="producto-image">
-            <img src="images/productos/acoples_por_compresion/CODO_MANG_MANGUERA/CODO_MANG_ MANGUERA_1.png" alt="Codo Mang-Manguera">
-            <div class="producto-badge">PP</div>
-          </div>
-          <div class="producto-content">
-            <h3 class="producto-title">Codo Mang-Manguera</h3>
-            <p class="producto-description">Codo para unión de manguera a manguera en sistemas de riego.</p>
-            <div class="producto-specs">
-              <div class="spec-item"><i class="fas fa-ruler"></i><div><span class="spec-label">Diámetro</span><span class="spec-value">16 mm – 110 mm (½" – 4")</span></div></div>
-            </div>
-            <div class="producto-tags"><span class="tag">Agrícola</span><span class="tag">Agroindustria</span><span class="tag">Minero</span></div>
-            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20CODO%20MANG-MANGUERA','_blank')">
-              <i class="fab fa-whatsapp"></i> Cotizar
-            </button>
-          </div>
-        </div>
-
-      </div>
-    </div><!-- /acoples-por-compresion -->
-
-
-    <!-- ══ GEOSINTÉTICOS ══ -->
-    <div class="productos-category rv" id="geosinteticos">
-      <div class="category-header">
-        <div class="category-badge" style="background:linear-gradient(135deg,#4A148C 0%,#6A1B9A 100%)">
-          <i class="fas fa-layer-group"></i>
-        </div>
-        <div>
-          <h2 class="category-title">Geosintéticos</h2>
-          <p class="category-subtitle">Geomembranas y soluciones para minería, relleno sanitario e impermeabilización</p>
-        </div>
-      </div>
-      <div class="productos-grid">
-
-        <div class="producto-card rv d1" data-category="geosinteticos">
-          <div class="producto-image">
-            <img src="images/productos/geosinteticos/GEOMEMBRANAS/GEOMEMBRANA_1.png" alt="Geomembrana HDPE">
-            <div class="producto-badge">HDPE</div>
-          </div>
-          <div class="producto-content">
-            <h3 class="producto-title">Geomembrana HDPE</h3>
-            <p class="producto-description">Lámina impermeable de polietileno de alta densidad para impermeabilización de piscinas, lagunas, rellenos sanitarios y minería.</p>
-            <div class="producto-specs">
-              <div class="spec-item"><i class="fas fa-ruler"></i><div><span class="spec-label">Espesor</span><span class="spec-value">0.5 mm – 3.0 mm</span></div></div>
-              <div class="spec-item"><i class="fas fa-certificate"></i><div><span class="spec-label">Norma</span><span class="spec-value">ASTM D7176 / GRI GM13</span></div></div>
-            </div>
-            <div class="producto-tags"><span class="tag">Minería</span><span class="tag">Relleno Sanitario</span><span class="tag">Agricultura</span></div>
-            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Geomembrana%20HDPE','_blank')">
-              <i class="fab fa-whatsapp"></i> Cotizar
-            </button>
-          </div>
-        </div>
-
-        <div class="producto-card rv d2" data-category="geosinteticos">
-          <div class="producto-image">
-            <img src="images/productos/geotextil/geotextil.png" alt="Geotextil">
-            <div class="producto-badge">Geosintético</div>
-          </div>
-          <div class="producto-content">
-            <h3 class="producto-title">Geotextil</h3>
-            <p class="producto-description">Tela geosintética permeable para separación, filtración, drenaje y refuerzo en obras civiles y minería.</p>
-            <div class="producto-specs">
-              <div class="spec-item"><i class="fas fa-layer-group"></i><div><span class="spec-label">Tipo</span><span class="spec-value">Tejido / No tejido</span></div></div>
-              <div class="spec-item"><i class="fas fa-certificate"></i><div><span class="spec-label">Norma</span><span class="spec-value">ASTM D4751</span></div></div>
-            </div>
-            <div class="producto-tags"><span class="tag">Minería</span><span class="tag">Construcción</span><span class="tag">Drenaje</span></div>
-            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Geotextil','_blank')">
-              <i class="fab fa-whatsapp"></i> Cotizar
-            </button>
-          </div>
-        </div>
-
-      </div>
-    </div><!-- /geosinteticos -->
-
-
-    <!-- ══ VÁLVULAS ══ -->
-    <div class="productos-category rv" id="valvulas">
-      <div class="category-header">
-        <div class="category-badge" style="background:linear-gradient(135deg,#01579B 0%,#0277BD 100%)">
-          <i class="fas fa-faucet-drip"></i>
-        </div>
-        <div>
-          <h2 class="category-title">Válvulas</h2>
-          <p class="category-subtitle">Control y regulación de fluidos para todos los sectores</p>
-        </div>
-      </div>
-      <div class="productos-grid">
-
-        <div class="producto-card rv d1" data-category="valvulas">
-          <div class="producto-image">
-            <img src="images/productos/valvulas/VALVULA_ACOPLE_RAPIDO/VALVULA_ACOPLE_RAPIDO_2.png" alt="Válvula Acople Rápido">
-            <div class="producto-badge">Polipropileno</div>
-          </div>
-          <div class="producto-content">
-            <h3 class="producto-title">Válvula Acople Rápido</h3>
-            <p class="producto-description">Sistema de conexión rápida para conducción.</p>
-            <div class="producto-specs">
-              <div class="spec-item"><i class="fas fa-ruler"></i><div><span class="spec-label">Diámetro</span><span class="spec-value">Variable</span></div></div>
-              <div class="spec-item"><i class="fas fa-tachometer-alt"></i><div><span class="spec-label">Presión</span><span class="spec-value">Media presión</span></div></div>
-            </div>
-            <div class="producto-tags"><span class="tag">Agrícola</span><span class="tag">Minero</span></div>
-            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20V%C3%A1lvula%20Acople%20R%C3%A1pido','_blank')">
-              <i class="fab fa-whatsapp"></i> Cotizar
-            </button>
-          </div>
-        </div>
-
-        <div class="producto-card rv d2" data-category="valvulas">
-          <div class="producto-image">
-            <img src="images/productos/valvulas/VALVULA_CHECK_DE_PIE_R_HEMBRA/VALVULA_CHECK_DE_PIE_R_HEMBRA_2.png" alt="Válvula Check de Pie">
-            <div class="producto-badge">Check</div>
-          </div>
-          <div class="producto-content">
-            <h3 class="producto-title">Válvula Check de Pie</h3>
-            <p class="producto-description">Válvula de retención tipo pie para evitar el retroceso de fluido en sistemas de bombeo.</p>
-            <div class="producto-specs">
-              <div class="spec-item"><i class="fas fa-ruler"></i><div><span class="spec-label">Diámetro</span><span class="spec-value">Variable</span></div></div>
-              <div class="spec-item"><i class="fas fa-tachometer-alt"></i><div><span class="spec-label">Presión</span><span class="spec-value">Media / Alta presión</span></div></div>
-            </div>
-            <div class="producto-tags"><span class="tag">Agrícola</span><span class="tag">Industrial</span><span class="tag">Minero</span></div>
-            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20V%C3%A1lvula%20Check%20de%20Pie','_blank')">
-              <i class="fab fa-whatsapp"></i> Cotizar
-            </button>
-          </div>
-        </div>
-
-        <div class="producto-card rv d3" data-category="valvulas">
-          <div class="producto-image">
-            <img src="images/productos/valvulas/VALVULA_RAMAL/VALVULA_RAMAL_1.png" alt="Válvula Ramal">
-            <div class="producto-badge">Ramal</div>
-          </div>
-          <div class="producto-content">
-            <h3 class="producto-title">Válvula Ramal</h3>
-            <p class="producto-description">Válvula para control de flujo en ramales de distribución de agua y fluidos.</p>
-            <div class="producto-specs">
-              <div class="spec-item"><i class="fas fa-ruler"></i><div><span class="spec-label">Diámetro</span><span class="spec-value">Variable</span></div></div>
-              <div class="spec-item"><i class="fas fa-tachometer-alt"></i><div><span class="spec-label">Presión</span><span class="spec-value">Media presión</span></div></div>
-            </div>
-            <div class="producto-tags"><span class="tag">Agrícola</span><span class="tag">Agroindustria</span><span class="tag">Industrial</span></div>
-            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20V%C3%A1lvula%20Ramal','_blank')">
-              <i class="fab fa-whatsapp"></i> Cotizar
-            </button>
-          </div>
-        </div>
-
-      </div>
-    </div><!-- /valvulas -->
-
-
-    <!-- ══ TERMOFUSIÓN ══ -->
-    <div class="productos-category rv" id="termofusion">
-      <div class="category-header">
-        <div class="category-badge" style="background:linear-gradient(135deg,#F44336 0%,#D32F2F 100%)">
-          <i class="fas fa-temperature-high"></i>
-        </div>
-        <div>
-          <h2 class="category-title">Termofusión</h2>
-          <p class="category-subtitle">Accesorios soldados por termofusión para sistemas HDPE de alta presión</p>
-        </div>
-      </div>
-      <div class="productos-grid">
-
-        <div class="producto-card rv d1" data-category="termofusion">
-          <div class="producto-image">
-            <img src="images/productos/tuberias_hdpe/hdpe_termofusion_22_5.png" alt="Codo 22.5°">
-            <div class="producto-badge">Termofusión</div>
-          </div>
-          <div class="producto-content">
-            <h3 class="producto-title">Codo 22.5°</h3>
-            <p class="producto-description">Accesorio que permite un cambio suave de dirección en 22.5°, ideal para ajustes progresivos en líneas de conducción.</p>
-            <div class="producto-specs">
-              <div class="spec-item"><i class="fas fa-ruler"></i><div><span class="spec-label">Diámetro</span><span class="spec-value">110 mm – 200 mm</span></div></div>
-              <div class="spec-item"><i class="fas fa-certificate"></i><div><span class="spec-label">Norma</span><span class="spec-value">NTP ISO 4427</span></div></div>
-            </div>
-            <div class="producto-tags"><span class="tag">Todos los sectores</span></div>
-            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20CODO%2022.5%C2%B0','_blank')">
-              <i class="fab fa-whatsapp"></i> Cotizar
-            </button>
-          </div>
-        </div>
-
-        <div class="producto-card rv d2" data-category="termofusion">
-          <div class="producto-image">
-            <img src="images/productos/tuberias_hdpe/hdpe_termofusion_45.png" alt="Codo 45°">
-            <div class="producto-badge">Termofusión</div>
-          </div>
-          <div class="producto-content">
-            <h3 class="producto-title">Codo 45°</h3>
-            <p class="producto-description">Permite desviar la tubería en 45°, reduciendo tensiones en la instalación.</p>
-            <div class="producto-specs">
-              <div class="spec-item"><i class="fas fa-ruler"></i><div><span class="spec-label">Diámetro</span><span class="spec-value">20 mm – 315 mm</span></div></div>
-              <div class="spec-item"><i class="fas fa-certificate"></i><div><span class="spec-label">Norma</span><span class="spec-value">NTP ISO 4427</span></div></div>
-            </div>
-            <div class="producto-tags"><span class="tag">Todos los sectores</span></div>
-            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20CODO%2045%C2%B0','_blank')">
-              <i class="fab fa-whatsapp"></i> Cotizar
-            </button>
-          </div>
-        </div>
-
-        <div class="producto-card rv" data-category="termofusion">
-          <div class="producto-image">
-            <img src="images/productos/tuberias_hdpe/HDPE_TERMOFUSION_90.png" alt="Codo 90° Termofusión">
-            <div class="producto-badge">Termofusión</div>
-          </div>
-          <div class="producto-content">
-            <h3 class="producto-title">Codo 90°</h3>
-            <p class="producto-description">Accesorio termofusionado para cambio de dirección en 90° en sistemas HDPE.</p>
-            <div class="producto-specs">
-              <div class="spec-item"><i class="fas fa-ruler"></i><div><span class="spec-label">Diámetro</span><span class="spec-value">20 mm – 315 mm</span></div></div>
-              <div class="spec-item"><i class="fas fa-certificate"></i><div><span class="spec-label">Norma</span><span class="spec-value">NTP ISO 4427</span></div></div>
-            </div>
-            <div class="producto-tags"><span class="tag">Todos los sectores</span></div>
-            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20CODO%2090%C2%B0%20Termofusi%C3%B3n','_blank')">
-              <i class="fab fa-whatsapp"></i> Cotizar
-            </button>
-          </div>
-        </div>
-
-        <div class="producto-card rv" data-category="termofusion">
-          <div class="producto-image">
-            <img src="images/productos/termofusion_electrofusion/TERMOFUSION/REDUCCION/REDUCCION_1.png" alt="Reducción Termofusión">
-            <div class="producto-badge">Termofusión</div>
-          </div>
-          <div class="producto-content">
-            <h3 class="producto-title">Reducción</h3>
-            <p class="producto-description">Accesorio termofusionado para reducir el diámetro en líneas de conducción HDPE.</p>
-            <div class="producto-specs">
-              <div class="spec-item"><i class="fas fa-ruler"></i><div><span class="spec-label">Diámetro</span><span class="spec-value">20 mm – 315 mm</span></div></div>
-              <div class="spec-item"><i class="fas fa-certificate"></i><div><span class="spec-label">Norma</span><span class="spec-value">NTP ISO 4427</span></div></div>
-            </div>
-            <div class="producto-tags"><span class="tag">Todos los sectores</span></div>
-            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Reducci%C3%B3n%20Termofusi%C3%B3n','_blank')">
-              <i class="fab fa-whatsapp"></i> Cotizar
-            </button>
-          </div>
-        </div>
-
-        <div class="producto-card rv" data-category="termofusion">
-          <div class="producto-image">
-            <img src="images/productos/termofusion_electrofusion/TERMOFUSION/STUB_END_FLANGE/STUB_END_FLANGE_2.png" alt="Stub End Flange Termofusión">
-            <div class="producto-badge">Termofusión</div>
-          </div>
-          <div class="producto-content">
-            <h3 class="producto-title">Stub End (Flange)</h3>
-            <p class="producto-description">Accesorio termofusionado tipo flange para conexión bridada en sistemas HDPE.</p>
-            <div class="producto-specs">
-              <div class="spec-item"><i class="fas fa-ruler"></i><div><span class="spec-label">Diámetro</span><span class="spec-value">63 mm – 315 mm</span></div></div>
-              <div class="spec-item"><i class="fas fa-certificate"></i><div><span class="spec-label">Norma</span><span class="spec-value">NTP ISO 4427</span></div></div>
-            </div>
-            <div class="producto-tags"><span class="tag">Todos los sectores</span></div>
-            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Stub%20End%20Flange%20Termofusi%C3%B3n','_blank')">
-              <i class="fab fa-whatsapp"></i> Cotizar
-            </button>
-          </div>
-        </div>
-
-        <div class="producto-card rv" data-category="termofusion">
-          <div class="producto-image">
-            <img src="images/productos/termofusion_electrofusion/TERMOFUSION/TAPON/TAPON_1.png" alt="Tapón Termofusión">
-            <div class="producto-badge">Termofusión</div>
-          </div>
-          <div class="producto-content">
-            <h3 class="producto-title">Tapón</h3>
-            <p class="producto-description">Accesorio termofusionado para cierre de extremos de tubería HDPE.</p>
-            <div class="producto-specs">
-              <div class="spec-item"><i class="fas fa-ruler"></i><div><span class="spec-label">Diámetro</span><span class="spec-value">20 mm – 315 mm</span></div></div>
-              <div class="spec-item"><i class="fas fa-certificate"></i><div><span class="spec-label">Norma</span><span class="spec-value">NTP ISO 4427</span></div></div>
-            </div>
-            <div class="producto-tags"><span class="tag">Todos los sectores</span></div>
-            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Tap%C3%B3n%20Termofusi%C3%B3n','_blank')">
-              <i class="fab fa-whatsapp"></i> Cotizar
-            </button>
-          </div>
-        </div>
-
-        <div class="producto-card rv" data-category="termofusion">
-          <div class="producto-image">
-            <img src="images/productos/termofusion_electrofusion/TERMOFUSION/TEE/TEE_1.png" alt="Tee Termofusión">
-            <div class="producto-badge">Termofusión</div>
-          </div>
-          <div class="producto-content">
-            <h3 class="producto-title">Tee</h3>
-            <p class="producto-description">Accesorio termofusionado para derivaciones en T en sistemas HDPE.</p>
-            <div class="producto-specs">
-              <div class="spec-item"><i class="fas fa-ruler"></i><div><span class="spec-label">Diámetro</span><span class="spec-value">20 mm – 315 mm</span></div></div>
-              <div class="spec-item"><i class="fas fa-certificate"></i><div><span class="spec-label">Norma</span><span class="spec-value">NTP ISO 4427</span></div></div>
-            </div>
-            <div class="producto-tags"><span class="tag">Todos los sectores</span></div>
-            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Tee%20Termofusi%C3%B3n','_blank')">
-              <i class="fab fa-whatsapp"></i> Cotizar
-            </button>
-          </div>
-        </div>
-
-        <div class="producto-card rv" data-category="termofusion">
-          <div class="producto-image">
-            <img src="images/productos/termofusion_electrofusion/TERMOFUSION/TEE_CRUZ/TEE_CRUZ.png" alt="Tee Cruz Termofusión">
-            <div class="producto-badge">Termofusión</div>
-          </div>
-          <div class="producto-content">
-            <h3 class="producto-title">Tee Cruz</h3>
-            <p class="producto-description">Accesorio termofusionado en forma de cruz para derivaciones múltiples en sistemas HDPE.</p>
-            <div class="producto-specs">
-              <div class="spec-item"><i class="fas fa-ruler"></i><div><span class="spec-label">Diámetro</span><span class="spec-value">63 mm – 315 mm</span></div></div>
-              <div class="spec-item"><i class="fas fa-certificate"></i><div><span class="spec-label">Norma</span><span class="spec-value">NTP ISO 4427</span></div></div>
-            </div>
-            <div class="producto-tags"><span class="tag">Todos los sectores</span></div>
-            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Tee%20Cruz%20Termofusi%C3%B3n','_blank')">
-              <i class="fab fa-whatsapp"></i> Cotizar
-            </button>
-          </div>
-        </div>
-
-        <div class="producto-card rv" data-category="termofusion">
-          <div class="producto-image">
-            <img src="images/productos/termofusion_electrofusion/TERMOFUSION/TEE_REDUCCION/TEE_REDUCCION_1.png" alt="Tee Reducción Termofusión">
-            <div class="producto-badge">Termofusión</div>
-          </div>
-          <div class="producto-content">
-            <h3 class="producto-title">Tee Reducción</h3>
-            <p class="producto-description">Accesorio termofusionado para derivaciones con reducción de diámetro en sistemas HDPE.</p>
-            <div class="producto-specs">
-              <div class="spec-item"><i class="fas fa-ruler"></i><div><span class="spec-label">Diámetro</span><span class="spec-value">32 mm – 315 mm</span></div></div>
-              <div class="spec-item"><i class="fas fa-certificate"></i><div><span class="spec-label">Norma</span><span class="spec-value">NTP ISO 4427</span></div></div>
-            </div>
-            <div class="producto-tags"><span class="tag">Todos los sectores</span></div>
-            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Tee%20Reducci%C3%B3n%20Termofusi%C3%B3n','_blank')">
-              <i class="fab fa-whatsapp"></i> Cotizar
-            </button>
-          </div>
-        </div>
-
-        <div class="producto-card rv" data-category="termofusion">
-          <div class="producto-image">
-            <img src="images/productos/termofusion_electrofusion/TERMOFUSION/YEE_45/YEE_45.png" alt="Yee 45° Termofusión">
-            <div class="producto-badge">Termofusión</div>
-          </div>
-          <div class="producto-content">
-            <h3 class="producto-title">Yee 45°</h3>
-            <p class="producto-description">Accesorio termofusionado tipo Y para derivaciones laterales en 45° en sistemas HDPE.</p>
-            <div class="producto-specs">
-              <div class="spec-item"><i class="fas fa-ruler"></i><div><span class="spec-label">Diámetro</span><span class="spec-value">63 mm – 315 mm</span></div></div>
-              <div class="spec-item"><i class="fas fa-certificate"></i><div><span class="spec-label">Norma</span><span class="spec-value">NTP ISO 4427</span></div></div>
-            </div>
-            <div class="producto-tags"><span class="tag">Todos los sectores</span></div>
-            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Yee%2045%C2%B0%20Termofusi%C3%B3n','_blank')">
-              <i class="fab fa-whatsapp"></i> Cotizar
-            </button>
-          </div>
-        </div>
-
-      </div>
-    </div><!-- /termofusion -->
-
-
-    <!-- ══ ELECTROFUSIÓN ══ -->
-    <div class="productos-category rv" id="electrofusion">
-      <div class="category-header">
-        <div class="category-badge" style="background:linear-gradient(135deg,#E65100 0%,#F57C00 100%)">
-          <i class="fas fa-bolt"></i>
-        </div>
-        <div>
-          <h2 class="category-title">Electrofusión</h2>
-          <p class="category-subtitle">Accesorios soldados eléctricamente para sistemas HDPE</p>
-        </div>
-      </div>
-      <div class="productos-grid">
-
-        <div class="producto-card rv d1" data-category="electrofusion">
-          <div class="producto-image">
-            <img src="images/productos/termofusion_electrofusion/ELECTROFUSION/TAPON/TAPON_ELECTROFUSION.png" alt="Tapón Electrofusión">
-            <div class="producto-badge">Electrofusión</div>
-          </div>
-          <div class="producto-content">
-            <h3 class="producto-title">Tapón</h3>
-            <p class="producto-description">Utilizado para cerrar el extremo de una tubería mediante sistema electrofusionado.</p>
-            <div class="producto-specs">
-              <div class="spec-item"><i class="fas fa-ruler"></i><div><span class="spec-label">Diámetro</span><span class="spec-value">20 mm – 160 mm</span></div></div>
-              <div class="spec-item"><i class="fas fa-certificate"></i><div><span class="spec-label">Norma</span><span class="spec-value">NTP ISO 4427</span></div></div>
-            </div>
-            <div class="producto-tags"><span class="tag">Todos los sectores</span></div>
-            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20TAP%C3%93N','_blank')">
-              <i class="fab fa-whatsapp"></i> Cotizar
-            </button>
-          </div>
-        </div>
-
-        <div class="producto-card rv d2" data-category="electrofusion">
-          <div class="producto-image">
-            <img src="images/productos/termofusion_electrofusion/ELECTROFUSION/ABRAZADERA_360/abrazadera_360.png" alt="Abrazadera 360°">
-            <div class="producto-badge">Electrofusión</div>
-          </div>
-          <div class="producto-content">
-            <h3 class="producto-title">Abrazadera 360°</h3>
-            <p class="producto-description">Accesorio especial para realizar derivaciones o reparaciones sobre tuberías ya instaladas.</p>
-            <div class="producto-specs">
-              <div class="spec-item"><i class="fas fa-ruler"></i><div><span class="spec-label">Diámetro</span><span class="spec-value">50 mm – 200 mm</span></div></div>
-              <div class="spec-item"><i class="fas fa-certificate"></i><div><span class="spec-label">Norma</span><span class="spec-value">NTP ISO 4427</span></div></div>
-            </div>
-            <div class="producto-tags"><span class="tag">Todos los sectores</span></div>
-            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20ABRAZADERA%20360%C2%B0','_blank')">
-              <i class="fab fa-whatsapp"></i> Cotizar
-            </button>
-          </div>
-        </div>
-
-        <div class="producto-card rv" data-category="electrofusion">
-          <div class="producto-image">
-            <img src="images/productos/tuberias_hdpe/CODO_ELECTROFUSION_45.png" alt="Codo 45° Electrofusión">
-            <div class="producto-badge">Electrofusión</div>
-          </div>
-          <div class="producto-content">
-            <h3 class="producto-title">Codo 45°</h3>
-            <p class="producto-description">Accesorio electrofusionado para cambio de dirección en 45° en sistemas HDPE.</p>
-            <div class="producto-specs">
-              <div class="spec-item"><i class="fas fa-ruler"></i><div><span class="spec-label">Diámetro</span><span class="spec-value">20 mm – 160 mm</span></div></div>
-              <div class="spec-item"><i class="fas fa-certificate"></i><div><span class="spec-label">Norma</span><span class="spec-value">NTP ISO 4427</span></div></div>
-            </div>
-            <div class="producto-tags"><span class="tag">Todos los sectores</span></div>
-            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Codo%2045%C2%B0%20Electrofusi%C3%B3n','_blank')">
-              <i class="fab fa-whatsapp"></i> Cotizar
-            </button>
-          </div>
-        </div>
-
-        <div class="producto-card rv" data-category="electrofusion">
-          <div class="producto-image">
-            <img src="images/productos/tuberias_hdpe/CODO_ELECTROFUSION_90.png" alt="Codo 90° Electrofusión">
-            <div class="producto-badge">Electrofusión</div>
-          </div>
-          <div class="producto-content">
-            <h3 class="producto-title">Codo 90°</h3>
-            <p class="producto-description">Accesorio electrofusionado para cambio de dirección en 90° en sistemas HDPE.</p>
-            <div class="producto-specs">
-              <div class="spec-item"><i class="fas fa-ruler"></i><div><span class="spec-label">Diámetro</span><span class="spec-value">20 mm – 160 mm</span></div></div>
-              <div class="spec-item"><i class="fas fa-certificate"></i><div><span class="spec-label">Norma</span><span class="spec-value">NTP ISO 4427</span></div></div>
-            </div>
-            <div class="producto-tags"><span class="tag">Todos los sectores</span></div>
-            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Codo%2090%C2%B0%20Electrofusi%C3%B3n','_blank')">
-              <i class="fab fa-whatsapp"></i> Cotizar
-            </button>
-          </div>
-        </div>
-
-        <div class="producto-card rv" data-category="electrofusion">
-          <div class="producto-image">
-            <img src="images/productos/termofusion_electrofusion/ELECTROFUSION/TEE/TEE_ELECTROFUSION.jpg" alt="Tee Electrofusión">
-            <div class="producto-badge">Electrofusión</div>
-          </div>
-          <div class="producto-content">
-            <h3 class="producto-title">Tee</h3>
-            <p class="producto-description">Accesorio electrofusionado para derivaciones en T en sistemas HDPE.</p>
-            <div class="producto-specs">
-              <div class="spec-item"><i class="fas fa-ruler"></i><div><span class="spec-label">Diámetro</span><span class="spec-value">20 mm – 160 mm</span></div></div>
-              <div class="spec-item"><i class="fas fa-certificate"></i><div><span class="spec-label">Norma</span><span class="spec-value">NTP ISO 4427</span></div></div>
-            </div>
-            <div class="producto-tags"><span class="tag">Todos los sectores</span></div>
-            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Tee%20Electrofusi%C3%B3n','_blank')">
-              <i class="fab fa-whatsapp"></i> Cotizar
-            </button>
-          </div>
-        </div>
-
-        <div class="producto-card rv" data-category="electrofusion">
-          <div class="producto-image">
-            <img src="images/productos/termofusion_electrofusion/ELECTROFUSION/TEE_REDUCCION/TEE_REDUCCION.jpg" alt="Tee Reducción Electrofusión">
-            <div class="producto-badge">Electrofusión</div>
-          </div>
-          <div class="producto-content">
-            <h3 class="producto-title">Tee Reducción</h3>
-            <p class="producto-description">Accesorio electrofusionado para derivaciones con reducción de diámetro en sistemas HDPE.</p>
-            <div class="producto-specs">
-              <div class="spec-item"><i class="fas fa-ruler"></i><div><span class="spec-label">Diámetro</span><span class="spec-value">20 mm – 160 mm</span></div></div>
-              <div class="spec-item"><i class="fas fa-certificate"></i><div><span class="spec-label">Norma</span><span class="spec-value">NTP ISO 4427</span></div></div>
-            </div>
-            <div class="producto-tags"><span class="tag">Todos los sectores</span></div>
-            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Tee%20Reducci%C3%B3n%20Electrofusi%C3%B3n','_blank')">
-              <i class="fab fa-whatsapp"></i> Cotizar
-            </button>
-          </div>
-        </div>
-
-        <div class="producto-card rv" data-category="electrofusion">
-          <div class="producto-image">
-            <img src="images/productos/termofusion_electrofusion/ELECTROFUSION/UNION/UNION.png" alt="Unión Electrofusión">
-            <div class="producto-badge">Electrofusión</div>
-          </div>
-          <div class="producto-content">
-            <h3 class="producto-title">Unión</h3>
-            <p class="producto-description">Accesorio electrofusionado para unión directa de tramos de tubería HDPE.</p>
-            <div class="producto-specs">
-              <div class="spec-item"><i class="fas fa-ruler"></i><div><span class="spec-label">Diámetro</span><span class="spec-value">20 mm – 160 mm</span></div></div>
-              <div class="spec-item"><i class="fas fa-certificate"></i><div><span class="spec-label">Norma</span><span class="spec-value">NTP ISO 4427</span></div></div>
-            </div>
-            <div class="producto-tags"><span class="tag">Todos los sectores</span></div>
-            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Uni%C3%B3n%20Electrofusi%C3%B3n','_blank')">
-              <i class="fab fa-whatsapp"></i> Cotizar
-            </button>
-          </div>
-        </div>
-
-      </div>
-    </div><!-- /electrofusion -->
-
-
-    <!-- ══ PVC ══ -->
+  
+  
+  
+  
+  
+	 <!-- ══ PVC ══ -->
     <div class="productos-category rv" id="pvc">
       <div class="category-header">
-        <div class="category-badge" style="background:linear-gradient(135deg,#1565C0 0%,#1E88E5 100%)">
-          <i class="fas fa-plug"></i>
+        <div class="category-badge" style="background:linear-gradient(135deg,#0277BD 0%,#0288D1 100%)">
         </div>
         <div>
           <h2 class="category-title">PVC</h2>
@@ -2460,11 +1077,12 @@ body.is-hovering #cur-ring{width:52px;height:52px;opacity:.9}
     </div><!-- /pvc -->
 
 
-    <!-- ══ PPH ══ -->
+
+  
+      <!-- ══ PPH ══ -->
     <div class="productos-category rv" id="pph">
       <div class="category-header">
-        <div class="category-badge" style="background:linear-gradient(135deg,#BF360C 0%,#E64A19 100%)">
-          <i class="fas fa-fire"></i>
+        <div class="category-badge" style="background:linear-gradient(135deg,#37474F 0%,#546E7A 100%)">
         </div>
         <div>
           <h2 class="category-title">PPH</h2>
@@ -2609,13 +1227,13 @@ body.is-hovering #cur-ring{width:52px;height:52px;opacity:.9}
       </div>
 
     </div><!-- /pph -->
-
-
-    <!-- ══ CPVC ══ -->
+	
+	
+	
+	    <!-- ══ CPVC ══ -->
     <div class="productos-category rv" id="cpvc">
       <div class="category-header">
-        <div class="category-badge" style="background:linear-gradient(135deg,#AD1457 0%,#D81B60 100%)">
-          <i class="fas fa-temperature-high"></i>
+        <div class="category-badge" style="background:linear-gradient(135deg,#BF360C 0%,#E64A19 100%)">
         </div>
         <div>
           <h2 class="category-title">CPVC</h2>
@@ -2634,13 +1252,219 @@ body.is-hovering #cur-ring{width:52px;height:52px;opacity:.9}
 
       </div>
     </div><!-- /cpvc -->
+	
+	
+    <!-- ══ TUBERÍAS HDPE - MANGUERAS PEBD ══ -->
+    <div class="productos-category rv" id="tuberias-hdpe">
+      <div class="category-header">
+        <div class="category-badge" style="background:linear-gradient(135deg,#1B5E20 0%,#2E7D32 100%)">
+        </div>
+        <div>
+          <h2 class="category-title">Tuberías HDPE — Mangueras PEBD</h2>
+          <p class="category-subtitle">Soluciones completas en polietileno de alta densidad y baja densidad</p>
+        </div>
+      </div>
+
+      <div class="productos-grid">
+
+        <!-- PE-80 -->
+        <div class="producto-card rv d1" data-category="tuberias-hdpe">
+          <div class="producto-image">
+            <img src="images/productos/tuberias_hdpe/HDPE_PE_80.PNG" alt="Tubería HDPE PE-80">
+            <div class="producto-badge">PE-80</div>
+          </div>
+          <div class="producto-content">
+            <h3 class="producto-title">HDPE PE-80</h3>
+            <p class="producto-description">Tubería de polietileno y conexiones para abastecimiento de agua potable.</p>
+            <div class="producto-specs">
+              <div class="spec-item"><i class="fas fa-award"></i><div><span class="spec-label">Norma</span><span class="spec-value">NTP ISO 4427</span></div></div>
+              <div class="spec-item"><i class="fas fa-ruler"></i><div><span class="spec-label">Diámetros</span><span class="spec-value">Ø 16 – 355 mm</span></div></div>
+              <div class="spec-item"><i class="fas fa-gauge-high"></i><div><span class="spec-label">SDR</span><span class="spec-value">SDR 6 – 41</span></div></div>
+            </div>
+            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Tuber%C3%ADa%20HDPE%20PE-80','_blank')">
+              <i class="fab fa-whatsapp"></i> Cotizar
+            </button>
+          </div>
+        </div>
+
+        <!-- PE-100 -->
+        <div class="producto-card rv d2" data-category="tuberias-hdpe">
+          <div class="producto-image">
+            <img src="images/productos/tuberias_hdpe/HDPE_PE_100.PNG" alt="Tubería HDPE PE-100">
+            <div class="producto-badge">PE-100</div>
+          </div>
+          <div class="producto-content">
+            <h3 class="producto-title">HDPE PE-100</h3>
+            <p class="producto-description">Tubería de alta densidad de mayor resistencia para sistemas de agua potable, minería e industria.</p>
+            <div class="producto-specs">
+              <div class="spec-item"><i class="fas fa-award"></i><div><span class="spec-label">Norma</span><span class="spec-value">NTP ISO 4427 / ASTM</span></div></div>
+              <div class="spec-item"><i class="fas fa-ruler"></i><div><span class="spec-label">Diámetros</span><span class="spec-value">Ø 16 – 355 mm</span></div></div>
+              <div class="spec-item"><i class="fas fa-gauge-high"></i><div><span class="spec-label">SDR</span><span class="spec-value">SDR 6 – 41</span></div></div>
+            </div>
+            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Tuber%C3%ADa%20HDPE%20PE-100','_blank')">
+              <i class="fab fa-whatsapp"></i> Cotizar
+            </button>
+          </div>
+        </div>
+
+        <!-- PE-3608 -->
+        <div class="producto-card rv d3" data-category="tuberias-hdpe">
+          <div class="producto-image">
+            <img src="images/productos/tuberias_hdpe/HDPE_PE_3608.PNG" alt="Tubería PE 3608">
+            <div class="producto-badge">PE-3608</div>
+          </div>
+          <div class="producto-content">
+            <h3 class="producto-title">PE-3608</h3>
+            <p class="producto-description">Tubería HDPE de alto desempeño para sistemas bajo estándar ASTM.</p>
+            <div class="producto-specs">
+              <div class="spec-item"><i class="fas fa-award"></i><div><span class="spec-label">Norma</span><span class="spec-value">ASTM D3035 / ASTM F714</span></div></div>
+              <div class="spec-item"><i class="fas fa-ruler"></i><div><span class="spec-label">Diámetros</span><span class="spec-value">Ø 16 – 355 mm</span></div></div>
+            </div>
+            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Tuber%C3%ADa%20PE%203608','_blank')">
+              <i class="fab fa-whatsapp"></i> Cotizar
+            </button>
+          </div>
+        </div>
+
+        <!-- PE-4710 -->
+        <div class="producto-card rv d4" data-category="tuberias-hdpe">
+          <div class="producto-image">
+            <img src="images/productos/tuberias_hdpe/HDPE_PE_4710.PNG" alt="Tubería PE 4710">
+            <div class="producto-badge">PE-4710</div>
+          </div>
+          <div class="producto-content">
+            <h3 class="producto-title">HDPE PE-4710</h3>
+            <p class="producto-description">Tubería HDPE de alto desempeño para sistemas bajo estándar ASTM.</p>
+            <div class="producto-specs">
+              <div class="spec-item"><i class="fas fa-award"></i><div><span class="spec-label">Norma</span><span class="spec-value">ASTM D3035 / F714 · D3350</span></div></div>
+              <div class="spec-item"><i class="fas fa-ruler"></i><div><span class="spec-label">Diámetros</span><span class="spec-value">Ø 16 – 355 mm</span></div></div>
+            </div>
+            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Tuber%C3%ADa%20PE%204710','_blank')">
+              <i class="fab fa-whatsapp"></i> Cotizar
+            </button>
+          </div>
+        </div>
+
+        <!-- Drenaje y alcantarillado -->
+        <div class="producto-card rv" data-category="tuberias-hdpe">
+          <div class="producto-image">
+            <img src="images/productos/tuberias_hdpe/drenaje_alcantarillado.PNG" alt="Tubería HDPE para drenaje">
+            <div class="producto-badge">Drenaje</div>
+          </div>
+          <div class="producto-content">
+            <h3 class="producto-title">Tubería HDPE Drenaje y Alcantarillado</h3>
+            <p class="producto-description">Tubería para sistemas de drenaje y alcantarillado color naranja.</p>
+            <div class="producto-specs">
+              <div class="spec-item"><i class="fas fa-award"></i><div><span class="spec-label">Norma</span><span class="spec-value">NTP ISO 8772</span></div></div>
+              <div class="spec-item"><i class="fas fa-ruler"></i><div><span class="spec-label">Diámetros</span><span class="spec-value">Ø 16 – 355 mm</span></div></div>
+            </div>
+            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Tuber%C3%ADa%20HDPE%20drenaje','_blank')">
+              <i class="fab fa-whatsapp"></i> Cotizar
+            </button>
+          </div>
+        </div>
+
+        <!-- PEBD Lisa -->
+        <div class="producto-card rv" data-category="tuberias-hdpe">
+          <div class="producto-image">
+            <img src="images/productos/tuberias_hdpe/manguera_pebd_lisa.PNG" alt="Manguera PEBD Lisa">
+            <div class="producto-badge">PEBD-Lisa</div>
+          </div>
+          <div class="producto-content">
+            <h3 class="producto-title">Manguera PEBD Lisa</h3>
+            <p class="producto-description">Manguera flexible de polietileno de baja densidad para riego por goteo y conducción ligera de agua.</p>
+            <div class="producto-specs">
+              <div class="spec-item"><i class="fas fa-ruler"></i><div><span class="spec-label">Diámetros</span><span class="spec-value">Ø 16 – 32 mm</span></div></div>
+              <div class="spec-item"><i class="fas fa-gauge-high"></i><div><span class="spec-label">Presión</span><span class="spec-value">Baja presión</span></div></div>
+            </div>
+            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Manguera%20PEBD%20Lisa','_blank')">
+              <i class="fab fa-whatsapp"></i> Cotizar
+            </button>
+          </div>
+        </div>
+
+        <!-- Manguera corrugada PEBD -->
+        <div class="producto-card rv" data-category="tuberias-hdpe">
+          <div class="producto-image">
+            <img src="images/productos/tuberias_hdpe/manguera_corrugada.PNG" alt="Manguera corrugada PEBD">
+            <div class="producto-badge">Corrugada</div>
+          </div>
+          <div class="producto-content">
+            <h3 class="producto-title">Manguera Corrugada PEBD</h3>
+            <p class="producto-description">Manguera corrugada para protección y paso de cables.</p>
+            <div class="producto-specs">
+              <div class="spec-item"><i class="fas fa-ruler"></i><div><span class="spec-label">Diámetros</span><span class="spec-value">Ø 16 – 50 mm</span></div></div>
+              <div class="spec-item"><i class="fas fa-gauge-high"></i><div><span class="spec-label">Presión</span><span class="spec-value">No presurizada</span></div></div>
+            </div>
+            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Manguera%20corrugada','_blank')">
+              <i class="fab fa-whatsapp"></i> Cotizar
+            </button>
+          </div>
+        </div>
+
+      </div><!-- /productos-grid -->
+    </div><!-- /tuberias-hdpe -->
+
+
+
+ <!-- ══ GEOSINTÉTICOS ══ -->
+    <div class="productos-category rv" id="geosinteticos">
+      <div class="category-header">
+        <div class="category-badge" style="background:linear-gradient(135deg,#4E342E 0%,#6D4C41 100%)">
+        </div>
+        <div>
+          <h2 class="category-title">Geosintéticos</h2>
+          <p class="category-subtitle">Geomembranas y soluciones para minería, relleno sanitario e impermeabilización</p>
+        </div>
+      </div>
+      <div class="productos-grid">
+
+        <div class="producto-card rv d1" data-category="geosinteticos">
+          <div class="producto-image">
+            <img src="images/productos/geosinteticos/GEOMEMBRANAS/GEOMEMBRANA_1.png" alt="Geomembrana HDPE">
+            <div class="producto-badge">HDPE</div>
+          </div>
+          <div class="producto-content">
+            <h3 class="producto-title">Geomembrana HDPE</h3>
+            <p class="producto-description">Lámina impermeable de polietileno de alta densidad para impermeabilización de piscinas, lagunas, rellenos sanitarios y minería.</p>
+            <div class="producto-specs">
+              <div class="spec-item"><i class="fas fa-ruler"></i><div><span class="spec-label">Espesor</span><span class="spec-value">0.5 mm – 3.0 mm</span></div></div>
+              <div class="spec-item"><i class="fas fa-certificate"></i><div><span class="spec-label">Norma</span><span class="spec-value">ASTM D7176 / GRI GM13</span></div></div>
+            </div>
+            <div class="producto-tags"><span class="tag">Minería</span><span class="tag">Relleno Sanitario</span><span class="tag">Agricultura</span></div>
+            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Geomembrana%20HDPE','_blank')">
+              <i class="fab fa-whatsapp"></i> Cotizar
+            </button>
+          </div>
+        </div>
+
+        <div class="producto-card rv d2" data-category="geosinteticos">
+          <div class="producto-image">
+            <img src="images/productos/geotextil/geotextil.png" alt="Geotextil">
+            <div class="producto-badge">Geosintético</div>
+          </div>
+          <div class="producto-content">
+            <h3 class="producto-title">Geotextil</h3>
+            <p class="producto-description">Tela geosintética permeable para separación, filtración, drenaje y refuerzo en obras civiles y minería.</p>
+            <div class="producto-specs">
+              <div class="spec-item"><i class="fas fa-layer-group"></i><div><span class="spec-label">Tipo</span><span class="spec-value">Tejido / No tejido</span></div></div>
+              <div class="spec-item"><i class="fas fa-certificate"></i><div><span class="spec-label">Norma</span><span class="spec-value">ASTM D4751</span></div></div>
+            </div>
+            <div class="producto-tags"><span class="tag">Minería</span><span class="tag">Construcción</span><span class="tag">Drenaje</span></div>
+            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Geotextil','_blank')">
+              <i class="fab fa-whatsapp"></i> Cotizar
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div><!-- /geosinteticos -->
 
 
     <!-- ══ TANQUES Y BIODIGESTORES ══ -->
     <div class="productos-category rv" id="tanques-biodigestores">
       <div class="category-header">
-        <div class="category-badge" style="background:linear-gradient(135deg,#00695C 0%,#00897B 100%)">
-          <i class="fas fa-database"></i>
+        <div class="category-badge" style="background:linear-gradient(135deg,#00696C 0%,#00838F 100%)">
         </div>
         <div>
           <h2 class="category-title">Tanques y Biodigestores</h2>
@@ -2659,6 +1483,1199 @@ body.is-hovering #cur-ring{width:52px;height:52px;opacity:.9}
 
       </div>
     </div><!-- /tanques-biodigestores -->
+	
+	
+	   <!-- ══ SUCCIÓN Y DESCARGA ══ -->
+    <div class="productos-category rv" id="succion-descarga">
+      <div class="category-header">
+        <div class="category-badge" style="background:linear-gradient(135deg,#006064 0%,#00838F 100%)">
+        </div>
+        <div>
+          <h2 class="category-title">Succión y Descarga</h2>
+          <p class="category-subtitle">Soluciones versátiles para succión y descarga de múltiples materiales</p>
+        </div>
+      </div>
+      <div class="productos-grid">
+
+        <div class="producto-card rv d1" data-category="succion-descarga">
+          <div class="producto-image">
+            <img src="images/productos/succion_descarga/manguera_succion_naranja.png" alt="Manguera Succión Naranja">
+            <div class="producto-badge">Rígido Flexible</div>
+          </div>
+          <div class="producto-content">
+            <h3 class="producto-title">Manguera Succión Naranja</h3>
+            <p class="producto-description">Manguera flexible de PVC reforzada con espiral rígido para succión y descarga de agua y líquidos.</p>
+            <div class="producto-specs">
+              <div class="spec-item"><i class="fas fa-ruler"></i><div><span class="spec-label">Rollos 50 mts · Uso comercial</span><span class="spec-value">1" – 1¼" – 1½" · 2" · 3" · 4" · 5" · 6"</span></div></div>
+            </div>
+            <div class="producto-tags"><span class="tag">Agrícola</span><span class="tag">Industrial</span><span class="tag">Construcción</span></div>
+            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Manguera%20Succi%C3%B3n%20Naranja','_blank')">
+              <i class="fab fa-whatsapp"></i> Cotizar
+            </button>
+          </div>
+        </div>
+
+        <div class="producto-card rv d2" data-category="succion-descarga">
+          <div class="producto-image">
+            <img src="images/productos/succion_descarga/manguera_succion_amarilla.png" alt="Manguera Succión Amarilla">
+            <div class="producto-badge">Rígido Flexible</div>
+          </div>
+          <div class="producto-content">
+            <h3 class="producto-title">Manguera Succión Amarilla</h3>
+            <p class="producto-description">Manguera flexible de PVC reforzada con espiral rígido, color amarillo.</p>
+            <div class="producto-specs">
+              <div class="spec-item"><i class="fas fa-ruler"></i><div><span class="spec-label">Diámetros</span><span class="spec-value">Ø 1" – 4"</span></div></div>
+            </div>
+            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Manguera%20Succion%20amarilla','_blank')">
+              <i class="fab fa-whatsapp"></i> Cotizar
+            </button>
+          </div>
+        </div>
+
+        <div class="producto-card rv d3" data-category="succion-descarga">
+          <div class="producto-image">
+            <img src="images/productos/succion_descarga/manguera_succion_azul.png" alt="Manguera Succión Azul">
+            <div class="producto-badge">Rígido Flexible</div>
+          </div>
+          <div class="producto-content">
+            <h3 class="producto-title">Manguera Succión Azul</h3>
+            <p class="producto-description">Manguera flexible de PVC reforzada con espiral rígido, color azul.</p>
+            <div class="producto-specs">
+              <div class="spec-item"><i class="fas fa-ruler"></i><div><span class="spec-label">Diámetros</span><span class="spec-value">Ø 1" – 4"</span></div></div>
+            </div>
+            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Manguera%20Succion%20azul','_blank')">
+              <i class="fab fa-whatsapp"></i> Cotizar
+            </button>
+          </div>
+        </div>
+
+        <div class="producto-card rv d4" data-category="succion-descarga">
+          <div class="producto-image">
+            <img src="images/productos/succion_descarga/manguera_succion_verde .png" alt="Manguera Succión Verde">
+            <div class="producto-badge">Rígido Flexible</div>
+          </div>
+          <div class="producto-content">
+            <h3 class="producto-title">Manguera Succión Verde</h3>
+            <p class="producto-description">Manguera flexible de PVC reforzada con espiral rígido, color verde.</p>
+            <div class="producto-specs">
+              <div class="spec-item"><i class="fas fa-ruler"></i><div><span class="spec-label">Diámetros</span><span class="spec-value">Ø 1" – 4"</span></div></div>
+            </div>
+            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Manguera%20Succion%20verde','_blank')">
+              <i class="fab fa-whatsapp"></i> Cotizar
+            </button>
+          </div>
+        </div>
+
+        <div class="producto-card rv" data-category="succion-descarga">
+          <div class="producto-image">
+            <img src="images/productos/succion_descarga/mangueras_sanitarias_alimentaria.jpeg" alt="Manguera Sanitaria Industria Alimentaria">
+            <div class="producto-badge">Sanitaria</div>
+          </div>
+          <div class="producto-content">
+            <h3 class="producto-title">Manguera Sanitaria — Industria Alimentaria</h3>
+            <p class="producto-description">Manguera PVC con alambre para uso de alimentos.</p>
+            <div class="producto-specs">
+              <div class="spec-item"><i class="fas fa-ruler"></i><div><span class="spec-label">Diámetros</span><span class="spec-value">1" · 2" · 3" · 4" · 6"</span></div></div>
+            </div>
+            <div class="producto-tags"><span class="tag">Industrial</span><span class="tag">Neumático</span><span class="tag">Talleres</span></div>
+            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Manguera%20Sanitaria%20para%20Industria%20Alimentaria','_blank')">
+              <i class="fab fa-whatsapp"></i> Cotizar
+            </button>
+          </div>
+        </div>
+
+        <div class="producto-card rv" data-category="succion-descarga">
+          <div class="producto-image">
+            <img src="images/productos/succion_descarga/manguera_descarga_aire.png" alt="Manguera Descarga Aire">
+            <div class="producto-badge">Descarga</div>
+          </div>
+          <div class="producto-content">
+            <h3 class="producto-title">Manguera Descarga Aire</h3>
+            <p class="producto-description">Manguera para descarga de aire a presión, diseñada para sistemas neumáticos y compresoras.</p>
+            <div class="producto-specs">
+              <div class="spec-item"><i class="fas fa-wind"></i><div><span class="spec-label">Uso</span><span class="spec-value">Neumático / Aire a presión</span></div></div>
+            </div>
+            <div class="producto-tags"><span class="tag">Industrial</span><span class="tag">Neumático</span></div>
+            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Manguera%20Descarga%20Aire','_blank')">
+              <i class="fab fa-whatsapp"></i> Cotizar
+            </button>
+          </div>
+        </div>
+
+        <div class="producto-card rv" data-category="succion-descarga">
+          <div class="producto-image">
+            <img src="images/productos/succion_descarga/manguera_descarga_azul.png" alt="Manguera Descarga Azul">
+            <div class="producto-badge">Descarga</div>
+          </div>
+          <div class="producto-content">
+            <h3 class="producto-title">Manguera Descarga Azul</h3>
+            <p class="producto-description">Manguera de descarga de agua, color azul, para bombas y sistemas de riego.</p>
+            <div class="producto-specs">
+              <div class="spec-item"><i class="fas fa-water"></i><div><span class="spec-label">Uso</span><span class="spec-value">Descarga de agua</span></div></div>
+              <div class="spec-item"><i class="fas fa-info-circle"></i><div><span class="spec-label">Detalle</span><span class="spec-value">Color azul</span></div></div>
+            </div>
+            <div class="producto-tags"><span class="tag">Agrícola</span><span class="tag">Industrial</span></div>
+            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Manguera%20Descarga%20Azul','_blank')">
+              <i class="fab fa-whatsapp"></i> Cotizar
+            </button>
+          </div>
+        </div>
+
+        <div class="producto-card rv" data-category="succion-descarga">
+          <div class="producto-image">
+            <img src="images/productos/succion_descarga/succion_cristal.png" alt="Tubos Succión Cristal">
+            <div class="producto-badge">Succión</div>
+          </div>
+          <div class="producto-content">
+            <h3 class="producto-title">Tubos Succión Cristal</h3>
+            <p class="producto-description">Tubos de succión transparentes (cristal) con espiral rígido para bombeo y conducción de líquidos.</p>
+            <div class="producto-specs">
+              <div class="spec-item"><i class="fas fa-eye"></i><div><span class="spec-label">Detalle</span><span class="spec-value">Transparente</span></div></div>
+            </div>
+            <div class="producto-tags"><span class="tag">Agrícola</span><span class="tag">Industrial</span></div>
+            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Tubos%20Succi%C3%B3n%20Cristal','_blank')">
+              <i class="fab fa-whatsapp"></i> Cotizar
+            </button>
+          </div>
+        </div>
+
+        <div class="producto-card rv" data-category="succion-descarga">
+          <div class="producto-image">
+            <img src="images/productos/succion_descarga/tubo_succion_naranja.png" alt="Tubos Succión Naranja">
+            <div class="producto-badge">Succión</div>
+          </div>
+          <div class="producto-content">
+            <h3 class="producto-title">Tubos Succión Naranja</h3>
+            <p class="producto-description">Tubos de succión color naranja con espiral rígido para bombeo y conducción de agua.</p>
+            <div class="producto-specs">
+              <div class="spec-item"><i class="fas fa-info-circle"></i><div><span class="spec-label">Detalle</span><span class="spec-value">Color naranja</span></div></div>
+            </div>
+            <div class="producto-tags"><span class="tag">Agrícola</span><span class="tag">Industrial</span></div>
+            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Tubos%20Succi%C3%B3n%20Naranja','_blank')">
+              <i class="fab fa-whatsapp"></i> Cotizar
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div><!-- /succion-descarga -->
+
+
+
+   <!-- ══ ACOPLES POR COMPRESIÓN ══ -->
+    <div class="productos-category rv" id="acoples-por-compresion">
+      <div class="category-header">
+        <div class="category-badge" style="background:linear-gradient(135deg,#6A1B9A 0%,#8E24AA 100%)">
+        </div>
+        <div>
+          <h2 class="category-title">Acoples por Compresión</h2>
+          <p class="category-subtitle">Accesorios y conexiones para sistemas de riego y conducción</p>
+        </div>
+      </div>
+      <div class="productos-grid">
+
+        <div class="producto-card rv d1" data-category="acoples-por-compresion">
+          <div class="producto-image">
+            <img src="images/productos/acoples_por_compresion/CODO_R_HEMBRA/CODO_R_HEMBRA_2.png" alt="Codo 90° Rosca Hembra">
+            <div class="producto-badge">Polipropileno</div>
+          </div>
+          <div class="producto-content">
+            <h3 class="producto-title">Codo 90° Rosca Hembra</h3>
+            <p class="producto-description">Codo con salida roscada para cambio de dirección en 90°.</p>
+            <div class="producto-specs">
+              <div class="spec-item"><i class="fas fa-ruler"></i><div><span class="spec-label">Diámetro</span><span class="spec-value">16 mm – 110 mm (½" – 4")</span></div></div>
+            </div>
+            <div class="producto-tags"><span class="tag">Agrícola</span></div>
+            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Codo%2090%C2%B0%20Rosca%20Hembra','_blank')">
+              <i class="fab fa-whatsapp"></i> Cotizar
+            </button>
+          </div>
+        </div>
+
+        <div class="producto-card rv d2" data-category="acoples-por-compresion">
+          <div class="producto-image">
+            <img src="images/productos/acoples_por_compresion/UNION_ENLACE/UNION_ENLACE_1.png" alt="Unión Enlace">
+            <div class="producto-badge">Polipropileno</div>
+          </div>
+          <div class="producto-content">
+            <h3 class="producto-title">Unión Enlace</h3>
+            <p class="producto-description">Accesorio para unión directa de tuberías.</p>
+            <div class="producto-specs">
+              <div class="spec-item"><i class="fas fa-ruler"></i><div><span class="spec-label">Diámetro</span><span class="spec-value">16 mm – 110 mm (½" – 4")</span></div></div>
+            </div>
+            <div class="producto-tags"><span class="tag">Agrícola</span></div>
+            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Uni%C3%B3n%20Enlace','_blank')">
+              <i class="fab fa-whatsapp"></i> Cotizar
+            </button>
+          </div>
+        </div>
+
+        <div class="producto-card rv d3" data-category="acoples-por-compresion">
+          <div class="producto-image">
+            <img src="images/productos/acoples_por_compresion/UNION_ENLACE_REDUCIDO/UNION_ENLACE_REDUCIDO_4.png" alt="Unión Enlace Reducido">
+            <div class="producto-badge">Polipropileno</div>
+          </div>
+          <div class="producto-content">
+            <h3 class="producto-title">Unión Enlace Reducido</h3>
+            <p class="producto-description">Unión con reducción integrada para distintos diámetros.</p>
+            <div class="producto-specs">
+              <div class="spec-item"><i class="fas fa-ruler"></i><div><span class="spec-label">Diámetro</span><span class="spec-value">16 mm – 110 mm (½" – 4")</span></div></div>
+            </div>
+            <div class="producto-tags"><span class="tag">Agrícola</span></div>
+            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Uni%C3%B3n%20Enlace%20Reducido','_blank')">
+              <i class="fab fa-whatsapp"></i> Cotizar
+            </button>
+          </div>
+        </div>
+
+        <div class="producto-card rv d4" data-category="acoples-por-compresion">
+          <div class="producto-image">
+            <img src="images/productos/acoples_por_compresion/CONECTOR_INICIAL/CONECTOR_INICIAL_1.png" alt="Conector Inicial">
+            <div class="producto-badge">Polipropileno</div>
+          </div>
+          <div class="producto-content">
+            <h3 class="producto-title">Conector Inicial</h3>
+            <p class="producto-description">Accesorio para inicio de línea de riego.</p>
+            <div class="producto-specs">
+              <div class="spec-item"><i class="fas fa-ruler"></i><div><span class="spec-label">Diámetro</span><span class="spec-value">16 mm – 110 mm (½" – 4")</span></div></div>
+            </div>
+            <div class="producto-tags"><span class="tag">Agrícola</span></div>
+            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Conector%20Inicial','_blank')">
+              <i class="fab fa-whatsapp"></i> Cotizar
+            </button>
+          </div>
+        </div>
+
+        <div class="producto-card rv" data-category="acoples-por-compresion">
+          <div class="producto-image">
+            <img src="images/productos/acoples_por_compresion/SACABOCADO/sacabocado_2.png" alt="Sacabocado">
+            <div class="producto-badge">Acero / Plástico</div>
+          </div>
+          <div class="producto-content">
+            <h3 class="producto-title">Sacabocado</h3>
+            <p class="producto-description">Herramienta para perforación en líneas de riego.</p>
+            <div class="producto-specs">
+              <div class="spec-item"><i class="fas fa-ruler"></i><div><span class="spec-label">Diámetro</span><span class="spec-value">16 mm – 110 mm (½" – 4")</span></div></div>
+            </div>
+            <div class="producto-tags"><span class="tag">Agrícola</span></div>
+            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Sacabocado','_blank')">
+              <i class="fab fa-whatsapp"></i> Cotizar
+            </button>
+          </div>
+        </div>
+
+        <div class="producto-card rv" data-category="acoples-por-compresion">
+          <div class="producto-image">
+            <img src="images/productos/acoples_por_compresion/ABRAZADERA_COLLARIN/ABRAZADERA_COLLARIN_1.png" alt="Abrazadera Collarín">
+            <div class="producto-badge">PP/HDPE</div>
+          </div>
+          <div class="producto-content">
+            <h3 class="producto-title">Abrazadera — Collarín</h3>
+            <p class="producto-description">Accesorio para derivación y sujeción en tuberías.</p>
+            <div class="producto-specs">
+              <div class="spec-item"><i class="fas fa-ruler"></i><div><span class="spec-label">Diámetro</span><span class="spec-value">16 mm – 110 mm (½" – 4")</span></div></div>
+            </div>
+            <div class="producto-tags"><span class="tag">Agrícola</span><span class="tag">Agroindustria</span><span class="tag">Minero</span></div>
+            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20ABRAZADERA%20%E2%80%93%20COLLARIN','_blank')">
+              <i class="fab fa-whatsapp"></i> Cotizar
+            </button>
+          </div>
+        </div>
+
+        <div class="producto-card rv" data-category="acoples-por-compresion">
+          <div class="producto-image">
+            <img src="images/productos/acoples_por_compresion/ASPERSOR_CIRCULAR/ASPERSOR_CIRCULAR_2.png" alt="Aspersor Circular">
+            <div class="producto-badge">Plástico técnico</div>
+          </div>
+          <div class="producto-content">
+            <h3 class="producto-title">Aspersor Circular</h3>
+            <p class="producto-description">Aspersor para riego con patrón circular, ideal para jardinería y cultivos.</p>
+            <div class="producto-specs">
+              <div class="spec-item"><i class="fas fa-tachometer-alt"></i><div><span class="spec-label">Cobertura</span><span class="spec-value">Uniforme; fácil instalación</span></div></div>
+            </div>
+            <div class="producto-tags"><span class="tag">Agrícola</span><span class="tag">Agroindustria</span></div>
+            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20ASPERSOR%20CIRCULAR','_blank')">
+              <i class="fab fa-whatsapp"></i> Cotizar
+            </button>
+          </div>
+        </div>
+
+        <div class="producto-card rv" data-category="acoples-por-compresion">
+          <div class="producto-image">
+            <img src="images/productos/acoples_por_compresion/ASPERSOR_SECTORIAL/ASPERSOR_SECTORIAL_2.png" alt="Aspersor Sectorial">
+            <div class="producto-badge">Plástico técnico</div>
+          </div>
+          <div class="producto-content">
+            <h3 class="producto-title">Aspersor Sectorial</h3>
+            <p class="producto-description">Aspersor ajustable por sectores, recomendado para riego dirigido.</p>
+            <div class="producto-specs">
+              <div class="spec-item"><i class="fas fa-tachometer-alt"></i><div><span class="spec-label">Ajuste</span><span class="spec-value">Ángulo regulable; eficiente</span></div></div>
+            </div>
+            <div class="producto-tags"><span class="tag">Agrícola</span><span class="tag">Agroindustria</span></div>
+            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20ASPERSOR%20SECTORIAL','_blank')">
+              <i class="fab fa-whatsapp"></i> Cotizar
+            </button>
+          </div>
+        </div>
+
+        <div class="producto-card rv" data-category="acoples-por-compresion">
+          <div class="producto-image">
+            <img src="images/productos/acoples_por_compresion/GOTEROS/goteros_2.png" alt="Goteros">
+            <div class="producto-badge">Plástico técnico</div>
+          </div>
+          <div class="producto-content">
+            <h3 class="producto-title">Goteros</h3>
+            <p class="producto-description">Emisores para riego por goteo que optimizan el uso de agua en agricultura.</p>
+            <div class="producto-specs">
+              <div class="spec-item"><i class="fas fa-tachometer-alt"></i><div><span class="spec-label">Caudal</span><span class="spec-value">Controlado; ahorro de agua</span></div></div>
+            </div>
+            <div class="producto-tags"><span class="tag">Agrícola</span><span class="tag">Agroindustria</span></div>
+            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20GOTEROS','_blank')">
+              <i class="fab fa-whatsapp"></i> Cotizar
+            </button>
+          </div>
+        </div>
+
+        <div class="producto-card rv" data-category="acoples-por-compresion">
+          <div class="producto-image">
+            <img src="images/productos/acoples_por_compresion/CODO_MANG_MANGUERA/CODO_MANG_ MANGUERA_1.png" alt="Codo Mang-Manguera">
+            <div class="producto-badge">PP</div>
+          </div>
+          <div class="producto-content">
+            <h3 class="producto-title">Codo Mang-Manguera</h3>
+            <p class="producto-description">Codo para unión de manguera a manguera en sistemas de riego.</p>
+            <div class="producto-specs">
+              <div class="spec-item"><i class="fas fa-ruler"></i><div><span class="spec-label">Diámetro</span><span class="spec-value">16 mm – 110 mm (½" – 4")</span></div></div>
+            </div>
+            <div class="producto-tags"><span class="tag">Agrícola</span><span class="tag">Agroindustria</span><span class="tag">Minero</span></div>
+            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20CODO%20MANG-MANGUERA','_blank')">
+              <i class="fab fa-whatsapp"></i> Cotizar
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div><!-- /acoples-por-compresion -->
+
+
+
+    <!-- ══ TERMOFUSIÓN ══ -->
+    <div class="productos-category rv" id="termofusion">
+      <div class="category-header">
+        <div class="category-badge" style="background:linear-gradient(135deg,#B71C1C 0%,#C62828 100%)">
+        </div>
+        <div>
+          <h2 class="category-title">Termofusión</h2>
+          <p class="category-subtitle">Accesorios soldados por termofusión para sistemas HDPE de alta presión</p>
+        </div>
+      </div>
+      <div class="productos-grid">
+
+        <div class="producto-card rv d1" data-category="termofusion">
+          <div class="producto-image">
+            <img src="images/productos/tuberias_hdpe/hdpe_termofusion_22_5.png" alt="Codo 22.5°">
+            <div class="producto-badge">Termofusión</div>
+          </div>
+          <div class="producto-content">
+            <h3 class="producto-title">Codo 22.5°</h3>
+            <p class="producto-description">Accesorio que permite un cambio suave de dirección en 22.5°, ideal para ajustes progresivos en líneas de conducción.</p>
+            <div class="producto-specs">
+              <div class="spec-item"><i class="fas fa-ruler"></i><div><span class="spec-label">Diámetro</span><span class="spec-value">110 mm – 200 mm</span></div></div>
+              <div class="spec-item"><i class="fas fa-certificate"></i><div><span class="spec-label">Norma</span><span class="spec-value">NTP ISO 4427</span></div></div>
+            </div>
+            <div class="producto-tags"><span class="tag">Todos los sectores</span></div>
+            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20CODO%2022.5%C2%B0','_blank')">
+              <i class="fab fa-whatsapp"></i> Cotizar
+            </button>
+          </div>
+        </div>
+
+        <div class="producto-card rv d2" data-category="termofusion">
+          <div class="producto-image">
+            <img src="images/productos/tuberias_hdpe/hdpe_termofusion_45.png" alt="Codo 45°">
+            <div class="producto-badge">Termofusión</div>
+          </div>
+          <div class="producto-content">
+            <h3 class="producto-title">Codo 45°</h3>
+            <p class="producto-description">Permite desviar la tubería en 45°, reduciendo tensiones en la instalación.</p>
+            <div class="producto-specs">
+              <div class="spec-item"><i class="fas fa-ruler"></i><div><span class="spec-label">Diámetro</span><span class="spec-value">20 mm – 315 mm</span></div></div>
+              <div class="spec-item"><i class="fas fa-certificate"></i><div><span class="spec-label">Norma</span><span class="spec-value">NTP ISO 4427</span></div></div>
+            </div>
+            <div class="producto-tags"><span class="tag">Todos los sectores</span></div>
+            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20CODO%2045%C2%B0','_blank')">
+              <i class="fab fa-whatsapp"></i> Cotizar
+            </button>
+          </div>
+        </div>
+
+        <div class="producto-card rv" data-category="termofusion">
+          <div class="producto-image">
+            <img src="images/productos/tuberias_hdpe/HDPE_TERMOFUSION_90.png" alt="Codo 90° Termofusión">
+            <div class="producto-badge">Termofusión</div>
+          </div>
+          <div class="producto-content">
+            <h3 class="producto-title">Codo 90°</h3>
+            <p class="producto-description">Accesorio termofusionado para cambio de dirección en 90° en sistemas HDPE.</p>
+            <div class="producto-specs">
+              <div class="spec-item"><i class="fas fa-ruler"></i><div><span class="spec-label">Diámetro</span><span class="spec-value">20 mm – 315 mm</span></div></div>
+              <div class="spec-item"><i class="fas fa-certificate"></i><div><span class="spec-label">Norma</span><span class="spec-value">NTP ISO 4427</span></div></div>
+            </div>
+            <div class="producto-tags"><span class="tag">Todos los sectores</span></div>
+            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20CODO%2090%C2%B0%20Termofusi%C3%B3n','_blank')">
+              <i class="fab fa-whatsapp"></i> Cotizar
+            </button>
+          </div>
+        </div>
+
+        <div class="producto-card rv" data-category="termofusion">
+          <div class="producto-image">
+            <img src="images/productos/termofusion_electrofusion/TERMOFUSION/REDUCCION/REDUCCION_1.png" alt="Reducción Termofusión">
+            <div class="producto-badge">Termofusión</div>
+          </div>
+          <div class="producto-content">
+            <h3 class="producto-title">Reducción</h3>
+            <p class="producto-description">Accesorio termofusionado para reducir el diámetro en líneas de conducción HDPE.</p>
+            <div class="producto-specs">
+              <div class="spec-item"><i class="fas fa-ruler"></i><div><span class="spec-label">Diámetro</span><span class="spec-value">20 mm – 315 mm</span></div></div>
+              <div class="spec-item"><i class="fas fa-certificate"></i><div><span class="spec-label">Norma</span><span class="spec-value">NTP ISO 4427</span></div></div>
+            </div>
+            <div class="producto-tags"><span class="tag">Todos los sectores</span></div>
+            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Reducci%C3%B3n%20Termofusi%C3%B3n','_blank')">
+              <i class="fab fa-whatsapp"></i> Cotizar
+            </button>
+          </div>
+        </div>
+
+        <div class="producto-card rv" data-category="termofusion">
+          <div class="producto-image">
+            <img src="images/productos/termofusion_electrofusion/TERMOFUSION/STUB_END_FLANGE/STUB_END_FLANGE_2.png" alt="Stub End Flange Termofusión">
+            <div class="producto-badge">Termofusión</div>
+          </div>
+          <div class="producto-content">
+            <h3 class="producto-title">Stub End (Flange)</h3>
+            <p class="producto-description">Accesorio termofusionado tipo flange para conexión bridada en sistemas HDPE.</p>
+            <div class="producto-specs">
+              <div class="spec-item"><i class="fas fa-ruler"></i><div><span class="spec-label">Diámetro</span><span class="spec-value">63 mm – 315 mm</span></div></div>
+              <div class="spec-item"><i class="fas fa-certificate"></i><div><span class="spec-label">Norma</span><span class="spec-value">NTP ISO 4427</span></div></div>
+            </div>
+            <div class="producto-tags"><span class="tag">Todos los sectores</span></div>
+            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Stub%20End%20Flange%20Termofusi%C3%B3n','_blank')">
+              <i class="fab fa-whatsapp"></i> Cotizar
+            </button>
+          </div>
+        </div>
+
+        <div class="producto-card rv" data-category="termofusion">
+          <div class="producto-image">
+            <img src="images/productos/termofusion_electrofusion/TERMOFUSION/TAPON/TAPON_1.png" alt="Tapón Termofusión">
+            <div class="producto-badge">Termofusión</div>
+          </div>
+          <div class="producto-content">
+            <h3 class="producto-title">Tapón</h3>
+            <p class="producto-description">Accesorio termofusionado para cierre de extremos de tubería HDPE.</p>
+            <div class="producto-specs">
+              <div class="spec-item"><i class="fas fa-ruler"></i><div><span class="spec-label">Diámetro</span><span class="spec-value">20 mm – 315 mm</span></div></div>
+              <div class="spec-item"><i class="fas fa-certificate"></i><div><span class="spec-label">Norma</span><span class="spec-value">NTP ISO 4427</span></div></div>
+            </div>
+            <div class="producto-tags"><span class="tag">Todos los sectores</span></div>
+            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Tap%C3%B3n%20Termofusi%C3%B3n','_blank')">
+              <i class="fab fa-whatsapp"></i> Cotizar
+            </button>
+          </div>
+        </div>
+
+        <div class="producto-card rv" data-category="termofusion">
+          <div class="producto-image">
+            <img src="images/productos/termofusion_electrofusion/TERMOFUSION/TEE/TEE_1.png" alt="Tee Termofusión">
+            <div class="producto-badge">Termofusión</div>
+          </div>
+          <div class="producto-content">
+            <h3 class="producto-title">Tee</h3>
+            <p class="producto-description">Accesorio termofusionado para derivaciones en T en sistemas HDPE.</p>
+            <div class="producto-specs">
+              <div class="spec-item"><i class="fas fa-ruler"></i><div><span class="spec-label">Diámetro</span><span class="spec-value">20 mm – 315 mm</span></div></div>
+              <div class="spec-item"><i class="fas fa-certificate"></i><div><span class="spec-label">Norma</span><span class="spec-value">NTP ISO 4427</span></div></div>
+            </div>
+            <div class="producto-tags"><span class="tag">Todos los sectores</span></div>
+            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Tee%20Termofusi%C3%B3n','_blank')">
+              <i class="fab fa-whatsapp"></i> Cotizar
+            </button>
+          </div>
+        </div>
+
+        <div class="producto-card rv" data-category="termofusion">
+          <div class="producto-image">
+            <img src="images/productos/termofusion_electrofusion/TERMOFUSION/TEE_CRUZ/TEE_CRUZ.png" alt="Tee Cruz Termofusión">
+            <div class="producto-badge">Termofusión</div>
+          </div>
+          <div class="producto-content">
+            <h3 class="producto-title">Tee Cruz</h3>
+            <p class="producto-description">Accesorio termofusionado en forma de cruz para derivaciones múltiples en sistemas HDPE.</p>
+            <div class="producto-specs">
+              <div class="spec-item"><i class="fas fa-ruler"></i><div><span class="spec-label">Diámetro</span><span class="spec-value">63 mm – 315 mm</span></div></div>
+              <div class="spec-item"><i class="fas fa-certificate"></i><div><span class="spec-label">Norma</span><span class="spec-value">NTP ISO 4427</span></div></div>
+            </div>
+            <div class="producto-tags"><span class="tag">Todos los sectores</span></div>
+            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Tee%20Cruz%20Termofusi%C3%B3n','_blank')">
+              <i class="fab fa-whatsapp"></i> Cotizar
+            </button>
+          </div>
+        </div>
+
+        <div class="producto-card rv" data-category="termofusion">
+          <div class="producto-image">
+            <img src="images/productos/termofusion_electrofusion/TERMOFUSION/TEE_REDUCCION/TEE_REDUCCION_1.png" alt="Tee Reducción Termofusión">
+            <div class="producto-badge">Termofusión</div>
+          </div>
+          <div class="producto-content">
+            <h3 class="producto-title">Tee Reducción</h3>
+            <p class="producto-description">Accesorio termofusionado para derivaciones con reducción de diámetro en sistemas HDPE.</p>
+            <div class="producto-specs">
+              <div class="spec-item"><i class="fas fa-ruler"></i><div><span class="spec-label">Diámetro</span><span class="spec-value">32 mm – 315 mm</span></div></div>
+              <div class="spec-item"><i class="fas fa-certificate"></i><div><span class="spec-label">Norma</span><span class="spec-value">NTP ISO 4427</span></div></div>
+            </div>
+            <div class="producto-tags"><span class="tag">Todos los sectores</span></div>
+            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Tee%20Reducci%C3%B3n%20Termofusi%C3%B3n','_blank')">
+              <i class="fab fa-whatsapp"></i> Cotizar
+            </button>
+          </div>
+        </div>
+
+        <div class="producto-card rv" data-category="termofusion">
+          <div class="producto-image">
+            <img src="images/productos/termofusion_electrofusion/TERMOFUSION/YEE_45/YEE_45.png" alt="Yee 45° Termofusión">
+            <div class="producto-badge">Termofusión</div>
+          </div>
+          <div class="producto-content">
+            <h3 class="producto-title">Yee 45°</h3>
+            <p class="producto-description">Accesorio termofusionado tipo Y para derivaciones laterales en 45° en sistemas HDPE.</p>
+            <div class="producto-specs">
+              <div class="spec-item"><i class="fas fa-ruler"></i><div><span class="spec-label">Diámetro</span><span class="spec-value">63 mm – 315 mm</span></div></div>
+              <div class="spec-item"><i class="fas fa-certificate"></i><div><span class="spec-label">Norma</span><span class="spec-value">NTP ISO 4427</span></div></div>
+            </div>
+            <div class="producto-tags"><span class="tag">Todos los sectores</span></div>
+            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Yee%2045%C2%B0%20Termofusi%C3%B3n','_blank')">
+              <i class="fab fa-whatsapp"></i> Cotizar
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div><!-- /termofusion -->
+
+
+    <!-- ══ ELECTROFUSIÓN ══ -->
+    <div class="productos-category rv" id="electrofusion">
+      <div class="category-header">
+        <div class="category-badge" style="background:linear-gradient(135deg,#E65100 0%,#EF6C00 100%)">
+        </div>
+        <div>
+          <h2 class="category-title">Electrofusión</h2>
+          <p class="category-subtitle">Accesorios soldados eléctricamente para sistemas HDPE</p>
+        </div>
+      </div>
+      <div class="productos-grid">
+
+        <div class="producto-card rv d1" data-category="electrofusion">
+          <div class="producto-image">
+            <img src="images/productos/termofusion_electrofusion/ELECTROFUSION/TAPON/TAPON_ELECTROFUSION.png" alt="Tapón Electrofusión">
+            <div class="producto-badge">Electrofusión</div>
+          </div>
+          <div class="producto-content">
+            <h3 class="producto-title">Tapón</h3>
+            <p class="producto-description">Utilizado para cerrar el extremo de una tubería mediante sistema electrofusionado.</p>
+            <div class="producto-specs">
+              <div class="spec-item"><i class="fas fa-ruler"></i><div><span class="spec-label">Diámetro</span><span class="spec-value">20 mm – 160 mm</span></div></div>
+              <div class="spec-item"><i class="fas fa-certificate"></i><div><span class="spec-label">Norma</span><span class="spec-value">NTP ISO 4427</span></div></div>
+            </div>
+            <div class="producto-tags"><span class="tag">Todos los sectores</span></div>
+            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20TAP%C3%93N','_blank')">
+              <i class="fab fa-whatsapp"></i> Cotizar
+            </button>
+          </div>
+        </div>
+
+        <div class="producto-card rv d2" data-category="electrofusion">
+          <div class="producto-image">
+            <img src="images/productos/termofusion_electrofusion/ELECTROFUSION/ABRAZADERA_360/abrazadera_360.png" alt="Abrazadera 360°">
+            <div class="producto-badge">Electrofusión</div>
+          </div>
+          <div class="producto-content">
+            <h3 class="producto-title">Abrazadera 360°</h3>
+            <p class="producto-description">Accesorio especial para realizar derivaciones o reparaciones sobre tuberías ya instaladas.</p>
+            <div class="producto-specs">
+              <div class="spec-item"><i class="fas fa-ruler"></i><div><span class="spec-label">Diámetro</span><span class="spec-value">50 mm – 200 mm</span></div></div>
+              <div class="spec-item"><i class="fas fa-certificate"></i><div><span class="spec-label">Norma</span><span class="spec-value">NTP ISO 4427</span></div></div>
+            </div>
+            <div class="producto-tags"><span class="tag">Todos los sectores</span></div>
+            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20ABRAZADERA%20360%C2%B0','_blank')">
+              <i class="fab fa-whatsapp"></i> Cotizar
+            </button>
+          </div>
+        </div>
+
+        <div class="producto-card rv" data-category="electrofusion">
+          <div class="producto-image">
+            <img src="images/productos/tuberias_hdpe/CODO_ELECTROFUSION_45.png" alt="Codo 45° Electrofusión">
+            <div class="producto-badge">Electrofusión</div>
+          </div>
+          <div class="producto-content">
+            <h3 class="producto-title">Codo 45°</h3>
+            <p class="producto-description">Accesorio electrofusionado para cambio de dirección en 45° en sistemas HDPE.</p>
+            <div class="producto-specs">
+              <div class="spec-item"><i class="fas fa-ruler"></i><div><span class="spec-label">Diámetro</span><span class="spec-value">20 mm – 160 mm</span></div></div>
+              <div class="spec-item"><i class="fas fa-certificate"></i><div><span class="spec-label">Norma</span><span class="spec-value">NTP ISO 4427</span></div></div>
+            </div>
+            <div class="producto-tags"><span class="tag">Todos los sectores</span></div>
+            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Codo%2045%C2%B0%20Electrofusi%C3%B3n','_blank')">
+              <i class="fab fa-whatsapp"></i> Cotizar
+            </button>
+          </div>
+        </div>
+
+        <div class="producto-card rv" data-category="electrofusion">
+          <div class="producto-image">
+            <img src="images/productos/tuberias_hdpe/CODO_ELECTROFUSION_90.png" alt="Codo 90° Electrofusión">
+            <div class="producto-badge">Electrofusión</div>
+          </div>
+          <div class="producto-content">
+            <h3 class="producto-title">Codo 90°</h3>
+            <p class="producto-description">Accesorio electrofusionado para cambio de dirección en 90° en sistemas HDPE.</p>
+            <div class="producto-specs">
+              <div class="spec-item"><i class="fas fa-ruler"></i><div><span class="spec-label">Diámetro</span><span class="spec-value">20 mm – 160 mm</span></div></div>
+              <div class="spec-item"><i class="fas fa-certificate"></i><div><span class="spec-label">Norma</span><span class="spec-value">NTP ISO 4427</span></div></div>
+            </div>
+            <div class="producto-tags"><span class="tag">Todos los sectores</span></div>
+            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Codo%2090%C2%B0%20Electrofusi%C3%B3n','_blank')">
+              <i class="fab fa-whatsapp"></i> Cotizar
+            </button>
+          </div>
+        </div>
+
+        <div class="producto-card rv" data-category="electrofusion">
+          <div class="producto-image">
+            <img src="images/productos/termofusion_electrofusion/ELECTROFUSION/TEE/TEE_ELECTROFUSION.jpg" alt="Tee Electrofusión">
+            <div class="producto-badge">Electrofusión</div>
+          </div>
+          <div class="producto-content">
+            <h3 class="producto-title">Tee</h3>
+            <p class="producto-description">Accesorio electrofusionado para derivaciones en T en sistemas HDPE.</p>
+            <div class="producto-specs">
+              <div class="spec-item"><i class="fas fa-ruler"></i><div><span class="spec-label">Diámetro</span><span class="spec-value">20 mm – 160 mm</span></div></div>
+              <div class="spec-item"><i class="fas fa-certificate"></i><div><span class="spec-label">Norma</span><span class="spec-value">NTP ISO 4427</span></div></div>
+            </div>
+            <div class="producto-tags"><span class="tag">Todos los sectores</span></div>
+            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Tee%20Electrofusi%C3%B3n','_blank')">
+              <i class="fab fa-whatsapp"></i> Cotizar
+            </button>
+          </div>
+        </div>
+
+        <div class="producto-card rv" data-category="electrofusion">
+          <div class="producto-image">
+            <img src="images/productos/termofusion_electrofusion/ELECTROFUSION/TEE_REDUCCION/TEE_REDUCCION.jpg" alt="Tee Reducción Electrofusión">
+            <div class="producto-badge">Electrofusión</div>
+          </div>
+          <div class="producto-content">
+            <h3 class="producto-title">Tee Reducción</h3>
+            <p class="producto-description">Accesorio electrofusionado para derivaciones con reducción de diámetro en sistemas HDPE.</p>
+            <div class="producto-specs">
+              <div class="spec-item"><i class="fas fa-ruler"></i><div><span class="spec-label">Diámetro</span><span class="spec-value">20 mm – 160 mm</span></div></div>
+              <div class="spec-item"><i class="fas fa-certificate"></i><div><span class="spec-label">Norma</span><span class="spec-value">NTP ISO 4427</span></div></div>
+            </div>
+            <div class="producto-tags"><span class="tag">Todos los sectores</span></div>
+            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Tee%20Reducci%C3%B3n%20Electrofusi%C3%B3n','_blank')">
+              <i class="fab fa-whatsapp"></i> Cotizar
+            </button>
+          </div>
+        </div>
+
+        <div class="producto-card rv" data-category="electrofusion">
+          <div class="producto-image">
+            <img src="images/productos/termofusion_electrofusion/ELECTROFUSION/UNION/UNION.png" alt="Unión Electrofusión">
+            <div class="producto-badge">Electrofusión</div>
+          </div>
+          <div class="producto-content">
+            <h3 class="producto-title">Unión</h3>
+            <p class="producto-description">Accesorio electrofusionado para unión directa de tramos de tubería HDPE.</p>
+            <div class="producto-specs">
+              <div class="spec-item"><i class="fas fa-ruler"></i><div><span class="spec-label">Diámetro</span><span class="spec-value">20 mm – 160 mm</span></div></div>
+              <div class="spec-item"><i class="fas fa-certificate"></i><div><span class="spec-label">Norma</span><span class="spec-value">NTP ISO 4427</span></div></div>
+            </div>
+            <div class="producto-tags"><span class="tag">Todos los sectores</span></div>
+            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Uni%C3%B3n%20Electrofusi%C3%B3n','_blank')">
+              <i class="fab fa-whatsapp"></i> Cotizar
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div><!-- /electrofusion -->
+
+
+
+
+    <!-- MODAL IMAGEN -->
+    <div id="detalle-modal" class="dm-overlay" onclick="if(event.target===this)cerrarDetalleModal()">
+      <div class="dm-box">
+        <button class="dm-close" onclick="cerrarDetalleModal()" aria-label="Cerrar"><i class="fas fa-times"></i></button>
+        <button class="dm-nav dm-prev" onclick="navDetalle(-1)" aria-label="Anterior"><i class="fas fa-chevron-left"></i></button>
+        <img id="detalle-modal-img" src="" alt="" class="dm-img">
+        <button class="dm-nav dm-next" onclick="navDetalle(1)" aria-label="Siguiente"><i class="fas fa-chevron-right"></i></button>
+        <p id="detalle-modal-cap" class="dm-cap"></p>
+        <div id="detalle-modal-dots" class="dm-dots"></div>
+      </div>
+    </div>
+
+
+ 
+
+
+    <!-- ══ MANGUERAS PVC ══ -->
+    <div class="productos-category rv" id="mangueras-pvc">
+      <div class="category-header">
+        <div class="category-badge" style="background:linear-gradient(135deg,#2E7D32 0%,#388E3C 100%)">
+        </div>
+        <div>
+          <h2 class="category-title">Mangueras PVC</h2>
+          <p class="category-subtitle">Amplia gama para jardín, industria, gas y alta presión</p>
+        </div>
+      </div>
+      <div class="productos-grid">
+
+        <div class="producto-card rv d1" data-category="mangueras-pvc">
+          <div class="producto-image">
+            <img src="images/productos/mangueras_pvc/manguera_reforzada_jardin.png" alt="Manguera Reforzada Jardín">
+            <div class="producto-badge">Línea jardín</div>
+          </div>
+          <div class="producto-content">
+            <h3 class="producto-title">Manguera Reforzada Jardín</h3>
+            <p class="producto-description">Manguera para riego con franja roja identificadora.</p>
+            <div class="producto-specs">
+              <div class="spec-item"><i class="fas fa-ruler"></i><div><span class="spec-label">Diámetro</span><span class="spec-value">½" · 5/8" · ¾" · 1"</span></div></div>
+              <div class="spec-item"><i class="fas fa-info-circle"></i><div><span class="spec-label">Detalle</span><span class="spec-value">Franja roja</span></div></div>
+            </div>
+            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Manguera%20Reforzada%20Jard%C3%ADn%20Franja%20Roja','_blank')">
+              <i class="fab fa-whatsapp"></i> Cotizar
+            </button>
+          </div>
+        </div>
+
+        <div class="producto-card rv d2" data-category="mangueras-pvc">
+          <div class="producto-image">
+            <img src="images/productos/mangueras_pvc/maguera_reforzada_transparente.png" alt="Manguera Reforzada Cristal Franja Naranja">
+            <div class="producto-badge">Línea industrial</div>
+          </div>
+          <div class="producto-content">
+            <h3 class="producto-title">Manguera Reforzada Cristal</h3>
+            <p class="producto-description">Manguera transparente con franja naranja identificadora.</p>
+            <div class="producto-specs">
+              <div class="spec-item"><i class="fas fa-ruler"></i><div><span class="spec-label">Diámetro</span><span class="spec-value">¼" · 5/16" · 3/8" · ½" · 5/8" · ¾" · 1"</span></div></div>
+              <div class="spec-item"><i class="fas fa-info-circle"></i><div><span class="spec-label">Detalle</span><span class="spec-value">Franja naranja</span></div></div>
+            </div>
+            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Manguera%20Reforzada%20Cristal%20Franja%20Naranja','_blank')">
+              <i class="fab fa-whatsapp"></i> Cotizar
+            </button>
+          </div>
+        </div>
+
+        <div class="producto-card rv d3" data-category="mangueras-pvc">
+          <div class="producto-image">
+            <img src="images/productos/mangueras_pvc/maguera_reforzada_transparente_sf.png" alt="Manguera Reforzada sin franja">
+            <div class="producto-badge">Línea baja presión</div>
+          </div>
+          <div class="producto-content">
+            <h3 class="producto-title">Manguera Reforzada Sin Franja</h3>
+            <p class="producto-description">Manguera transparente reforzada sin franja.</p>
+            <div class="producto-specs">
+              <div class="spec-item"><i class="fas fa-ruler"></i><div><span class="spec-label">Diámetro</span><span class="spec-value">3/8" · ½" · 5/8" · ¾" · 1"</span></div></div>
+            </div>
+            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Manguera%20Reforzada%20Cristal%20Sin%20Franja','_blank')">
+              <i class="fab fa-whatsapp"></i> Cotizar
+            </button>
+          </div>
+        </div>
+
+        <div class="producto-card rv d4" data-category="mangueras-pvc">
+          <div class="producto-image">
+            <img src="images/productos/mangueras_pvc/manguera_alta_presion_cristal.png" alt="Manguera Alta Presión 300 PSI">
+            <div class="producto-badge">Alta presión</div>
+          </div>
+          <div class="producto-content">
+            <h3 class="producto-title">Manguera de Alta Presión 300 PSI</h3>
+            <p class="producto-description">Manguera de alta presión 300 PSI color cristal.</p>
+            <div class="producto-specs">
+              <div class="spec-item"><i class="fas fa-ruler"></i><div><span class="spec-label">Diámetro</span><span class="spec-value">½"</span></div></div>
+              <div class="spec-item"><i class="fas fa-tachometer-alt"></i><div><span class="spec-label">Presión</span><span class="spec-value">300 PSI</span></div></div>
+            </div>
+            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Manguera%20Alta%20Presi%C3%B3n%20300%20PSI%20Cristal','_blank')">
+              <i class="fab fa-whatsapp"></i> Cotizar
+            </button>
+          </div>
+        </div>
+
+        <div class="producto-card rv" data-category="mangueras-pvc">
+          <div class="producto-image">
+            <img src="images/productos/mangueras_pvc/manguera_duplex_liviana.png" alt="Manguera Duplex Liviana">
+            <div class="producto-badge">Línea duplex</div>
+          </div>
+          <div class="producto-content">
+            <h3 class="producto-title">Manguera Duplex Liviana</h3>
+            <p class="producto-description">Manguera duplex liviana con franja amarilla identificadora.</p>
+            <div class="producto-specs">
+              <div class="spec-item"><i class="fas fa-ruler"></i><div><span class="spec-label">Diámetro</span><span class="spec-value">5/8" · ¾" · 1"</span></div></div>
+              <div class="spec-item"><i class="fas fa-info-circle"></i><div><span class="spec-label">Detalle</span><span class="spec-value">Franja amarilla</span></div></div>
+            </div>
+            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Manguera%20Duplex%20Liviana%20Franja%20Amarilla','_blank')">
+              <i class="fab fa-whatsapp"></i> Cotizar
+            </button>
+          </div>
+        </div>
+
+        <div class="producto-card rv" data-category="mangueras-pvc">
+          <div class="producto-image">
+            <img src="images/productos/mangueras_pvc/manguera_duplex_pesada.png" alt="Manguera Duplex Pesada">
+            <div class="producto-badge">Línea duplex</div>
+          </div>
+          <div class="producto-content">
+            <h3 class="producto-title">Manguera Duplex Pesada</h3>
+            <p class="producto-description">Manguera duplex pesada con franja roja identificadora.</p>
+            <div class="producto-specs">
+              <div class="spec-item"><i class="fas fa-ruler"></i><div><span class="spec-label">Diámetro</span><span class="spec-value">5/8" · ¾" · 1"</span></div></div>
+              <div class="spec-item"><i class="fas fa-info-circle"></i><div><span class="spec-label">Detalle</span><span class="spec-value">Franja roja</span></div></div>
+            </div>
+            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Manguera%20Duplex%20Pesada%20Franja%20Roja','_blank')">
+              <i class="fab fa-whatsapp"></i> Cotizar
+            </button>
+          </div>
+        </div>
+
+        <div class="producto-card rv" data-category="mangueras-pvc">
+          <div class="producto-image">
+            <img src="images/productos/mangueras_pvc/manguera_presion_gle_aire.png" alt="Manguera de Presión GLP/Aire">
+            <div class="producto-badge">Gas</div>
+          </div>
+          <div class="producto-content">
+            <h3 class="producto-title">Manguera de Presión GLP/Aire</h3>
+            <p class="producto-description">Manguera GLP y aire a presión, color rojo con franja azul identificadora.</p>
+            <div class="producto-specs">
+              <div class="spec-item"><i class="fas fa-tachometer-alt"></i><div><span class="spec-label">Presión</span><span class="spec-value">Media presión</span></div></div>
+              <div class="spec-item"><i class="fas fa-info-circle"></i><div><span class="spec-label">Detalle</span><span class="spec-value">Rojo con franja azul</span></div></div>
+            </div>
+            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Manguera%20Presi%C3%B3n%20GLP%20Aire%20Rojo%20Franja%20Azul','_blank')">
+              <i class="fab fa-whatsapp"></i> Cotizar
+            </button>
+          </div>
+        </div>
+
+        <div class="producto-card rv" data-category="mangueras-pvc">
+          <div class="producto-image">
+            <img src="images/productos/mangueras_pvc/manguera_glp_premium.png" alt="Manguera GLP Premium">
+            <div class="producto-badge">Gas</div>
+          </div>
+          <div class="producto-content">
+            <h3 class="producto-title">Manguera GLP Premium</h3>
+            <p class="producto-description">Manguera GLP premium color naranja.</p>
+            <div class="producto-specs">
+              <div class="spec-item"><i class="fas fa-ruler"></i><div><span class="spec-label">Diámetro</span><span class="spec-value">3/8"</span></div></div>
+              <div class="spec-item"><i class="fas fa-info-circle"></i><div><span class="spec-label">Detalle</span><span class="spec-value">Color naranja</span></div></div>
+            </div>
+            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Manguera%20GLP%20Premium%20Naranja','_blank')">
+              <i class="fab fa-whatsapp"></i> Cotizar
+            </button>
+          </div>
+        </div>
+
+        <div class="producto-card rv" data-category="mangueras-pvc">
+          <div class="producto-image">
+            <img src="images/productos/mangueras_pvc/manguera_jebe_lona_reforzada_f_azul.png" alt="Manguera Jebe y Lona Reforzada">
+            <div class="producto-badge">Jebe y lona</div>
+          </div>
+          <div class="producto-content">
+            <h3 class="producto-title">Manguera Jebe y Lona Reforzada</h3>
+            <p class="producto-description">Manguera reforzada jebe y lona alta presión de gas y aire, 300 PSI, color negro con franja azul.</p>
+            <div class="producto-specs">
+              <div class="spec-item"><i class="fas fa-tachometer-alt"></i><div><span class="spec-label">Presión</span><span class="spec-value">300 PSI</span></div></div>
+              <div class="spec-item"><i class="fas fa-info-circle"></i><div><span class="spec-label">Detalle</span><span class="spec-value">Negro con franja azul</span></div></div>
+            </div>
+            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Manguera%20Jebe%20y%20Lona%20Reforzada','_blank')">
+              <i class="fab fa-whatsapp"></i> Cotizar
+            </button>
+          </div>
+        </div>
+
+        <div class="producto-card rv" data-category="mangueras-pvc">
+          <div class="producto-image">
+            <img src="images/productos/mangueras_pvc/layflat.png" alt="Manguera Layflat Azul">
+            <div class="producto-badge">Layflat</div>
+          </div>
+          <div class="producto-content">
+            <h3 class="producto-title">Manguera PVC Layflat Azul</h3>
+            <p class="producto-description">Manguera plana para conducción de agua, fácil de enrollar y transportar.</p>
+            <div class="producto-specs">
+              <div class="spec-item"><i class="fas fa-ruler"></i><div><span class="spec-label">Diámetro</span><span class="spec-value">1" · 1½" · 2" · 3" · 4" · 6"</span></div></div>
+              <div class="spec-item"><i class="fas fa-info-circle"></i><div><span class="spec-label">Detalle</span><span class="spec-value">Azul</span></div></div>
+            </div>
+            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Manguera%20PVC%20Layflat%20Azul','_blank')">
+              <i class="fab fa-whatsapp"></i> Cotizar
+            </button>
+          </div>
+        </div>
+
+        <div class="producto-card rv" data-category="mangueras-pvc">
+          <div class="producto-image">
+            <img src="images/productos/mimbre/mimbre.png" alt="Mimbre Cordón Sólido PVC">
+            <div class="producto-badge">Cordón sólido</div>
+          </div>
+          <div class="producto-content">
+            <h3 class="producto-title">Mimbre — Cordón Sólido de PVC</h3>
+            <p class="producto-description">Cordones de fibra sintética de PVC para sillas y muebles artesanales.</p>
+            <div class="producto-specs">
+              <div class="spec-item"><i class="fas fa-palette"></i><div><span class="spec-label">Colores</span><span class="spec-value">Varios colores disponibles</span></div></div>
+              <div class="spec-item"><i class="fas fa-info-circle"></i><div><span class="spec-label">Uso</span><span class="spec-value">Sillas y muebles artesanales</span></div></div>
+            </div>
+            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Mimbre','_blank')">
+              <i class="fab fa-whatsapp"></i> Cotizar
+            </button>
+          </div>
+        </div>
+
+        <div class="producto-card rv" data-category="mangueras-pvc">
+          <div class="producto-image">
+            <img src="images/productos/mangueras_pvc/manguera_gas_domestico_azul_f_blanca.png" alt="Manguera de Gas Doméstico Azul con franja blanca">
+            <div class="producto-badge">Gas doméstico</div>
+          </div>
+          <div class="producto-content">
+            <h3 class="producto-title">Manguera de Gas Doméstico (Azul con franja blanca)</h3>
+            <p class="producto-description">Manguera para gas doméstico, color azul con franja blanca identificadora.</p>
+            <div class="producto-specs">
+              <div class="spec-item"><i class="fas fa-fire"></i><div><span class="spec-label">Uso</span><span class="spec-value">Gas doméstico</span></div></div>
+              <div class="spec-item"><i class="fas fa-info-circle"></i><div><span class="spec-label">Detalle</span><span class="spec-value">Azul con franja blanca</span></div></div>
+            </div>
+            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Manguera%20Gas%20Dom%C3%A9stico%20Azul','_blank')">
+              <i class="fab fa-whatsapp"></i> Cotizar
+            </button>
+          </div>
+        </div>
+
+        <div class="producto-card rv" data-category="mangueras-pvc">
+          <div class="producto-image">
+            <img src="images/productos/mangueras_pvc/manguera_gas_domestico_naranja_f_blanca.png" alt="Manguera de Gas Doméstico Naranja con franja blanca">
+            <div class="producto-badge">Gas doméstico</div>
+          </div>
+          <div class="producto-content">
+            <h3 class="producto-title">Manguera de Gas Doméstico (Naranja con franja blanca)</h3>
+            <p class="producto-description">Manguera para gas doméstico, color naranja con franja blanca identificadora.</p>
+            <div class="producto-specs">
+              <div class="spec-item"><i class="fas fa-fire"></i><div><span class="spec-label">Uso</span><span class="spec-value">Gas doméstico</span></div></div>
+              <div class="spec-item"><i class="fas fa-info-circle"></i><div><span class="spec-label">Detalle</span><span class="spec-value">Naranja con franja blanca</span></div></div>
+            </div>
+            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Manguera%20Gas%20Dom%C3%A9stico%20Naranja','_blank')">
+              <i class="fab fa-whatsapp"></i> Cotizar
+            </button>
+          </div>
+        </div>
+
+        <div class="producto-card rv" data-category="mangueras-pvc">
+          <div class="producto-image">
+            <img src="images/productos/mangueras_pvc/manguera_gas_domestico_rojo_f_blanca.png" alt="Manguera de Gas Doméstico Rojo con franja blanca">
+            <div class="producto-badge">Gas doméstico</div>
+          </div>
+          <div class="producto-content">
+            <h3 class="producto-title">Manguera de Gas Doméstico (Rojo con franja blanca)</h3>
+            <p class="producto-description">Manguera para gas doméstico, color rojo con franja blanca identificadora.</p>
+            <div class="producto-specs">
+              <div class="spec-item"><i class="fas fa-fire"></i><div><span class="spec-label">Uso</span><span class="spec-value">Gas doméstico</span></div></div>
+              <div class="spec-item"><i class="fas fa-info-circle"></i><div><span class="spec-label">Detalle</span><span class="spec-value">Rojo con franja blanca</span></div></div>
+            </div>
+            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Manguera%20Gas%20Dom%C3%A9stico%20Rojo','_blank')">
+              <i class="fab fa-whatsapp"></i> Cotizar
+            </button>
+          </div>
+        </div>
+
+        <div class="producto-card rv" data-category="mangueras-pvc">
+          <div class="producto-image">
+            <img src="images/productos/mangueras_pvc/manguera_nivel_azulino.png" alt="Manguera de Nivel">
+            <div class="producto-badge">Nivel</div>
+          </div>
+          <div class="producto-content">
+            <h3 class="producto-title">Manguera de Nivel</h3>
+            <p class="producto-description">Manguera transparente de PVC para nivelación en obras de construcción y carpintería.</p>
+            <div class="producto-specs">
+              <div class="spec-item"><i class="fas fa-ruler-horizontal"></i><div><span class="spec-label">Uso</span><span class="spec-value">Nivelación en construcción</span></div></div>
+            </div>
+            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Manguera%20de%20Nivel','_blank')">
+              <i class="fab fa-whatsapp"></i> Cotizar
+            </button>
+          </div>
+        </div>
+
+        <div class="producto-card rv" data-category="mangueras-pvc">
+          <div class="producto-image">
+            <img src="images/productos/mangueras_pvc/manguera_automotriz.png" alt="Manguera de Uso Automotriz">
+            <div class="producto-badge">Automotriz</div>
+          </div>
+          <div class="producto-content">
+            <h3 class="producto-title">Manguera de Uso Automotriz</h3>
+            <p class="producto-description">Manguera de PVC para aplicaciones automotrices, resistente a aceites y combustibles.</p>
+            <div class="producto-specs">
+              <div class="spec-item"><i class="fas fa-car"></i><div><span class="spec-label">Uso</span><span class="spec-value">Automotriz</span></div></div>
+            </div>
+            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Manguera%20Uso%20Automotriz','_blank')">
+              <i class="fab fa-whatsapp"></i> Cotizar
+            </button>
+          </div>
+        </div>
+
+
+
+        <div class="producto-card rv" data-category="mangueras-pvc">
+          <div class="producto-image">
+            <img src="images/productos/mangueras_pvc/manguera_jebe_lona_reforzada_f_amarilla.png" alt="Manguera Jebe y Lona Reforzada Franja Amarilla">
+            <div class="producto-badge">Jebe y lona</div>
+          </div>
+          <div class="producto-content">
+            <h3 class="producto-title">Manguera Jebe y Lona Reforzada (Franja Amarilla)</h3>
+            <p class="producto-description">Manguera reforzada jebe y lona de alta presión con franja amarilla identificadora.</p>
+            <div class="producto-specs">
+              <div class="spec-item"><i class="fas fa-info-circle"></i><div><span class="spec-label">Detalle</span><span class="spec-value">Franja amarilla</span></div></div>
+            </div>
+            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Manguera%20Jebe%20y%20Lona%20Franja%20Amarilla','_blank')">
+              <i class="fab fa-whatsapp"></i> Cotizar
+            </button>
+          </div>
+        </div>
+
+        <div class="producto-card rv" data-category="mangueras-pvc">
+          <div class="producto-image">
+            <img src="images/productos/mangueras_pvc/manguera_jebe_lona_reforzada_f_naranja.png" alt="Manguera Jebe y Lona Reforzada Franja Naranja">
+            <div class="producto-badge">Jebe y lona</div>
+          </div>
+          <div class="producto-content">
+            <h3 class="producto-title">Manguera Jebe y Lona Reforzada (Franja Naranja)</h3>
+            <p class="producto-description">Manguera reforzada jebe y lona de alta presión con franja naranja identificadora.</p>
+            <div class="producto-specs">
+              <div class="spec-item"><i class="fas fa-info-circle"></i><div><span class="spec-label">Detalle</span><span class="spec-value">Franja naranja</span></div></div>
+            </div>
+            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Manguera%20Jebe%20y%20Lona%20Franja%20Naranja','_blank')">
+              <i class="fab fa-whatsapp"></i> Cotizar
+            </button>
+          </div>
+        </div>
+
+        <div class="producto-card rv" data-category="mangueras-pvc">
+          <div class="producto-image">
+            <img src="images/productos/mangueras_pvc/manguera_milimetrica.png" alt="Manguera Milimétrica">
+            <div class="producto-badge">Milimétrica</div>
+          </div>
+          <div class="producto-content">
+            <h3 class="producto-title">Manguera Milimétrica</h3>
+            <p class="producto-description">Manguera de PVC de dimensiones milimétricas para aplicaciones de precisión en laboratorio e industria.</p>
+            <div class="producto-specs">
+              <div class="spec-item"><i class="fas fa-microscope"></i><div><span class="spec-label">Uso</span><span class="spec-value">Laboratorio / Precisión</span></div></div>
+            </div>
+            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Manguera%20Milit%C3%A9trica','_blank')">
+              <i class="fab fa-whatsapp"></i> Cotizar
+            </button>
+          </div>
+        </div>
+
+
+        <div class="producto-card rv" data-category="mangueras-pvc">
+          <div class="producto-image">
+            <img src="images/productos/mangueras_pvc/manguera_reforzada_gnv.png" alt="Manguera Reforzada GNV">
+            <div class="producto-badge">GNV</div>
+          </div>
+          <div class="producto-content">
+            <h3 class="producto-title">Manguera Reforzada GNV</h3>
+            <p class="producto-description">Manguera reforzada para gas natural vehicular (GNV), alta resistencia a la presión.</p>
+            <div class="producto-specs">
+              <div class="spec-item"><i class="fas fa-gas-pump"></i><div><span class="spec-label">Uso</span><span class="spec-value">Gas natural vehicular</span></div></div>
+            </div>
+            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20Manguera%20Reforzada%20GNV','_blank')">
+              <i class="fab fa-whatsapp"></i> Cotizar
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div><!-- /mangueras-pvc -->
+
+
+    <!-- ══ VÁLVULAS ══ -->
+    <div class="productos-category rv" id="valvulas">
+      <div class="category-header">
+        <div class="category-badge" style="background:linear-gradient(135deg,#01579B 0%,#0277BD 100%)">
+        </div>
+        <div>
+          <h2 class="category-title">Válvulas</h2>
+          <p class="category-subtitle">Control y regulación de fluidos para todos los sectores</p>
+        </div>
+      </div>
+      <div class="productos-grid">
+
+        <div class="producto-card rv d1" data-category="valvulas">
+          <div class="producto-image">
+            <img src="images/productos/valvulas/VALVULA_ACOPLE_RAPIDO/VALVULA_ACOPLE_RAPIDO_2.png" alt="Válvula Acople Rápido">
+            <div class="producto-badge">Polipropileno</div>
+          </div>
+          <div class="producto-content">
+            <h3 class="producto-title">Válvula Acople Rápido</h3>
+            <p class="producto-description">Sistema de conexión rápida para conducción.</p>
+            <div class="producto-specs">
+              <div class="spec-item"><i class="fas fa-ruler"></i><div><span class="spec-label">Diámetro</span><span class="spec-value">Variable</span></div></div>
+              <div class="spec-item"><i class="fas fa-tachometer-alt"></i><div><span class="spec-label">Presión</span><span class="spec-value">Media presión</span></div></div>
+            </div>
+            <div class="producto-tags"><span class="tag">Agrícola</span><span class="tag">Minero</span></div>
+            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20V%C3%A1lvula%20Acople%20R%C3%A1pido','_blank')">
+              <i class="fab fa-whatsapp"></i> Cotizar
+            </button>
+          </div>
+        </div>
+
+        <div class="producto-card rv d2" data-category="valvulas">
+          <div class="producto-image">
+            <img src="images/productos/valvulas/VALVULA_CHECK_DE_PIE_R_HEMBRA/VALVULA_CHECK_DE_PIE_R_HEMBRA_2.png" alt="Válvula Check de Pie">
+            <div class="producto-badge">Check</div>
+          </div>
+          <div class="producto-content">
+            <h3 class="producto-title">Válvula Check de Pie</h3>
+            <p class="producto-description">Válvula de retención tipo pie para evitar el retroceso de fluido en sistemas de bombeo.</p>
+            <div class="producto-specs">
+              <div class="spec-item"><i class="fas fa-ruler"></i><div><span class="spec-label">Diámetro</span><span class="spec-value">Variable</span></div></div>
+              <div class="spec-item"><i class="fas fa-tachometer-alt"></i><div><span class="spec-label">Presión</span><span class="spec-value">Media / Alta presión</span></div></div>
+            </div>
+            <div class="producto-tags"><span class="tag">Agrícola</span><span class="tag">Industrial</span><span class="tag">Minero</span></div>
+            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20V%C3%A1lvula%20Check%20de%20Pie','_blank')">
+              <i class="fab fa-whatsapp"></i> Cotizar
+            </button>
+          </div>
+        </div>
+
+        <div class="producto-card rv d3" data-category="valvulas">
+          <div class="producto-image">
+            <img src="images/productos/valvulas/VALVULA_RAMAL/VALVULA_RAMAL_1.png" alt="Válvula Ramal">
+            <div class="producto-badge">Ramal</div>
+          </div>
+          <div class="producto-content">
+            <h3 class="producto-title">Válvula Ramal</h3>
+            <p class="producto-description">Válvula para control de flujo en ramales de distribución de agua y fluidos.</p>
+            <div class="producto-specs">
+              <div class="spec-item"><i class="fas fa-ruler"></i><div><span class="spec-label">Diámetro</span><span class="spec-value">Variable</span></div></div>
+              <div class="spec-item"><i class="fas fa-tachometer-alt"></i><div><span class="spec-label">Presión</span><span class="spec-value">Media presión</span></div></div>
+            </div>
+            <div class="producto-tags"><span class="tag">Agrícola</span><span class="tag">Agroindustria</span><span class="tag">Industrial</span></div>
+            <button class="btn-cotizar" onclick="window.open('https://wa.me/51923302538?text=Hola%2C%20me%20interesa%20cotizar%3A%20V%C3%A1lvula%20Ramal','_blank')">
+              <i class="fab fa-whatsapp"></i> Cotizar
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div><!-- /valvulas -->
+
 
   </div>
 </section>
