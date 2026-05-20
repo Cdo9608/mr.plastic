@@ -40,12 +40,10 @@
         // Scroll suave a la primera categoría visible
         const firstVisible = document.querySelector('.productos-category:not(.hidden)');
         if (firstVisible) {
-          // Forzar clase 'in' en la categoría padre Y en todas sus cards
-          // (necesario en móvil: el IntersectionObserver no alcanzó lo que
-          //  estaba fuera del viewport inicial, dejando opacity:0 en todo)
-          document.querySelectorAll('.productos-category:not(.hidden)').forEach(cat => {
-            cat.classList.add('in');
-            cat.querySelectorAll('.producto-card').forEach(c => c.classList.add('in'));
+          // Forzar clase 'in' en todas las cards visibles del filtro activo
+          // (necesario en móvil cuando el IntersectionObserver no las alcanzó)
+          firstVisible.querySelectorAll(`.producto-card[data-category="${filter}"]`).forEach(c => {
+            c.classList.add('in');
           });
 
           setTimeout(() => {
@@ -143,6 +141,13 @@
   }, { threshold: 0.06, rootMargin: '0px 0px -24px 0px' });
 
   document.querySelectorAll('.rv, .rv-l, .rv-r, .producto-card').forEach(el => {
+    // Los contenedores .productos-category nunca deben bloquearse con opacity:0
+    // porque si están fuera del viewport inicial jamás reciben 'in' y todo su
+    // contenido queda invisible. Les damos 'in' de inmediato.
+    if (el.classList.contains('productos-category')) {
+      el.classList.add('rv', 'in');
+      return;
+    }
     el.classList.add('rv');
     revObs.observe(el);
   });
