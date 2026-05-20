@@ -141,11 +141,11 @@
   }, { threshold: 0.06, rootMargin: '0px 0px -24px 0px' });
 
   document.querySelectorAll('.rv, .rv-l, .rv-r, .producto-card').forEach(el => {
-    // Los contenedores .productos-category nunca deben bloquearse con opacity:0
-    // porque si están fuera del viewport inicial jamás reciben 'in' y todo su
-    // contenido queda invisible. Les damos 'in' de inmediato.
-    if (el.classList.contains('productos-category')) {
-      el.classList.add('rv', 'in');
+    // Las .productos-category y .producto-card NUNCA deben animarse con rv:
+    // son demasiadas y las que están fuera del viewport inicial jamás reciben
+    // 'in', quedando con opacity:0 para siempre. Se les da 'in' de inmediato.
+    if (el.classList.contains('productos-category') || el.classList.contains('producto-card')) {
+      el.classList.add('in');
       return;
     }
     el.classList.add('rv');

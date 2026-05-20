@@ -436,6 +436,13 @@
   display: none;
 }
 
+/* Las cards y categorías nunca deben heredar opacity:0 del sistema rv */
+.producto-card,
+.productos-category {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
 
 
 
